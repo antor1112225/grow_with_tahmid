@@ -9496,3 +9496,44 @@ html[data-theme="light"] .cta-band h2 em,
   transform: translateY(-3px) scale(1.05) !important;
   box-shadow: 0 12px 32px rgba(37, 211, 102, 0.6), 0 0 22px rgba(37, 211, 102, 0.4) !important;
 }
+
+/* ==========================================================================
+   High-Converting Signature Flame Palette for Schedule Call Buttons
+   ========================================================================== */
+
+.btn-schedule-slot,
+.btn-faq-call {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 8px !important;
+  width: 100% !important;
+  padding: 14px 20px !important;
+  background: linear-gradient(135deg, #ff5500 0%, #ff7700 50%, #ff9500 100%) !important;
+  color: #ffffff !important;
+  font-size: 0.92rem !important;
+  font-weight: 700 !important;
+  border-radius: 12px !important;
+  border: 1px solid rgba(255, 255, 255, 0.22) !important;
+  text-decoration: none !important;
+  box-shadow: 0 8px 24px -4px rgba(255, 85, 0, 0.48), 0 0 14px rgba(255, 119, 0, 0.22) !important;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+.btn-schedule-slot:hover,
+.btn-faq-call:hover {
+  background: linear-gradient(135deg, #ff6600 0%, #ff8800 50%, #ffa500 100%) !important;
+  box-shadow: 0 12px 32px -4px rgba(255, 85, 0, 0.65), 0 0 22px rgba(255, 136, 0, 0.38) !important;
+  transform: translateY(-2px) !important;
+  color: #ffffff !important;
+}
+
+.btn-schedule-slot svg,
+.btn-faq-call svg {
+  transition: transform 0.2s ease !important;
+}
+
+.btn-schedule-slot:hover svg,
+.btn-faq-call:hover svg {
+  transform: translateX(4px) !important;
+}
