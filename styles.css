@@ -1418,96 +1418,378 @@ ol {
 }
 
 /* Visual Card Column */
+/* Visual Card Column - Enhanced SaaS Credibility Showcase */
 .about-visual-card {
   position: relative;
-  background: #081528;
-  border: 1px solid rgba(56, 189, 248, 0.20);
+  background: radial-gradient(circle at 50% 30%, rgba(14, 30, 56, 0.95), #060e1c 85%);
+  border: 1px solid rgba(56, 189, 248, 0.25);
   border-radius: 28px;
-  padding: 24px 20px 0;
+  padding: 30px 24px 24px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
-  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.55), 0 0 30px rgba(56, 189, 248, 0.08);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.6), 0 0 35px rgba(56, 189, 248, 0.10);
+  min-height: 480px;
 }
 
 .about-visual-grid {
   position: absolute;
   inset: 0;
   background-image: 
-    linear-gradient(rgba(56, 189, 248, 0.08) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(56, 189, 248, 0.08) 1px, transparent 1px);
-  background-size: 26px 26px;
+    linear-gradient(rgba(56, 189, 248, 0.07) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(56, 189, 248, 0.07) 1px, transparent 1px);
+  background-size: 28px 28px;
   pointer-events: none;
 }
 
-.about-floating-tags {
+.about-glow-halo {
   position: absolute;
-  top: 18px;
-  left: 18px;
-  display: flex;
-  flex-direction: column;
-  gap: 7px;
-  z-index: 3;
-  background: rgba(6, 17, 34, 0.88);
-  border: 1px solid rgba(56, 189, 248, 0.28);
-  border-radius: 12px;
-  padding: 8px 12px;
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -20%);
+  width: 260px;
+  height: 260px;
+  background: radial-gradient(circle, rgba(56, 189, 248, 0.22) 0%, rgba(16, 185, 129, 0.15) 45%, transparent 70%);
+  filter: blur(28px);
+  pointer-events: none;
+  z-index: 1;
 }
 
-.about-tag-pill {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  font-size: 0.72rem;
-  font-weight: 700;
-  color: #cbd5e1;
-  letter-spacing: 0.02em;
-}
-
-.about-tag-pill .dot-cyan {
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  background: #38bdf8;
-  box-shadow: 0 0 6px #38bdf8;
-}
-
+/* Photo Wrapper & Frame */
 .about-photo-wrapper {
   position: relative;
   z-index: 2;
   width: 100%;
-  max-width: 340px;
-  margin-top: 12px;
+  max-width: 310px;
+  margin: 18px 0 16px;
   display: flex;
   justify-content: center;
 }
 
+.about-photo-frame {
+  position: relative;
+  width: 100%;
+  border-radius: 22px;
+  overflow: hidden;
+  border: 1.5px solid rgba(56, 189, 248, 0.35);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.65), 0 0 20px rgba(56, 189, 248, 0.18);
+  background: #091322;
+}
+
+.about-photo-frame::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 22px;
+  box-shadow: inset 0 0 18px rgba(56, 189, 248, 0.15);
+  pointer-events: none;
+}
+
 .about-photo {
   width: 100%;
-  height: auto;
-  max-height: 400px;
+  height: 340px;
   object-fit: cover;
   object-position: center top;
-  border-radius: 20px 20px 0 0;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.about-visual-card:hover .about-photo {
+  transform: scale(1.02);
+}
+
+/* Floating Glass Badges */
+.about-float-badge {
+  position: absolute;
+  z-index: 4;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 14px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5), 0 0 15px rgba(56, 189, 248, 0.15);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.about-float-badge:hover {
+  transform: translateY(-2px);
+  border-color: rgba(56, 189, 248, 0.55);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.6), 0 0 22px rgba(56, 189, 248, 0.28);
+}
+
+/* 1. Partner Badge (Top Left) */
+.badge-partner {
+  top: 18px;
+  left: 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 14px;
+  background: rgba(9, 20, 39, 0.92);
+  border: 1px solid rgba(56, 189, 248, 0.32);
+}
+
+.badge-partner-icons {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.badge-partner-icons svg {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+}
+
+.badge-partner-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.badge-partner-text strong {
+  font-size: 0.76rem;
+  color: #ffffff;
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+}
+
+.badge-partner-text small {
+  font-size: 0.65rem;
+  color: #38bdf8;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.badge-check-icon {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #10b981;
+  color: #ffffff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  font-weight: 900;
+  box-shadow: 0 0 8px rgba(16, 185, 129, 0.6);
+  flex-shrink: 0;
+}
+
+/* 2. Status Badge (Top Right) */
+.badge-status {
+  top: 18px;
+  right: 16px;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 7px 12px;
+  background: rgba(9, 20, 39, 0.90);
+  border: 1px solid rgba(16, 185, 129, 0.35);
+  font-size: 0.72rem;
+  font-weight: 800;
+  color: #34d399;
+  letter-spacing: 0.03em;
+}
+
+.live-dot-pulse {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #10b981;
+  box-shadow: 0 0 0 2px rgba(16, 185, 129, 0.3), 0 0 8px #10b981;
+  animation: pulseDot 2s infinite;
+}
+
+/* 3. Spend Metric Badge (Bottom Left) */
+.badge-metric-spend {
+  bottom: 64px;
+  left: 14px;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 8px 13px;
+  background: rgba(9, 20, 39, 0.92);
+  border: 1px solid rgba(245, 158, 11, 0.35);
+}
+
+.badge-metric-icon {
+  font-size: 16px;
+  width: 28px;
+  height: 28px;
+  border-radius: 8px;
+  background: rgba(245, 158, 11, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.badge-metric-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.metric-num {
+  font-size: 0.82rem;
+  font-weight: 800;
+  color: #ffffff;
+  line-height: 1.15;
+}
+
+.badge-metric-info small {
+  font-size: 0.65rem;
+  color: #94a3b8;
+  font-weight: 600;
+}
+
+/* 4. Rating Metric Badge (Bottom Right) */
+.badge-metric-rating {
+  bottom: 64px;
+  right: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 8px 13px;
+  background: rgba(9, 20, 39, 0.92);
+  border: 1px solid rgba(56, 189, 248, 0.32);
+}
+
+.badge-rating-stars {
+  color: #f59e0b;
+  font-size: 0.72rem;
+  letter-spacing: 1px;
+  line-height: 1;
+}
+
+/* 5. Bottom Name Bar */
+.about-name-bar {
+  position: relative;
+  z-index: 3;
+  width: 100%;
+  max-width: 310px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 14px;
+  border-radius: 12px;
+  background: rgba(6, 15, 29, 0.85);
+  border: 1px solid rgba(56, 189, 248, 0.22);
+}
+
+.about-name-title {
+  font-family: var(--font-heading);
+  font-size: 0.85rem;
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: -0.01em;
+}
+
+.about-name-sub {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.68rem;
+  font-weight: 700;
+  color: #38bdf8;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.name-sub-dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #38bdf8;
+  box-shadow: 0 0 5px #38bdf8;
+}
+
+@media (max-width: 520px) {
+  .about-visual-card {
+    padding: 20px 14px 18px;
+    min-height: auto;
+  }
+  .about-photo-wrapper {
+    max-width: 100%;
+  }
+  .about-photo {
+    height: 290px;
+  }
+  .badge-partner {
+    top: 12px;
+    left: 10px;
+    padding: 6px 10px;
+  }
+  .badge-status {
+    top: 12px;
+    right: 10px;
+    padding: 5px 9px;
+  }
+  .badge-metric-spend {
+    bottom: 58px;
+    left: 8px;
+    padding: 6px 10px;
+  }
+  .badge-metric-rating {
+    bottom: 58px;
+    right: 8px;
+    padding: 6px 10px;
+  }
+}
+
+/* Skill Items with Official Logos */
+.about-skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin-bottom: 24px;
+  max-width: 600px;
+}
+
+.about-skill-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 14px;
+  border-radius: 12px;
+  background: rgba(15, 23, 42, 0.65);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: transform 200ms ease, border-color 200ms ease, box-shadow 200ms ease, background 200ms ease;
+}
+
+.about-skill-item:hover {
+  transform: translateY(-2px);
+  border-color: rgba(56, 189, 248, 0.40);
+  background: rgba(15, 23, 42, 0.85);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35), 0 0 12px rgba(56, 189, 248, 0.12);
+}
+
+.about-skill-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  flex-shrink: 0;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: transform 0.2s ease;
+}
+
+.about-skill-item:hover .about-skill-icon {
+  transform: scale(1.08);
+}
+
+.about-skill-icon .brand-logo-svg {
+  width: 22px;
+  height: 22px;
   display: block;
 }
 
-.about-signature {
-  position: absolute;
-  bottom: 16px;
-  left: 22px;
-  z-index: 4;
-  font-family: 'Caveat', 'Playwrite', 'Brush Script MT', 'Dancing Script', cursive;
-  font-size: 2.8rem;
+.about-skill-label {
+  font-size: 0.85rem;
   font-weight: 700;
-  color: #ffffff;
-  text-shadow: 0 4px 14px rgba(0, 0, 0, 0.9);
-  transform: rotate(-6deg);
-  letter-spacing: 0.02em;
+  color: #f1f5f9;
+  letter-spacing: -0.01em;
 }
 
 /* Content Column */
