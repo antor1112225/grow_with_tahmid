@@ -30,6 +30,9 @@
 <!-- Google Tag Manager: set tracking.gtmId in src/data/site.mjs (currently GTM-XXXXXXX). GA4 (GA4-MEASUREMENT-ID), Google Ads (GOOGLE-ADS-CONVERSION-ID) and Meta Pixel (META-PIXEL-ID) are configured inside GTM. -->
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://growwithtahmid.com/"},{"@type":"ListItem","position":2,"name":"Industries","item":"https://growwithtahmid.com/industries"},{"@type":"ListItem","position":3,"name":"Automotive Services","item":"https://growwithtahmid.com/industries/automotive"}]}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Service","name":"Google & Meta Ads for Automotive Services","serviceType":"Paid advertising lead generation","audience":{"@type":"BusinessAudience","name":"Automotive Services"},"provider":{"@id":"https://growwithtahmid.com/#person"},"url":"https://growwithtahmid.com/industries/automotive"}</script>
+<script>
+(function(){try{var s=localStorage.getItem('theme');var p=(s==='dark'||s==='light')?s:((window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches)?'dark':'light');document.documentElement.setAttribute('data-theme',p);}catch(e){document.documentElement.setAttribute('data-theme','light');}})();
+</script>
 <script src="/main.js" defer></script>
 </head>
 <body class="">
@@ -44,9 +47,19 @@
       </span>
       <span class="brand-text"><strong>Tahmid Hasan Antor <span class="brand-status-dot" aria-label="Available"></span></strong><small>PERFORMANCE MARKETER</small></span>
     </a>
-    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+        <div class="header-mobile-right">
+      <button type="button" class="theme-toggle-btn js-theme-toggle header-mobile-theme-btn" aria-label="Toggle dark/light theme" title="Toggle dark/light theme">
+        <svg class="theme-icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        <svg class="theme-icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+    </div>
     <nav id="site-nav" class="site-nav" aria-label="Main">
       <ul><li><a href="/">Home</a></li><li><a href="/about">About</a></li><li><a href="/services">Services</a></li><li><a href="/case-studies">Case Studies</a></li><li><a href="/industries" aria-current="page">Industries</a></li><li><a href="/resources">Resources</a></li><li><a href="/contact">Contact</a></li></ul>
+      <button type="button" class="theme-toggle-btn js-theme-toggle header-desktop-theme-btn" aria-label="Toggle dark/light theme" title="Toggle dark/light theme">
+        <svg class="theme-icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        <svg class="theme-icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
       <a id="cta-header-book-call" class="btn btn-primary btn-sm js-track" data-track-event="book_call_click" data-track-location="header" href="https://calendly.com/tahmidconsultent/meeting" target="_blank" rel="noopener noreferrer"><span>Book a Free Strategy Call</span></a>
     </nav>
   </div>
