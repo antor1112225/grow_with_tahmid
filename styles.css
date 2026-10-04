@@ -5546,6 +5546,458 @@ tbody tr:last-child td {
   }
 }
 
+
+/* ==========================================================================
+   Final Audit & Direct Reach-out Section (Media Reference 1791148027344)
+   ========================================================================== */
+.final-audit-section {
+  position: relative;
+  background: radial-gradient(circle at 50% 0%, rgba(30, 58, 95, 0.28) 0%, rgba(6, 11, 19, 0.98) 75%), #060b13;
+  padding: 100px 0 90px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  overflow: hidden;
+}
+
+.final-audit-section::before {
+  content: "";
+  position: absolute;
+  top: -150px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 700px;
+  height: 350px;
+  background: radial-gradient(ellipse, rgba(56, 189, 248, 0.12) 0%, transparent 70%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.final-audit-header {
+  text-align: center;
+  max-width: 780px;
+  margin: 0 auto 52px;
+  position: relative;
+  z-index: 2;
+}
+
+.final-audit-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 16px;
+  background: rgba(16, 185, 129, 0.12);
+  border: 1px solid rgba(16, 185, 129, 0.3);
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #34d399;
+  margin-bottom: 20px;
+}
+
+.final-audit-badge .dot-emerald {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #10b981;
+  box-shadow: 0 0 8px #10b981;
+}
+
+.final-audit-title {
+  font-size: clamp(2rem, 3.8vw, 3rem);
+  font-weight: 800;
+  color: #ffffff;
+  line-height: 1.18;
+  letter-spacing: -0.03em;
+  margin-bottom: 18px;
+}
+
+.final-audit-subtitle {
+  font-size: 1.05rem;
+  color: #94a3b8;
+  line-height: 1.6;
+  max-width: 660px;
+  margin: 0 auto;
+}
+
+.final-audit-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.35fr;
+  gap: 32px;
+  align-items: stretch;
+  position: relative;
+  z-index: 2;
+}
+
+/* Base Card Style */
+.final-card {
+  background: rgba(13, 21, 38, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 24px;
+  padding: 38px 34px;
+  box-shadow: 0 20px 45px -10px rgba(0, 0, 0, 0.65), inset 0 1px 0 rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  display: flex;
+  flex-direction: column;
+}
+
+.final-card-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+
+.final-card-tag.is-green {
+  color: #10b981;
+}
+
+.final-card-tag.is-cyan {
+  color: #38bdf8;
+}
+
+.final-card-head h3 {
+  font-size: 1.45rem;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: -0.02em;
+  margin-bottom: 10px;
+}
+
+.final-card-head p {
+  font-size: 0.88rem;
+  color: #94a3b8;
+  line-height: 1.55;
+  margin-bottom: 26px;
+}
+
+/* Left Card: Channels */
+.final-channels-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 28px;
+}
+
+.final-channel-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 13px 16px;
+  background: rgba(255, 255, 255, 0.025);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 14px;
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.final-channel-item:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(56, 189, 248, 0.25);
+  transform: translateY(-2px);
+}
+
+.final-channel-left {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.final-channel-icon {
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.final-channel-icon.is-email {
+  background: rgba(56, 189, 248, 0.1);
+  color: #38bdf8;
+  border: 1px solid rgba(56, 189, 248, 0.2);
+}
+
+.final-channel-icon.is-youtube {
+  background: rgba(239, 68, 68, 0.1);
+  color: #f87171;
+  border: 1px solid rgba(239, 68, 68, 0.2);
+}
+
+.final-channel-icon.is-whatsapp {
+  background: rgba(16, 185, 129, 0.1);
+  color: #34d399;
+  border: 1px solid rgba(16, 185, 129, 0.2);
+}
+
+.final-channel-icon.is-linkedin {
+  background: rgba(14, 165, 233, 0.1);
+  color: #38bdf8;
+  border: 1px solid rgba(14, 165, 233, 0.2);
+}
+
+.final-channel-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.final-channel-lbl {
+  font-size: 0.72rem;
+  font-weight: 500;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 2px;
+}
+
+.final-channel-val {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: #e2e8f0;
+}
+
+.final-channel-action {
+  color: #64748b;
+  display: flex;
+  align-items: center;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.final-channel-item:hover .final-channel-action {
+  color: #38bdf8;
+  transform: translate(2px, -2px);
+}
+
+.btn-copy-email {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: #cbd5e1;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 6px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.btn-copy-email:hover {
+  background: rgba(56, 189, 248, 0.15);
+  border-color: #38bdf8;
+  color: #ffffff;
+}
+
+.btn-copy-email.copied {
+  background: rgba(16, 185, 129, 0.2);
+  border-color: #10b981;
+  color: #34d399;
+}
+
+/* Schedule Call Box inside Left Card */
+.final-schedule-box {
+  margin-top: auto;
+  background: linear-gradient(145deg, rgba(30, 58, 95, 0.4) 0%, rgba(15, 23, 42, 0.6) 100%);
+  border: 1px solid rgba(56, 189, 248, 0.25);
+  border-radius: 18px;
+  padding: 22px 20px;
+  box-shadow: 0 10px 25px -5px rgba(2, 132, 199, 0.15);
+}
+
+.final-schedule-box-head {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 8px;
+}
+
+.final-schedule-box-head svg {
+  color: #38bdf8;
+}
+
+.final-schedule-box p {
+  font-size: 0.8rem;
+  color: #94a3b8;
+  line-height: 1.5;
+  margin-bottom: 16px;
+}
+
+.btn-schedule-slot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  padding: 13px 18px;
+  background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+  color: #ffffff;
+  font-size: 0.88rem;
+  font-weight: 700;
+  border-radius: 12px;
+  text-decoration: none;
+  box-shadow: 0 6px 18px rgba(37, 99, 235, 0.35);
+  transition: all 0.2s ease;
+}
+
+.btn-schedule-slot:hover {
+  background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+  box-shadow: 0 8px 24px rgba(37, 99, 235, 0.5);
+  transform: translateY(-1px);
+  color: #ffffff;
+}
+
+/* Right Card: Audit Form */
+.final-audit-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.final-form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.final-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.final-form-group label {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #cbd5e1;
+  letter-spacing: 0.01em;
+}
+
+.final-form-group label span.req {
+  color: #f87171;
+}
+
+.final-form-group input,
+.final-form-group select,
+.final-form-group textarea {
+  width: 100%;
+  background: rgba(15, 23, 42, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 12px 14px;
+  font-size: 0.88rem;
+  color: #ffffff;
+  font-family: inherit;
+  transition: all 0.2s ease;
+  outline: none;
+}
+
+.final-form-group select {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%2394a3b8' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 14px center;
+  padding-right: 36px;
+}
+
+.final-form-group select option {
+  background: #0f172a;
+  color: #ffffff;
+}
+
+.final-form-group input:focus,
+.final-form-group select:focus,
+.final-form-group textarea:focus {
+  border-color: #38bdf8;
+  box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.2);
+  background: rgba(15, 23, 42, 0.95);
+}
+
+.final-form-group input::placeholder,
+.final-form-group textarea::placeholder {
+  color: #475569;
+}
+
+.final-form-group textarea {
+  resize: vertical;
+  min-height: 95px;
+}
+
+.btn-audit-submit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  padding: 15px 24px;
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  color: #ffffff;
+  font-size: 0.95rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0 8px 24px -4px rgba(16, 185, 129, 0.45);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  margin-top: 6px;
+}
+
+.btn-audit-submit:hover {
+  background: linear-gradient(135deg, #34d399 0%, #10b981 100%);
+  box-shadow: 0 10px 30px -2px rgba(16, 185, 129, 0.6);
+  transform: translateY(-2px);
+}
+
+.final-audit-trust {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 0.78rem;
+  color: #64748b;
+  text-align: center;
+  margin-top: 14px;
+}
+
+/* Responsiveness for Final Section */
+@media (max-width: 960px) {
+  .final-audit-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+}
+
+@media (max-width: 600px) {
+  .final-audit-section {
+    padding: 70px 0 60px;
+  }
+
+  .final-card {
+    padding: 26px 20px;
+    border-radius: 20px;
+  }
+
+  .final-form-row {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .btn-audit-submit {
+    font-size: 0.88rem;
+    padding: 14px 18px;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
