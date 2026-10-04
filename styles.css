@@ -7722,3 +7722,306 @@ html.theme-transition *::before,
 html.theme-transition *::after {
   transition: background-color 0.25s ease, border-color 0.25s ease, color 0.2s ease, box-shadow 0.25s ease !important;
 }
+
+
+/* ==========================================================================
+   Modern SaaS Industry Cards (Always Visible Action Button & Category Icons)
+   ========================================================================== */
+
+.grid-industries {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 26px;
+}
+
+@media (max-width: 1080px) {
+  .grid-industries {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 680px) {
+  .grid-industries {
+    grid-template-columns: 1fr;
+  }
+}
+
+.industry-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 30px 26px !important;
+  background: #ffffff;
+  border: 1px solid #e2e8f0 !important;
+  border-radius: 20px !important;
+  box-shadow: 0 4px 20px -2px rgba(15, 23, 42, 0.05), 0 2px 6px -1px rgba(15, 23, 42, 0.03) !important;
+  transition: transform 260ms cubic-bezier(0.16, 1, 0.3, 1), box-shadow 260ms cubic-bezier(0.16, 1, 0.3, 1), border-color 260ms ease !important;
+  position: relative;
+}
+
+.industry-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 36px -4px rgba(15, 23, 42, 0.12) !important;
+  border-color: #cbd5e1 !important;
+}
+
+html[data-theme="dark"] .industry-card {
+  background: radial-gradient(circle at 85% 15%, rgba(14, 28, 52, 0.75), #0a1322 85%) !important;
+  border-color: rgba(255, 255, 255, 0.09) !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45) !important;
+}
+
+html[data-theme="dark"] .industry-card:hover {
+  border-color: rgba(56, 189, 248, 0.45) !important;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.55), 0 0 22px rgba(56, 189, 248, 0.12) !important;
+}
+
+.industry-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.ind-badge-wrap {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.ind-live-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #10b981;
+  box-shadow: 0 0 6px #10b981;
+  flex-shrink: 0;
+}
+
+.industry-card .tag-core {
+  background: rgba(16, 185, 129, 0.12) !important;
+  border: 1px solid rgba(16, 185, 129, 0.35) !important;
+  color: #10b981 !important;
+  font-size: 0.74rem;
+  font-weight: 800;
+  padding: 3px 12px;
+  border-radius: 999px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.industry-card .tag-muted {
+  background: rgba(56, 189, 248, 0.10) !important;
+  border: 1px solid rgba(56, 189, 248, 0.25) !important;
+  color: #38bdf8 !important;
+  font-size: 0.74rem;
+  font-weight: 800;
+  padding: 3px 12px;
+  border-radius: 999px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.industry-card .count {
+  color: #94a3b8 !important;
+  font-size: 0.78rem;
+  font-weight: 700;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 3px 10px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.industry-title-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 12px;
+}
+
+.industry-icon-box {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  transition: transform 0.2s ease;
+}
+
+.industry-card:hover .industry-icon-box {
+  transform: scale(1.08);
+}
+
+.industry-icon-box.is-auto {
+  background: rgba(56, 189, 248, 0.12);
+  border-color: rgba(56, 189, 248, 0.35);
+  color: #38bdf8;
+}
+
+.industry-icon-box.is-home {
+  background: rgba(16, 185, 129, 0.12);
+  border-color: rgba(16, 185, 129, 0.35);
+  color: #10b981;
+}
+
+.industry-icon-box.is-legal {
+  background: rgba(245, 158, 11, 0.12);
+  border-color: rgba(245, 158, 11, 0.35);
+  color: #f59e0b;
+}
+
+.industry-icon-box.is-health {
+  background: rgba(236, 72, 153, 0.12);
+  border-color: rgba(236, 72, 153, 0.35);
+  color: #ec4899;
+}
+
+.industry-icon-box.is-b2c {
+  background: rgba(168, 85, 247, 0.12);
+  border-color: rgba(168, 85, 247, 0.35);
+  color: #a855f7;
+}
+
+.industry-card h3 {
+  font-family: var(--font-heading);
+  font-size: 1.35rem;
+  font-weight: 800;
+  line-height: 1.25;
+  margin: 0;
+  letter-spacing: -0.015em;
+}
+
+.industry-card h3 a {
+  color: var(--ink) !important;
+  text-decoration: none !important;
+  transition: color 200ms ease;
+}
+
+html[data-theme="dark"] .industry-card h3 a {
+  color: #ffffff !important;
+}
+
+.industry-card:hover h3 a {
+  color: #38bdf8 !important;
+}
+
+.industry-desc {
+  margin: 0 0 18px !important;
+  color: #64748b !important;
+  font-size: 0.90rem !important;
+  line-height: 1.6 !important;
+}
+
+html[data-theme="dark"] .industry-desc {
+  color: #94a3b8 !important;
+}
+
+/* Chips */
+.industry-card .chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin: 0 0 24px;
+  padding: 0;
+  list-style: none;
+}
+
+.industry-card .chips li {
+  padding: 5px 11px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.05);
+  color: #cbd5e1;
+  font-size: 0.76rem;
+  font-weight: 600;
+  line-height: 1.2;
+  transition: all 180ms ease;
+  white-space: nowrap;
+}
+
+.industry-card .chips li:hover {
+  background: rgba(56, 189, 248, 0.15);
+  border-color: rgba(56, 189, 248, 0.4);
+  color: #ffffff;
+  transform: translateY(-1px);
+}
+
+.industry-card .chip-more {
+  background: rgba(249, 115, 22, 0.12) !important;
+  border: 1px solid rgba(249, 115, 22, 0.32) !important;
+  color: #f97316 !important;
+  font-weight: 700 !important;
+}
+
+/* ALWAYS VISIBLE ACTION BUTTON (Fixes invisible link bug) */
+.industry-card-footer {
+  margin-top: auto;
+  padding-top: 14px;
+  width: 100%;
+}
+
+.industry-action-btn,
+.industry-card .card-link {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  width: 100% !important;
+  padding: 11px 16px !important;
+  border-radius: 12px !important;
+  font-size: 0.88rem !important;
+  font-weight: 800 !important;
+  text-decoration: none !important;
+  transition: all 220ms ease !important;
+  box-sizing: border-box !important;
+  color: #38bdf8 !important;
+  background: rgba(56, 189, 248, 0.08) !important;
+  border: 1px solid rgba(56, 189, 248, 0.28) !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2) !important;
+}
+
+html[data-theme="light"] .industry-action-btn,
+html[data-theme="light"] .industry-card .card-link,
+:root:not([data-theme="dark"]) .industry-action-btn,
+:root:not([data-theme="dark"]) .industry-card .card-link {
+  color: #0284c7 !important;
+  background: rgba(2, 132, 199, 0.08) !important;
+  border: 1px solid rgba(2, 132, 199, 0.25) !important;
+}
+
+.industry-action-btn svg,
+.industry-card .card-link svg {
+  width: 17px !important;
+  height: 17px !important;
+  stroke-width: 2.2 !important;
+  transition: transform 220ms ease !important;
+  flex-shrink: 0 !important;
+}
+
+.industry-action-btn:hover,
+.industry-card .card-link:hover {
+  background: rgba(56, 189, 248, 0.18) !important;
+  border-color: #38bdf8 !important;
+  color: #ffffff !important;
+  box-shadow: 0 4px 16px rgba(56, 189, 248, 0.28) !important;
+  transform: translateY(-1px) !important;
+}
+
+html[data-theme="light"] .industry-action-btn:hover,
+html[data-theme="light"] .industry-card .card-link:hover,
+:root:not([data-theme="dark"]) .industry-action-btn:hover,
+:root:not([data-theme="dark"]) .industry-card .card-link:hover {
+  background: #0284c7 !important;
+  border-color: #0284c7 !important;
+  color: #ffffff !important;
+  box-shadow: 0 4px 16px rgba(2, 132, 199, 0.3) !important;
+}
+
+.industry-action-btn:hover svg,
+.industry-card .card-link:hover svg {
+  transform: translateX(4px) !important;
+}
