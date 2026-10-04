@@ -318,13 +318,13 @@ ol {
 
 .brand-avatar-wrap {
   display: flex;
-  width: 42px;
-  height: 42px;
-  flex: 0 0 42px;
-  border-radius: 12px;
+  width: 40px;
+  height: 40px;
+  flex: 0 0 40px;
+  border-radius: 50%;
   overflow: hidden;
-  border: 1.5px solid rgba(255, 106, 61, 0.4);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  border: 2px solid #38bdf8;
+  box-shadow: 0 0 10px rgba(56, 189, 248, 0.45);
   background: var(--navy-900);
 }
 
@@ -333,6 +333,7 @@ ol {
   height: 100%;
   object-fit: cover;
   object-position: center top;
+  border-radius: 50%;
   display: block;
 }
 
@@ -343,15 +344,41 @@ ol {
 }
 
 .brand-text strong {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
   font-family: var(--font-heading);
   font-size: .98rem;
+  font-weight: 800;
+}
+
+.brand-status-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #10b981;
+  box-shadow: 0 0 8px #10b981;
+  display: inline-block;
+  flex-shrink: 0;
+  animation: pulse-dot 2.5s infinite ease-in-out;
+}
+
+@keyframes pulse-dot {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0.85;
+  }
 }
 
 .brand-text small {
-  color: var(--muted);
+  color: #64748b;
   font-size: .67rem;
   font-weight: 700;
-  letter-spacing: .04em;
+  letter-spacing: .06em;
   text-transform: uppercase;
 }
 
