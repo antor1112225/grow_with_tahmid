@@ -837,30 +837,152 @@
   </div>
 </section>
 
-<section class="section" aria-labelledby="resources-title">
+<section class="section res-slider-section" aria-labelledby="resources-title">
   <div class="container">
-    <div class="section-head"><p class="eyebrow">Resources & insights</p><h2 id="resources-title">Answers to real Google Ads and Meta Ads problems</h2><p class="lede">Practical breakdowns of the problems I see in audits, client questions and PPC communities.</p></div>
-    <div class="grid grid-3">
-<article class="card article-card">
-  <div class="article-meta"><a class="tag" href="/resources/category/meta-ads">Meta Ads</a><span>8 min read</span></div>
-  <h3><a href="/resources/meta-ads-leads-dont-convert">Why Meta Ads Generate Leads That Don't Convert (and How to Fix Lead Quality)</a></h3>
-  <p>Your Meta Ads dashboard shows plenty of leads at a cost per lead that looks great. But when your team calls them, half do not pick up, some do not remember filling in a form, and very few book. You are starting to wonder whether Facebook and Instagram leads are worth it at all.</p>
-  <p class="article-date">Updated <time datetime="2026-10-01">October 1, 2026</time></p>
-</article>
-<article class="card article-card">
-  <div class="article-meta"><a class="tag" href="/resources/category/local-service-marketing">Local Service Marketing</a><span>8 min read</span></div>
-  <h3><a href="/resources/broad-match-vs-phrase-match-local-services">Broad Match vs Phrase Match for Local Services: Which One Actually Brings in Booked Jobs?</a></h3>
-  <p>Google keeps recommending broad match, but every time you try it your search terms fill up with DIY questions, job seekers and searches from towns you do not serve. Phrase match feels safer, yet volume is thin and costs per lead are creeping up. You want to know which one is right for a local business with a limited budget.</p>
-  <p class="article-date">Updated <time datetime="2026-10-01">October 1, 2026</time></p>
-</article>
-<article class="card article-card">
-  <div class="article-meta"><a class="tag" href="/resources/category/conversion-tracking">Conversion Tracking</a><span>9 min read</span></div>
-  <h3><a href="/resources/google-ads-conversion-tracking-problems">Google Ads Conversion Tracking Problems: How to Find and Fix the Errors That Mislead Smart Bidding</a></h3>
-  <p>Google Ads says you got 40 conversions last month, but your inbox and phone log show maybe half of that. Or the opposite: leads are coming in and the account shows almost nothing. Either way, Smart Bidding is optimizing toward numbers that do not match reality, and you cannot trust your cost per lead.</p>
-  <p class="article-date">Updated <time datetime="2026-10-01">October 1, 2026</time></p>
-</article></div>
-    <div class="section-cta"><a class="btn btn-outline" href="/resources"><span>Browse all resources</span><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+    <div class="res-header-row">
+      <div class="res-header-copy">
+        <div class="res-badge"><span class="res-badge-dot"></span> RESOURCES &amp; INSIGHTS</div>
+        <h2 id="resources-title" class="res-title">Answers to real Google Ads and Meta Ads problems</h2>
+        <p class="res-subtitle">Practical breakdowns of the problems I see in audits, client questions and PPC communities.</p>
+      </div>
+
+      <div class="res-slider-controls">
+        <button class="res-slider-btn" id="res-slider-prev" type="button" aria-label="Previous article" title="Previous article">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+        </button>
+        <button class="res-slider-btn" id="res-slider-next" type="button" aria-label="Next article" title="Next article">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="res-slider-container">
+      <div class="res-slider-track" id="res-slider-track">
+        <!-- Article 1: Meta Ads Leads -->
+        <article class="res-article-card">
+          <div class="res-card-meta">
+            <span class="res-tag res-tag-meta">Meta Ads</span>
+            <span class="res-read-time"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> 8 min read</span>
+          </div>
+          <h3 class="res-card-title"><a href="/resources/meta-ads-leads-dont-convert">Why Meta Ads Generate Leads That Don't Convert (and How to Fix Lead Quality)</a></h3>
+          <p class="res-card-desc">Your Meta Ads dashboard shows plenty of leads at a low CPL. But when your team calls, half do not pick up, some don't remember filling in a form, and few book. Here is how to fix intent.</p>
+          <div class="res-card-footer">
+            <span class="res-card-date"><time datetime="2026-10-01">October 1, 2026</time></span>
+            <a class="res-card-arrow" href="/resources/meta-ads-leads-dont-convert"><span>Read Article</span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          </div>
+        </article>
+
+        <!-- Article 2: Broad vs Phrase Match -->
+        <article class="res-article-card">
+          <div class="res-card-meta">
+            <span class="res-tag res-tag-local">Local Service Marketing</span>
+            <span class="res-read-time"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> 8 min read</span>
+          </div>
+          <h3 class="res-card-title"><a href="/resources/broad-match-vs-phrase-match-local-services">Broad Match vs Phrase Match for Local Services: Which One Actually Brings in Booked Jobs?</a></h3>
+          <p class="res-card-desc">Google keeps recommending broad match, but search terms fill up with DIY research and out-of-area searches. Phrase match feels safer, yet volume is thin. Here is the right balance.</p>
+          <div class="res-card-footer">
+            <span class="res-card-date"><time datetime="2026-10-01">October 1, 2026</time></span>
+            <a class="res-card-arrow" href="/resources/broad-match-vs-phrase-match-local-services"><span>Read Article</span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          </div>
+        </article>
+
+        <!-- Article 3: Conversion Tracking Problems -->
+        <article class="res-article-card">
+          <div class="res-card-meta">
+            <span class="res-tag res-tag-tracking">Conversion Tracking</span>
+            <span class="res-read-time"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> 9 min read</span>
+          </div>
+          <h3 class="res-card-title"><a href="/resources/google-ads-conversion-tracking-problems">Google Ads Conversion Tracking Problems: How to Find and Fix Errors That Mislead Smart Bidding</a></h3>
+          <p class="res-card-desc">Google Ads says you got 40 conversions, but your inbox and phone log show half of that. Smart Bidding is optimizing toward numbers that do not match reality. Here is the audit checklist.</p>
+          <div class="res-card-footer">
+            <span class="res-card-date"><time datetime="2026-10-01">October 1, 2026</time></span>
+            <a class="res-card-arrow" href="/resources/google-ads-conversion-tracking-problems"><span>Read Article</span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          </div>
+        </article>
+
+        <!-- Article 4: Clicks but No Leads -->
+        <article class="res-article-card">
+          <div class="res-card-meta">
+            <span class="res-tag res-tag-google">Google Ads Search</span>
+            <span class="res-read-time"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> 7 min read</span>
+          </div>
+          <h3 class="res-card-title"><a href="/resources/google-ads-clicks-but-no-leads">Google Ads Clicks but No Leads: 7 Fixes for Local &amp; High-Intent Services</a></h3>
+          <p class="res-card-desc">You are paying for clicks daily, but the phone is silent and form submissions are rare. Here is how to diagnose whether the leak is search term intent, landing page friction, or broken tracking.</p>
+          <div class="res-card-footer">
+            <span class="res-card-date"><time datetime="2026-10-01">October 1, 2026</time></span>
+            <a class="res-card-arrow" href="/resources/google-ads-clicks-but-no-leads"><span>Read Article</span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          </div>
+        </article>
+
+        <!-- Article 5: Low Quality Leads -->
+        <article class="res-article-card">
+          <div class="res-card-meta">
+            <span class="res-tag res-tag-quality">Lead Quality &amp; Filtering</span>
+            <span class="res-read-time"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> 8 min read</span>
+          </div>
+          <h3 class="res-card-title"><a href="/resources/google-ads-low-quality-leads">Google Ads Low Quality Leads: How to Stop Wasting Budget on Unqualified Inquiries</a></h3>
+          <p class="res-card-desc">Stop paying for price-shoppers and out-of-area inquiries. Learn how negative keyword sculpting, price anchoring in ad copy, and qualification forms filter out low-value clicks.</p>
+          <div class="res-card-footer">
+            <span class="res-card-date"><time datetime="2026-10-01">October 1, 2026</time></span>
+            <a class="res-card-arrow" href="/resources/google-ads-low-quality-leads"><span>Read Article</span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          </div>
+        </article>
+
+        <!-- Article 6: Why CPL Increased -->
+        <article class="res-article-card">
+          <div class="res-card-meta">
+            <span class="res-tag res-tag-scaling">Ad Scaling &amp; Strategy</span>
+            <span class="res-read-time"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> 6 min read</span>
+          </div>
+          <h3 class="res-card-title"><a href="/resources/why-cpl-suddenly-increased">Why Your Cost Per Lead Suddenly Increased &amp; How to Recover Quality</a></h3>
+          <p class="res-card-desc">When CPA doubles unexpectedly, panic bidding makes it worse. A step-by-step diagnostic framework to identify whether auction competition, audience fatigue, or tracking broke down.</p>
+          <div class="res-card-footer">
+            <span class="res-card-date"><time datetime="2026-10-01">October 1, 2026</time></span>
+            <a class="res-card-arrow" href="/resources/why-cpl-suddenly-increased"><span>Read Article</span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <div class="res-footer-action">
+      <a class="btn btn-outline" href="/resources">
+        <span>Browse all resources</span>
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+    </div>
   </div>
+
+  <script>
+    (function initResSlider() {
+      const track = document.getElementById('res-slider-track');
+      const prevBtn = document.getElementById('res-slider-prev');
+      const nextBtn = document.getElementById('res-slider-next');
+      if (!track || !prevBtn || !nextBtn) return;
+
+      function getScrollStep() {
+        const card = track.querySelector('.res-article-card');
+        return card ? (card.offsetWidth + 24) : 380;
+      }
+
+      nextBtn.addEventListener('click', function() {
+        track.scrollBy({ left: getScrollStep(), behavior: 'smooth' });
+      });
+
+      prevBtn.addEventListener('click', function() {
+        track.scrollBy({ left: -getScrollStep(), behavior: 'smooth' });
+      });
+
+      function updateControls() {
+        const maxScroll = track.scrollWidth - track.clientWidth;
+        prevBtn.disabled = track.scrollLeft <= 4;
+        nextBtn.disabled = track.scrollLeft >= maxScroll - 4;
+      }
+
+      track.addEventListener('scroll', updateControls, { passive: true });
+      window.addEventListener('resize', updateControls);
+      updateControls();
+    })();
+  </script>
 </section>
 
 
