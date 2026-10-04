@@ -9338,26 +9338,57 @@ html[data-theme="light"] .theme-switch-option.is-dark {
    "Cyber-ROI Hyper-Signal" Brand Identity (Unforgettable & Unique)
    ========================================================================== */
 
-/* --- Primary High-Converting CTA Buttons (Electric Flame & Luxury Warm Glow) --- */
+/* --- High-ROI Emerald Green CTA Buttons & Cyber Ghost Buttons --- */
 .btn-primary,
 .cta-header-book-call,
-.btn-faq-call {
-  background: linear-gradient(135deg, #ff5500 0%, #ff7700 50%, #ff9500 100%) !important;
-  color: #ffffff !important;
-  border: 1px solid rgba(255, 255, 255, 0.22) !important;
-  box-shadow: 0 8px 24px -4px rgba(255, 85, 0, 0.45), 0 0 12px rgba(255, 119, 0, 0.2) !important;
-  font-weight: 700 !important;
+.btn-faq-call,
+#cta-hero-book-call,
+#cta-about-call,
+.btn-cta-submit {
+  background: #00d084 !important;
+  background: linear-gradient(135deg, #00d084 0%, #05b370 100%) !important;
+  color: #061d15 !important;
+  border: 1px solid rgba(0, 208, 132, 0.45) !important;
+  box-shadow: 0 8px 24px -2px rgba(0, 208, 132, 0.42), 0 0 16px rgba(0, 208, 132, 0.25) !important;
+  font-weight: 800 !important;
   letter-spacing: -0.01em !important;
+  border-radius: 12px !important;
   transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1) !important;
 }
 
 .btn-primary:hover,
 .cta-header-book-call:hover,
-.btn-faq-call:hover {
-  background: linear-gradient(135deg, #ff6600 0%, #ff8800 50%, #ffa500 100%) !important;
+.btn-faq-call:hover,
+#cta-hero-book-call:hover,
+#cta-about-call:hover,
+.btn-cta-submit:hover {
+  background: #05e896 !important;
+  background: linear-gradient(135deg, #05e896 0%, #00cb7c 100%) !important;
+  color: #02140d !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 12px 32px -2px rgba(0, 208, 132, 0.58), 0 0 22px rgba(0, 208, 132, 0.4) !important;
+}
+
+.btn-ghost,
+.btn-secondary,
+#cta-about-more {
+  background: #141d2e !important;
+  border: 1px solid rgba(255, 255, 255, 0.14) !important;
+  color: #fb7185 !important;
+  font-weight: 700 !important;
+  border-radius: 12px !important;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.3) !important;
+  transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+.btn-ghost:hover,
+.btn-secondary:hover,
+#cta-about-more:hover {
+  background: #1c273c !important;
+  border-color: rgba(251, 113, 133, 0.45) !important;
   color: #ffffff !important;
   transform: translateY(-2px) !important;
-  box-shadow: 0 12px 32px -4px rgba(255, 85, 0, 0.6), 0 0 22px rgba(255, 136, 0, 0.35) !important;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45), 0 0 16px rgba(251, 113, 133, 0.25) !important;
 }
 
 /* --- Brand Avatar Signature Aura --- */
@@ -9536,4 +9567,363 @@ html[data-theme="light"] .cta-band h2 em,
 .btn-schedule-slot:hover svg,
 .btn-faq-call:hover svg {
   transform: translateX(4px) !important;
+}
+
+
+
+/* =========================================================
+   Sleek Cyber Footer Bar & Squircle Buttons (Reference Exact)
+   ========================================================= */
+.site-footer {
+  background: #070d18 !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.08) !important;
+  padding: 32px 0 26px !important;
+  color: #94a3b8 !important;
+}
+
+.footer-top-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.footer-profile {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.footer-avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #00d084;
+  box-shadow: 0 0 12px rgba(0, 208, 132, 0.35);
+}
+
+.footer-profile-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-profile-name {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: -0.01em;
+  line-height: 1.2;
+}
+
+.footer-profile-tagline {
+  font-size: 0.78rem;
+  color: #8da2bb;
+  font-weight: 500;
+  margin-top: 2px;
+}
+
+.footer-nav {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.footer-nav-link {
+  color: #cbd5e1;
+  font-size: 0.86rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.footer-nav-link:hover {
+  color: #38bdf8;
+}
+
+.footer-nav-video {
+  color: #f87171;
+  font-weight: 700;
+}
+
+.footer-nav-video:hover {
+  color: #ef4444;
+}
+
+.footer-live-dot {
+  width: 7px;
+  height: 7px;
+  background: #ef4444;
+  border-radius: 50%;
+  display: inline-block;
+  box-shadow: 0 0 8px #ef4444;
+  animation: footerDotPulse 1.8s infinite;
+}
+
+@keyframes footerDotPulse {
+  0% { transform: scale(0.95); opacity: 0.8; }
+  50% { transform: scale(1.3); opacity: 1; }
+  100% { transform: scale(0.95); opacity: 0.8; }
+}
+
+/* 4 Squircle Icon Buttons */
+.footer-social-squircles {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-squircle-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 10px;
+  background: #141f32;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: #cbd5e1;
+  text-decoration: none;
+  transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.footer-squircle-btn:hover {
+  background: #1e3252;
+  border-color: #38bdf8;
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.5), 0 0 14px rgba(56, 189, 248, 0.28);
+}
+
+.footer-squircle-btn svg {
+  display: block;
+}
+
+.footer-divider-line {
+  height: 1px;
+  background: rgba(255, 255, 255, 0.08);
+  margin: 22px 0 18px;
+}
+
+.footer-bottom-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+  font-size: 0.8rem;
+  color: #64748b;
+}
+
+.footer-copyright {
+  color: #7b8ea6;
+}
+
+.footer-legal-links {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-legal-links a {
+  color: #7b8ea6;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-legal-links a:hover {
+  color: #cbd5e1;
+}
+
+.footer-bullet {
+  color: #475569;
+  font-size: 0.75rem;
+}
+
+.footer-back-to-top {
+  cursor: pointer;
+}
+
+@media (max-width: 900px) {
+  .footer-top-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 18px;
+  }
+  .footer-social-squircles {
+    align-self: flex-start;
+  }
+  .footer-bottom-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+}
+
+/* =========================================================
+   About Profile Card (Matching media_1791154533224.png)
+   ========================================================= */
+.about-visual-card-v2 {
+  position: relative;
+  background: #0b1322;
+  border: 1px solid rgba(56, 189, 248, 0.22);
+  border-radius: 24px;
+  padding: 16px;
+  overflow: hidden;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6), 0 0 30px rgba(56, 189, 248, 0.1);
+  max-width: 380px;
+  margin: 0 auto;
+}
+
+.card-top-badges {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 12px;
+  position: relative;
+  z-index: 3;
+}
+
+.badge-partner-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(15, 23, 42, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  padding: 5px 12px;
+  border-radius: 30px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: #ffffff;
+  backdrop-filter: blur(8px);
+}
+
+.badge-partner-pill .partner-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #00d084;
+  box-shadow: 0 0 6px #00d084;
+}
+
+.badge-partner-pill .check-icon {
+  width: 14px;
+  height: 14px;
+  color: #38bdf8;
+}
+
+.badge-roas-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  background: rgba(0, 208, 132, 0.12);
+  border: 1px solid rgba(0, 208, 132, 0.35);
+  padding: 5px 12px;
+  border-radius: 30px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: #00d084;
+}
+
+.card-photo-container {
+  position: relative;
+  border-radius: 18px;
+  overflow: hidden;
+  background: #080f1d;
+}
+
+.card-photo-img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+}
+
+.card-photo-overlay {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
+  background: rgba(11, 19, 34, 0.92);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 14px;
+  padding: 10px 14px;
+  backdrop-filter: blur(10px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.card-overlay-text strong {
+  display: block;
+  font-size: 0.88rem;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.card-overlay-text strong span {
+  color: #00d084;
+  font-weight: 600;
+}
+
+.card-overlay-text small {
+  font-size: 0.72rem;
+  color: #94a3b8;
+}
+
+.card-ratio-badge {
+  background: rgba(0, 208, 132, 0.12);
+  border: 1px solid rgba(0, 208, 132, 0.4);
+  color: #00d084;
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 4px 8px;
+  border-radius: 8px;
+  white-space: nowrap;
+}
+
+.card-stats-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.card-stat-box {
+  background: rgba(15, 23, 42, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  padding: 10px 6px;
+  text-align: center;
+}
+
+.card-stat-label {
+  display: block;
+  font-size: 0.68rem;
+  color: #8fa0b5;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+
+.card-stat-val-green {
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: #00d084;
+  line-height: 1.2;
+}
+
+.card-stat-val-blue {
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: #38bdf8;
+  line-height: 1.2;
 }
