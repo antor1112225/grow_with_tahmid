@@ -6885,6 +6885,220 @@ tbody tr:last-child td {
   }
 }
 
+
+/* ==========================================================================
+   Modern SaaS Footer (Media Reference 1791148533683)
+   ========================================================================== */
+.site-footer {
+  background: #060b13 !important;
+  color: #94a3b8 !important;
+  padding: 80px 0 36px !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.08) !important;
+  position: relative;
+  overflow: hidden;
+}
+
+.footer-main-grid {
+  display: grid;
+  grid-template-columns: 1.45fr 1fr 1.15fr 1.15fr;
+  gap: 46px;
+  align-items: start;
+}
+
+/* Column 1: Brand & Bio */
+.footer-brand-wrap {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  margin-bottom: 4px;
+}
+
+.footer-brand-bar {
+  width: 3.5px;
+  height: 40px;
+  background: #38bdf8;
+  border-radius: 2px;
+  flex-shrink: 0;
+  box-shadow: 0 0 10px rgba(56, 189, 248, 0.6);
+}
+
+.footer-brand-names {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-brand-names strong {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: -0.015em;
+  line-height: 1.15;
+}
+
+.footer-brand-names small {
+  font-size: 0.68rem;
+  font-weight: 700;
+  color: #38bdf8;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-top: 4px;
+}
+
+.footer-bio-text {
+  font-size: 0.88rem;
+  color: #94a3b8;
+  line-height: 1.65;
+  margin: 18px 0 20px;
+  max-width: 340px;
+}
+
+.footer-social-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.footer-social-btn {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #cbd5e1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: all 0.22s ease;
+}
+
+.footer-social-btn:hover {
+  background: rgba(56, 189, 248, 0.16);
+  border-color: #38bdf8;
+  color: #38bdf8;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(56, 189, 248, 0.2);
+}
+
+.footer-social-btn svg {
+  width: 17px;
+  height: 17px;
+}
+
+.footer-fiverr-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #e2e8f0;
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-fiverr-badge:hover {
+  color: #10b981;
+}
+
+.fiverr-box-icon {
+  width: 17px;
+  height: 17px;
+  border-radius: 4px;
+  background: #10b981;
+  color: #ffffff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  font-weight: 900;
+  box-shadow: 0 0 8px rgba(16, 185, 129, 0.4);
+}
+
+/* Link Columns */
+.footer-col-title {
+  font-size: 0.74rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  color: #94a3b8;
+  text-transform: uppercase;
+  margin: 0 0 20px;
+}
+
+.footer-links-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer-links-list a {
+  color: #cbd5e1;
+  font-size: 0.90rem;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  display: inline-block;
+}
+
+.footer-links-list a:hover {
+  color: #38bdf8;
+  transform: translateX(3px);
+}
+
+/* Bottom Bar */
+.footer-bottom-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 56px;
+  padding-top: 26px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  font-size: 0.82rem;
+  color: #64748b;
+}
+
+.footer-legal-nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer-legal-nav a {
+  color: #64748b;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-legal-nav a:hover {
+  color: #cbd5e1;
+}
+
+/* Responsiveness */
+@media (max-width: 900px) {
+  .footer-main-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 36px;
+  }
+}
+
+@media (max-width: 580px) {
+  .footer-main-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  .footer-bottom-bar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
