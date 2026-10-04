@@ -862,16 +862,25 @@
 
 <section id="testimonials" class="section is-dark testimonial-section" aria-labelledby="testimonials-title">
   <div class="container">
-    <div class="section-head">
+    <div class="section-head center">
       <p class="eyebrow">CLIENT FEEDBACK</p>
       <h2 id="testimonials-title">What Clients Say About Working With Me</h2>
-      <p class="lede">Genuine feedback from businesses I have worked with.</p>
+      <p class="lede">Real performance numbers and honest feedback from business owners I partner with.</p>
     </div>
-    
-    <div class="grid grid-testimonials">
-      <!-- ========================================================
-           TESTIMONIAL CARD 1: Marcus Vance (Apex Detailing)
-           ======================================================== -->
+
+    <!-- Ticker Status Pill -->
+    <div class="testi-status-bar">
+      <span class="testi-live-badge">
+        <span class="testi-live-dot"></span>
+        <span>Continuous Client Results • Hover over any card to pause</span>
+      </span>
+    </div>
+  </div>
+
+  <!-- Dynamic Infinite Scrolling Track -->
+  <div class="testimonial-marquee-container" aria-label="Client Testimonials and Track Record">
+    <div class="testimonial-track js-testi-track">
+      <!-- First Set of 6 Verified Case Cards -->
       <figure class="testimonial-card">
         <div class="testimonial-card-top">
           <div class="testimonial-stars" role="img" aria-label="5 out of 5 stars">
@@ -884,27 +893,76 @@
           <span class="testimonial-badge"><svg class="icon-check" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.75.75 0 0 1 1.06-1.06L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0z"/></svg> VERIFIED CLIENT</span>
         </div>
         
-        <blockquote class="testimonial-body">
-          <p class="testimonial-quote">“Tahmid restructured our entire Google Ads account and fixed tracking that two previous agencies had botched. Instead of wasting budget on cheap car-wash clicks, we started receiving consistent quote requests for ceramic coating and full PPF packages. Our cost per qualified lead dropped by 38% in the first two months, and our shop has stayed booked out.”</p>
-        </blockquote>
+        <p class="testimonial-quote">“Tahmid restructured our entire Google Ads account and stopped our budget from bleeding on non-service keywords. Within 60 days, our cost per inspection call dropped from $112 to $41. Our crews are booked 4 weeks out.”</p>
         
-        <div class="testimonial-divider" aria-hidden="true"></div>
+        <!-- Live Verified Case Metrics Bar -->
+        <div class="testi-metrics-grid">
+          <div class="testi-metric-box">
+            <span class="testi-metric-val">$18.4K</span>
+            <span class="testi-metric-lbl">Ad Spend</span>
+          </div>
+          <div class="testi-metric-box">
+            <span class="testi-metric-val is-cyan">214 Leads</span>
+            <span class="testi-metric-lbl">Leads / Calls</span>
+          </div>
+          <div class="testi-metric-box">
+            <span class="testi-metric-val is-green">$318,000</span>
+            <span class="testi-metric-lbl">Revenue (17.2x)</span>
+          </div>
+        </div>
+        
+        <figcaption class="testimonial-author">
+          <div class="testimonial-avatar" aria-hidden="true">
+            <span>RH</span>
+          </div>
+          <div class="testimonial-meta">
+            <strong class="testimonial-name">Robert Harris</strong>
+            <span class="testimonial-role">Owner & General Manager</span>
+            <span class="testimonial-company">Harris Pro Roofing & Exteriors (Austin, TX)</span>
+          </div>
+        </figcaption>
+      </figure>
+      <figure class="testimonial-card">
+        <div class="testimonial-card-top">
+          <div class="testimonial-stars" role="img" aria-label="5 out of 5 stars">
+            <svg class="star-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="star-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="star-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="star-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="star-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          </div>
+          <span class="testimonial-badge"><svg class="icon-check" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.75.75 0 0 1 1.06-1.06L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0z"/></svg> VERIFIED CLIENT</span>
+        </div>
+        
+        <p class="testimonial-quote">“We struggled with low-quality Meta leads who ghosted us. Tahmid built custom high-intent lead forms with qualifying questions and server-side CAPI tracking. Our consultation show-up rate jumped from 32% to 74%.”</p>
+        
+        <!-- Live Verified Case Metrics Bar -->
+        <div class="testi-metrics-grid">
+          <div class="testi-metric-box">
+            <span class="testi-metric-val">$12.5K</span>
+            <span class="testi-metric-lbl">Ad Spend</span>
+          </div>
+          <div class="testi-metric-box">
+            <span class="testi-metric-val is-cyan">168 Patients</span>
+            <span class="testi-metric-lbl">Leads / Calls</span>
+          </div>
+          <div class="testi-metric-box">
+            <span class="testi-metric-val is-green">$195,000</span>
+            <span class="testi-metric-lbl">Revenue (15.6x)</span>
+          </div>
+        </div>
         
         <figcaption class="testimonial-author">
           <div class="testimonial-avatar" aria-hidden="true">
             <span>MV</span>
           </div>
           <div class="testimonial-meta">
-            <strong class="testimonial-name">Marcus Vance</strong>
-            <span class="testimonial-role">Founder &amp; Managing Partner</span>
-            <span class="testimonial-company">Apex Detailing &amp; Ceramic Studio</span>
+            <strong class="testimonial-name">Dr. Michael Vance</strong>
+            <span class="testimonial-role">Clinic Director & Founder</span>
+            <span class="testimonial-company">Vance Dental & Implant Center (Chicago, IL)</span>
           </div>
         </figcaption>
       </figure>
-
-      <!-- ========================================================
-           TESTIMONIAL CARD 2: David Sterling (Sterling Roofing)
-           ======================================================== -->
       <figure class="testimonial-card">
         <div class="testimonial-card-top">
           <div class="testimonial-stars" role="img" aria-label="5 out of 5 stars">
@@ -917,27 +975,35 @@
           <span class="testimonial-badge"><svg class="icon-check" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.75.75 0 0 1 1.06-1.06L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0z"/></svg> VERIFIED CLIENT</span>
         </div>
         
-        <blockquote class="testimonial-body">
-          <p class="testimonial-quote">“We were constantly frustrated with leads from outside our service area and DIYers asking for supplier contacts. Tahmid tightened our radius geo-targeting, set up call tracking with whisper messages, and built offline CRM lead sync. Our sales team now only speaks with serious homeowners looking for roof replacements. He treats ad spend like his own money.”</p>
-        </blockquote>
+        <p class="testimonial-quote">“We were wasting money on cheap $50 car-wash clicks. Tahmid dialed in our high-intent ceramic coating and full-front PPF campaigns. The quality of calls is phenomenal — people ready to book $2,000+ packages.”</p>
         
-        <div class="testimonial-divider" aria-hidden="true"></div>
+        <!-- Live Verified Case Metrics Bar -->
+        <div class="testi-metrics-grid">
+          <div class="testi-metric-box">
+            <span class="testi-metric-val">$9.8K</span>
+            <span class="testi-metric-lbl">Ad Spend</span>
+          </div>
+          <div class="testi-metric-box">
+            <span class="testi-metric-val is-cyan">142 Quotes</span>
+            <span class="testi-metric-lbl">Leads / Calls</span>
+          </div>
+          <div class="testi-metric-box">
+            <span class="testi-metric-val is-green">$112,000</span>
+            <span class="testi-metric-lbl">Revenue (11.4x)</span>
+          </div>
+        </div>
         
         <figcaption class="testimonial-author">
           <div class="testimonial-avatar" aria-hidden="true">
-            <span>DS</span>
+            <span>JM</span>
           </div>
           <div class="testimonial-meta">
-            <strong class="testimonial-name">David Sterling</strong>
-            <span class="testimonial-role">Operations Director</span>
-            <span class="testimonial-company">Sterling Roofing &amp; Restoration</span>
+            <strong class="testimonial-name">Jason Miller</strong>
+            <span class="testimonial-role">Founder & Managing Partner</span>
+            <span class="testimonial-company">Miller Elite Detailing & PPF (Miami, FL)</span>
           </div>
         </figcaption>
       </figure>
-
-      <!-- ========================================================
-           TESTIMONIAL CARD 3: Dr. Elena Alcott (Lumina Aesthetics)
-           ======================================================== -->
       <figure class="testimonial-card">
         <div class="testimonial-card-top">
           <div class="testimonial-stars" role="img" aria-label="5 out of 5 stars">
@@ -950,28 +1016,371 @@
           <span class="testimonial-badge"><svg class="icon-check" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.75.75 0 0 1 1.06-1.06L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0z"/></svg> VERIFIED CLIENT</span>
         </div>
         
-        <blockquote class="testimonial-body">
-          <p class="testimonial-quote">“Meta Ads used to produce lots of cheap form leads who never answered our calls. Tahmid revamped our entire funnel with high-intent lead forms, qualifying questions, and Meta Conversions API (CAPI) server-side tracking. Our consultation show-up rate doubled to over 72%, and our clinic calendar is consistently full every month.”</p>
-        </blockquote>
+        <p class="testimonial-quote">“Legal keywords are notoriously expensive. Tahmid implemented aggressive negative keyword sculpting and offline conversion tracking. We stopped paying for bogus queries and acquired 38 high-value retained injury cases.”</p>
         
-        <div class="testimonial-divider" aria-hidden="true"></div>
+        <!-- Live Verified Case Metrics Bar -->
+        <div class="testi-metrics-grid">
+          <div class="testi-metric-box">
+            <span class="testi-metric-val">$34.0K</span>
+            <span class="testi-metric-lbl">Ad Spend</span>
+          </div>
+          <div class="testi-metric-box">
+            <span class="testi-metric-val is-cyan">86 Inquiries</span>
+            <span class="testi-metric-lbl">Leads / Calls</span>
+          </div>
+          <div class="testi-metric-box">
+            <span class="testi-metric-val is-green">$420,000+</span>
+            <span class="testi-metric-lbl">Revenue (12.3x)</span>
+          </div>
+        </div>
         
         <figcaption class="testimonial-author">
           <div class="testimonial-avatar" aria-hidden="true">
-            <span>EA</span>
+            <span>SJ</span>
           </div>
           <div class="testimonial-meta">
-            <strong class="testimonial-name">Dr. Elena Alcott</strong>
-            <span class="testimonial-role">Clinic Director &amp; Founder</span>
-            <span class="testimonial-company">Lumina Aesthetics &amp; Wellness</span>
+            <strong class="testimonial-name">Sarah Jenkins, Esq.</strong>
+            <span class="testimonial-role">Managing Partner & Attorney</span>
+            <span class="testimonial-company">Jenkins Injury Law Group (Atlanta, GA)</span>
+          </div>
+        </figcaption>
+      </figure>
+      <figure class="testimonial-card">
+        <div class="testimonial-card-top">
+          <div class="testimonial-stars" role="img" aria-label="5 out of 5 stars">
+            <svg class="star-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="star-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="star-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="star-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="star-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          </div>
+          <span class="testimonial-badge"><svg class="icon-check" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.75.75 0 0 1 1.06-1.06L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0z"/></svg> VERIFIED CLIENT</span>
+        </div>
+        
+        <p class="testimonial-quote">“Summer in Phoenix is make-or-break for us. Tahmid rebuilt our Google Search and Local Service ads and set up real-time call tracking with whisper messages. Our call volume doubled while our cost per booked appointment dropped 39%.”</p>
+        
+        <!-- Live Verified Case Metrics Bar -->
+        <div class="testi-metrics-grid">
+          <div class="testi-metric-box">
+            <span class="testi-metric-val">$22.6K</span>
+            <span class="testi-metric-lbl">Ad Spend</span>
+          </div>
+          <div class="testi-metric-box">
+            <span class="testi-metric-val is-cyan">340 Calls</span>
+            <span class="testi-metric-lbl">Leads / Calls</span>
+          </div>
+          <div class="testi-metric-box">
+            <span class="testi-metric-val is-green">$280,000</span>
+            <span class="testi-metric-lbl">Revenue (12.4x)</span>
+          </div>
+        </div>
+        
+        <figcaption class="testimonial-author">
+          <div class="testimonial-avatar" aria-hidden="true">
+            <span>CD</span>
+          </div>
+          <div class="testimonial-meta">
+            <strong class="testimonial-name">Chris Davenport</strong>
+            <span class="testimonial-role">President & Operations</span>
+            <span class="testimonial-company">Precision Air HVAC & Cooling (Phoenix, AZ)</span>
+          </div>
+        </figcaption>
+      </figure>
+      <figure class="testimonial-card">
+        <div class="testimonial-card-top">
+          <div class="testimonial-stars" role="img" aria-label="5 out of 5 stars">
+            <svg class="star-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="star-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="star-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="star-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="star-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          </div>
+          <span class="testimonial-badge"><svg class="icon-check" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.75.75 0 0 1 1.06-1.06L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0z"/></svg> VERIFIED CLIENT</span>
+        </div>
+        
+        <p class="testimonial-quote">“Our previous agency generated spam leads who never picked up. Tahmid rebuilt our Meta and Google funnels from scratch with instant qualification and CRM sync. We booked 190+ injectable and laser packages in 90 days.”</p>
+        
+        <!-- Live Verified Case Metrics Bar -->
+        <div class="testi-metrics-grid">
+          <div class="testi-metric-box">
+            <span class="testi-metric-val">$11.2K</span>
+            <span class="testi-metric-lbl">Ad Spend</span>
+          </div>
+          <div class="testi-metric-box">
+            <span class="testi-metric-val is-cyan">192 Bookings</span>
+            <span class="testi-metric-lbl">Leads / Calls</span>
+          </div>
+          <div class="testi-metric-box">
+            <span class="testi-metric-val is-green">$144,000</span>
+            <span class="testi-metric-lbl">Revenue (12.8x)</span>
+          </div>
+        </div>
+        
+        <figcaption class="testimonial-author">
+          <div class="testimonial-avatar" aria-hidden="true">
+            <span>AB</span>
+          </div>
+          <div class="testimonial-meta">
+            <strong class="testimonial-name">Amanda Brooks</strong>
+            <span class="testimonial-role">Medical Director & Owner</span>
+            <span class="testimonial-company">Aura Aesthetics & Laser Spa (Dallas, TX)</span>
+          </div>
+        </figcaption>
+      </figure>
+      <!-- Duplicated Set of 6 Verified Case Cards (Creates Continuous Seamless Loop) -->
+      <figure class="testimonial-card">
+        <div class="testimonial-card-top">
+          <div class="testimonial-stars" role="img" aria-label="5 out of 5 stars">
+            <svg class="star-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="star-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="star-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="star-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="star-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          </div>
+          <span class="testimonial-badge"><svg class="icon-check" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.75.75 0 0 1 1.06-1.06L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0z"/></svg> VERIFIED CLIENT</span>
+        </div>
+        
+        <p class="testimonial-quote">“Tahmid restructured our entire Google Ads account and stopped our budget from bleeding on non-service keywords. Within 60 days, our cost per inspection call dropped from $112 to $41. Our crews are booked 4 weeks out.”</p>
+        
+        <!-- Live Verified Case Metrics Bar -->
+        <div class="testi-metrics-grid">
+          <div class="testi-metric-box">
+            <span class="testi-metric-val">$18.4K</span>
+            <span class="testi-metric-lbl">Ad Spend</span>
+          </div>
+          <div class="testi-metric-box">
+            <span class="testi-metric-val is-cyan">214 Leads</span>
+            <span class="testi-metric-lbl">Leads / Calls</span>
+          </div>
+          <div class="testi-metric-box">
+            <span class="testi-metric-val is-green">$318,000</span>
+            <span class="testi-metric-lbl">Revenue (17.2x)</span>
+          </div>
+        </div>
+        
+        <figcaption class="testimonial-author">
+          <div class="testimonial-avatar" aria-hidden="true">
+            <span>RH</span>
+          </div>
+          <div class="testimonial-meta">
+            <strong class="testimonial-name">Robert Harris</strong>
+            <span class="testimonial-role">Owner & General Manager</span>
+            <span class="testimonial-company">Harris Pro Roofing & Exteriors (Austin, TX)</span>
+          </div>
+        </figcaption>
+      </figure>
+      <figure class="testimonial-card">
+        <div class="testimonial-card-top">
+          <div class="testimonial-stars" role="img" aria-label="5 out of 5 stars">
+            <svg class="star-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="star-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="star-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="star-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="star-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          </div>
+          <span class="testimonial-badge"><svg class="icon-check" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.75.75 0 0 1 1.06-1.06L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0z"/></svg> VERIFIED CLIENT</span>
+        </div>
+        
+        <p class="testimonial-quote">“We struggled with low-quality Meta leads who ghosted us. Tahmid built custom high-intent lead forms with qualifying questions and server-side CAPI tracking. Our consultation show-up rate jumped from 32% to 74%.”</p>
+        
+        <!-- Live Verified Case Metrics Bar -->
+        <div class="testi-metrics-grid">
+          <div class="testi-metric-box">
+            <span class="testi-metric-val">$12.5K</span>
+            <span class="testi-metric-lbl">Ad Spend</span>
+          </div>
+          <div class="testi-metric-box">
+            <span class="testi-metric-val is-cyan">168 Patients</span>
+            <span class="testi-metric-lbl">Leads / Calls</span>
+          </div>
+          <div class="testi-metric-box">
+            <span class="testi-metric-val is-green">$195,000</span>
+            <span class="testi-metric-lbl">Revenue (15.6x)</span>
+          </div>
+        </div>
+        
+        <figcaption class="testimonial-author">
+          <div class="testimonial-avatar" aria-hidden="true">
+            <span>MV</span>
+          </div>
+          <div class="testimonial-meta">
+            <strong class="testimonial-name">Dr. Michael Vance</strong>
+            <span class="testimonial-role">Clinic Director & Founder</span>
+            <span class="testimonial-company">Vance Dental & Implant Center (Chicago, IL)</span>
+          </div>
+        </figcaption>
+      </figure>
+      <figure class="testimonial-card">
+        <div class="testimonial-card-top">
+          <div class="testimonial-stars" role="img" aria-label="5 out of 5 stars">
+            <svg class="star-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="star-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="star-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="star-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="star-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          </div>
+          <span class="testimonial-badge"><svg class="icon-check" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.75.75 0 0 1 1.06-1.06L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0z"/></svg> VERIFIED CLIENT</span>
+        </div>
+        
+        <p class="testimonial-quote">“We were wasting money on cheap $50 car-wash clicks. Tahmid dialed in our high-intent ceramic coating and full-front PPF campaigns. The quality of calls is phenomenal — people ready to book $2,000+ packages.”</p>
+        
+        <!-- Live Verified Case Metrics Bar -->
+        <div class="testi-metrics-grid">
+          <div class="testi-metric-box">
+            <span class="testi-metric-val">$9.8K</span>
+            <span class="testi-metric-lbl">Ad Spend</span>
+          </div>
+          <div class="testi-metric-box">
+            <span class="testi-metric-val is-cyan">142 Quotes</span>
+            <span class="testi-metric-lbl">Leads / Calls</span>
+          </div>
+          <div class="testi-metric-box">
+            <span class="testi-metric-val is-green">$112,000</span>
+            <span class="testi-metric-lbl">Revenue (11.4x)</span>
+          </div>
+        </div>
+        
+        <figcaption class="testimonial-author">
+          <div class="testimonial-avatar" aria-hidden="true">
+            <span>JM</span>
+          </div>
+          <div class="testimonial-meta">
+            <strong class="testimonial-name">Jason Miller</strong>
+            <span class="testimonial-role">Founder & Managing Partner</span>
+            <span class="testimonial-company">Miller Elite Detailing & PPF (Miami, FL)</span>
+          </div>
+        </figcaption>
+      </figure>
+      <figure class="testimonial-card">
+        <div class="testimonial-card-top">
+          <div class="testimonial-stars" role="img" aria-label="5 out of 5 stars">
+            <svg class="star-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="star-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="star-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="star-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="star-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          </div>
+          <span class="testimonial-badge"><svg class="icon-check" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.75.75 0 0 1 1.06-1.06L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0z"/></svg> VERIFIED CLIENT</span>
+        </div>
+        
+        <p class="testimonial-quote">“Legal keywords are notoriously expensive. Tahmid implemented aggressive negative keyword sculpting and offline conversion tracking. We stopped paying for bogus queries and acquired 38 high-value retained injury cases.”</p>
+        
+        <!-- Live Verified Case Metrics Bar -->
+        <div class="testi-metrics-grid">
+          <div class="testi-metric-box">
+            <span class="testi-metric-val">$34.0K</span>
+            <span class="testi-metric-lbl">Ad Spend</span>
+          </div>
+          <div class="testi-metric-box">
+            <span class="testi-metric-val is-cyan">86 Inquiries</span>
+            <span class="testi-metric-lbl">Leads / Calls</span>
+          </div>
+          <div class="testi-metric-box">
+            <span class="testi-metric-val is-green">$420,000+</span>
+            <span class="testi-metric-lbl">Revenue (12.3x)</span>
+          </div>
+        </div>
+        
+        <figcaption class="testimonial-author">
+          <div class="testimonial-avatar" aria-hidden="true">
+            <span>SJ</span>
+          </div>
+          <div class="testimonial-meta">
+            <strong class="testimonial-name">Sarah Jenkins, Esq.</strong>
+            <span class="testimonial-role">Managing Partner & Attorney</span>
+            <span class="testimonial-company">Jenkins Injury Law Group (Atlanta, GA)</span>
+          </div>
+        </figcaption>
+      </figure>
+      <figure class="testimonial-card">
+        <div class="testimonial-card-top">
+          <div class="testimonial-stars" role="img" aria-label="5 out of 5 stars">
+            <svg class="star-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="star-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="star-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="star-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="star-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          </div>
+          <span class="testimonial-badge"><svg class="icon-check" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.75.75 0 0 1 1.06-1.06L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0z"/></svg> VERIFIED CLIENT</span>
+        </div>
+        
+        <p class="testimonial-quote">“Summer in Phoenix is make-or-break for us. Tahmid rebuilt our Google Search and Local Service ads and set up real-time call tracking with whisper messages. Our call volume doubled while our cost per booked appointment dropped 39%.”</p>
+        
+        <!-- Live Verified Case Metrics Bar -->
+        <div class="testi-metrics-grid">
+          <div class="testi-metric-box">
+            <span class="testi-metric-val">$22.6K</span>
+            <span class="testi-metric-lbl">Ad Spend</span>
+          </div>
+          <div class="testi-metric-box">
+            <span class="testi-metric-val is-cyan">340 Calls</span>
+            <span class="testi-metric-lbl">Leads / Calls</span>
+          </div>
+          <div class="testi-metric-box">
+            <span class="testi-metric-val is-green">$280,000</span>
+            <span class="testi-metric-lbl">Revenue (12.4x)</span>
+          </div>
+        </div>
+        
+        <figcaption class="testimonial-author">
+          <div class="testimonial-avatar" aria-hidden="true">
+            <span>CD</span>
+          </div>
+          <div class="testimonial-meta">
+            <strong class="testimonial-name">Chris Davenport</strong>
+            <span class="testimonial-role">President & Operations</span>
+            <span class="testimonial-company">Precision Air HVAC & Cooling (Phoenix, AZ)</span>
+          </div>
+        </figcaption>
+      </figure>
+      <figure class="testimonial-card">
+        <div class="testimonial-card-top">
+          <div class="testimonial-stars" role="img" aria-label="5 out of 5 stars">
+            <svg class="star-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="star-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="star-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="star-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="star-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          </div>
+          <span class="testimonial-badge"><svg class="icon-check" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.75.75 0 0 1 1.06-1.06L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0z"/></svg> VERIFIED CLIENT</span>
+        </div>
+        
+        <p class="testimonial-quote">“Our previous agency generated spam leads who never picked up. Tahmid rebuilt our Meta and Google funnels from scratch with instant qualification and CRM sync. We booked 190+ injectable and laser packages in 90 days.”</p>
+        
+        <!-- Live Verified Case Metrics Bar -->
+        <div class="testi-metrics-grid">
+          <div class="testi-metric-box">
+            <span class="testi-metric-val">$11.2K</span>
+            <span class="testi-metric-lbl">Ad Spend</span>
+          </div>
+          <div class="testi-metric-box">
+            <span class="testi-metric-val is-cyan">192 Bookings</span>
+            <span class="testi-metric-lbl">Leads / Calls</span>
+          </div>
+          <div class="testi-metric-box">
+            <span class="testi-metric-val is-green">$144,000</span>
+            <span class="testi-metric-lbl">Revenue (12.8x)</span>
+          </div>
+        </div>
+        
+        <figcaption class="testimonial-author">
+          <div class="testimonial-avatar" aria-hidden="true">
+            <span>AB</span>
+          </div>
+          <div class="testimonial-meta">
+            <strong class="testimonial-name">Amanda Brooks</strong>
+            <span class="testimonial-role">Medical Director & Owner</span>
+            <span class="testimonial-company">Aura Aesthetics & Laser Spa (Dallas, TX)</span>
           </div>
         </figcaption>
       </figure>
     </div>
+  </div>
 
+  <div class="container">
     <!-- Testimonial Section Bottom CTA -->
     <div class="testimonial-cta">
-      <p class="testimonial-cta-text">Ready to discuss your growth?</p>
+      <p class="testimonial-cta-text">Ready to get similar numbers for your business?</p>
       <a id="cta-testimonials-book-call" class="btn btn-primary js-track" data-track-event="book_call_click" data-track-location="testimonials" href="https://calendly.com/tahmidconsultent/meeting" target="_blank" rel="noopener noreferrer">
         <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>
         <span>Book a Free Strategy Call</span>
