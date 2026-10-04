@@ -3867,6 +3867,16 @@ tbody tr:last-child td {
     width: 100%;
   }
 
+  .hero-float-card.card-top {
+    left: 4px;
+    top: -12px;
+  }
+
+  .hero-float-card.card-bottom {
+    right: 4px;
+    bottom: 96px;
+  }
+
   .portrait-hero {
     aspect-ratio: 1/1.1;
   }
@@ -3963,6 +3973,29 @@ tbody tr:last-child td {
     right: 10px;
     bottom: 10px;
     left: 10px;
+  }
+
+  .hero-float-card {
+    padding: 7px 10px;
+    gap: 7px;
+  }
+
+  .hero-float-card.card-top {
+    left: 0;
+    top: -10px;
+  }
+
+  .hero-float-card.card-bottom {
+    right: 0;
+    bottom: 115px;
+  }
+
+  .hero-card-tag {
+    font-size: 0.58rem;
+  }
+
+  .hero-card-title {
+    font-size: 0.74rem;
   }
 
   .hero-id strong {
