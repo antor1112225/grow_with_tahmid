@@ -8634,3 +8634,318 @@ html[data-theme="dark"] .tool-chip:hover {
     padding: 24px 20px !important;
   }
 }
+
+/* ==========================================================================
+   Colourful & High-Visibility FAQ Section (Dark & Light Theme Overhaul)
+   Fixing Open Card Contrast & Support Box Glare
+   ========================================================================== */
+
+/* Dark Mode FAQ Section Background */
+html[data-theme="dark"] .faq-section {
+  background: radial-gradient(circle at 10% 20%, rgba(56, 189, 248, 0.08) 0%, transparent 45%),
+              radial-gradient(circle at 90% 80%, rgba(16, 185, 129, 0.08) 0%, transparent 45%),
+              #070f1e !important;
+}
+
+html[data-theme="dark"] .faq-title {
+  color: #f8fafc !important;
+}
+
+html[data-theme="dark"] .faq-subtitle {
+  color: #94a3b8 !important;
+}
+
+/* --- Left Support Advice Box --- */
+html[data-theme="dark"] .faq-support-box {
+  background: linear-gradient(145deg, #0b1528 0%, #10213d 100%) !important;
+  border: 1px solid rgba(56, 189, 248, 0.35) !important;
+  border-radius: 20px !important;
+  box-shadow: 0 14px 35px -5px rgba(0, 0, 0, 0.65), 0 0 28px rgba(56, 189, 248, 0.14) !important;
+}
+
+html[data-theme="dark"] .faq-support-box h4 {
+  color: #38bdf8 !important;
+  font-size: 1.15rem !important;
+  font-weight: 800 !important;
+  margin: 0 0 10px !important;
+  text-shadow: 0 0 12px rgba(56, 189, 248, 0.25) !important;
+}
+
+html[data-theme="dark"] .faq-support-box p {
+  color: #cbd5e1 !important;
+  font-size: 0.92rem !important;
+  line-height: 1.65 !important;
+  margin: 0 0 20px !important;
+}
+
+html[data-theme="dark"] .btn-faq-call {
+  background: linear-gradient(135deg, #0284c7 0%, #2563eb 100%) !important;
+  box-shadow: 0 8px 24px rgba(2, 132, 199, 0.45) !important;
+  color: #ffffff !important;
+  border: 1px solid rgba(255, 255, 255, 0.15) !important;
+}
+
+html[data-theme="dark"] .btn-faq-call:hover {
+  background: linear-gradient(135deg, #38bdf8 0%, #0284c7 100%) !important;
+  box-shadow: 0 10px 30px rgba(56, 189, 248, 0.5) !important;
+  transform: translateY(-2px) !important;
+}
+
+/* Light Mode Support Box */
+html[data-theme="light"] .faq-support-box,
+:root:not([data-theme="dark"]) .faq-support-box {
+  background: linear-gradient(145deg, #ffffff 0%, #f0fdfa 100%) !important;
+  border: 1px solid rgba(13, 148, 136, 0.25) !important;
+  box-shadow: 0 10px 25px -5px rgba(13, 148, 136, 0.1) !important;
+}
+
+html[data-theme="light"] .faq-support-box h4,
+:root:not([data-theme="dark"]) .faq-support-box h4 {
+  color: #0f172a !important;
+}
+
+html[data-theme="light"] .faq-support-box p,
+:root:not([data-theme="dark"]) .faq-support-box p {
+  color: #475569 !important;
+}
+
+/* --- FAQ Cards (Closed State in Dark Mode) --- */
+html[data-theme="dark"] .faq-card {
+  background: #0b1528 !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  border-radius: 16px !important;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3) !important;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+html[data-theme="dark"] .faq-card summary h3 {
+  color: #f1f5f9 !important;
+  transition: color 0.2s ease !important;
+}
+
+html[data-theme="dark"] .faq-card:hover {
+  background: #0e1c34 !important;
+  border-color: rgba(56, 189, 248, 0.4) !important;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.45), 0 0 18px rgba(56, 189, 248, 0.1) !important;
+  transform: translateY(-2px) !important;
+}
+
+html[data-theme="dark"] .faq-card:hover summary h3 {
+  color: #38bdf8 !important;
+}
+
+html[data-theme="dark"] .faq-circle-toggle {
+  background: rgba(255, 255, 255, 0.08) !important;
+  color: #94a3b8 !important;
+}
+
+/* --- FAQ Cards (OPEN STATE - Full Contrast & Colourful Glow) --- */
+html[data-theme="dark"] .faq-card[open] {
+  background: linear-gradient(180deg, #0e1d35 0%, #081120 100%) !important;
+  border-color: rgba(56, 189, 248, 0.5) !important;
+  box-shadow: 0 16px 36px -6px rgba(0, 0, 0, 0.7), 0 0 30px rgba(56, 189, 248, 0.18) !important;
+}
+
+html[data-theme="dark"] .faq-card[open] summary h3 {
+  color: #38bdf8 !important;
+  font-weight: 800 !important;
+}
+
+html[data-theme="dark"] .faq-card[open] .faq-card-body {
+  color: #cbd5e1 !important;
+  font-size: 0.94rem !important;
+  line-height: 1.72 !important;
+}
+
+html[data-theme="dark"] .faq-card[open] .faq-card-body p {
+  color: #cbd5e1 !important;
+}
+
+html[data-theme="dark"] .faq-card[open] .faq-circle-toggle {
+  background: linear-gradient(135deg, #0284c7 0%, #06b6d4 100%) !important;
+  color: #ffffff !important;
+  transform: rotate(45deg) !important;
+  box-shadow: 0 0 14px rgba(6, 182, 212, 0.55) !important;
+}
+
+/* Light Mode Open State */
+html[data-theme="light"] .faq-card[open],
+:root:not([data-theme="dark"]) .faq-card[open] {
+  background: linear-gradient(180deg, #f0fdfa 0%, #ffffff 100%) !important;
+  border-color: rgba(13, 148, 136, 0.35) !important;
+  border-left: 4px solid #0d9488 !important;
+  box-shadow: 0 10px 28px -4px rgba(13, 148, 136, 0.14) !important;
+}
+
+html[data-theme="light"] .faq-card[open] summary h3,
+:root:not([data-theme="dark"]) .faq-card[open] summary h3 {
+  color: #0d9488 !important;
+  font-weight: 800 !important;
+}
+
+html[data-theme="light"] .faq-card[open] .faq-card-body,
+:root:not([data-theme="dark"]) .faq-card[open] .faq-card-body,
+html[data-theme="light"] .faq-card[open] .faq-card-body p,
+:root:not([data-theme="dark"]) .faq-card[open] .faq-card-body p {
+  color: #334155 !important;
+}
+
+html[data-theme="light"] .faq-card[open] .faq-circle-toggle,
+:root:not([data-theme="dark"]) .faq-card[open] .faq-circle-toggle {
+  background: #0d9488 !important;
+  color: #ffffff !important;
+}
+
+/* --- Colourful Accents for Each FAQ (Cyan, Emerald, Amber, Blue, Purple, Rose, Teal, Indigo) --- */
+#home-faq-1[open] {
+  border-left: 4px solid #06b6d4 !important;
+}
+html[data-theme="dark"] #home-faq-1[open] summary h3 {
+  color: #22d3ee !important;
+}
+
+#home-faq-2[open] {
+  border-left: 4px solid #10b981 !important;
+}
+html[data-theme="dark"] #home-faq-2[open] summary h3 {
+  color: #34d399 !important;
+}
+
+#home-faq-3[open] {
+  border-left: 4px solid #f59e0b !important;
+}
+html[data-theme="dark"] #home-faq-3[open] summary h3 {
+  color: #fbbf24 !important;
+}
+
+#home-faq-4[open] {
+  border-left: 4px solid #3b82f6 !important;
+}
+html[data-theme="dark"] #home-faq-4[open] summary h3 {
+  color: #60a5fa !important;
+}
+
+#home-faq-5[open] {
+  border-left: 4px solid #a855f7 !important;
+}
+html[data-theme="dark"] #home-faq-5[open] summary h3 {
+  color: #c084fc !important;
+}
+
+#home-faq-6[open] {
+  border-left: 4px solid #f43f5e !important;
+}
+html[data-theme="dark"] #home-faq-6[open] summary h3 {
+  color: #fb7185 !important;
+}
+
+#home-faq-7[open] {
+  border-left: 4px solid #14b8a6 !important;
+}
+html[data-theme="dark"] #home-faq-7[open] summary h3 {
+  color: #2dd4bf !important;
+}
+
+#home-faq-8[open] {
+  border-left: 4px solid #6366f1 !important;
+}
+html[data-theme="dark"] #home-faq-8[open] summary h3 {
+  color: #818cf8 !important;
+}
+
+/* --- Vivid Numbered Pills (High-Contrast & Glowing) --- */
+.faq-pill-cyan {
+  background: rgba(6, 182, 212, 0.14) !important;
+  color: #0891b2 !important;
+  border: 1px solid rgba(6, 182, 212, 0.3) !important;
+}
+html[data-theme="dark"] .faq-pill-cyan {
+  background: rgba(6, 182, 212, 0.22) !important;
+  color: #22d3ee !important;
+  border-color: rgba(6, 182, 212, 0.45) !important;
+  box-shadow: 0 0 10px rgba(6, 182, 212, 0.22) !important;
+}
+
+.faq-pill-emerald {
+  background: rgba(16, 185, 129, 0.14) !important;
+  color: #059669 !important;
+  border: 1px solid rgba(16, 185, 129, 0.3) !important;
+}
+html[data-theme="dark"] .faq-pill-emerald {
+  background: rgba(16, 185, 129, 0.22) !important;
+  color: #34d399 !important;
+  border-color: rgba(16, 185, 129, 0.45) !important;
+  box-shadow: 0 0 10px rgba(16, 185, 129, 0.22) !important;
+}
+
+.faq-pill-amber {
+  background: rgba(245, 158, 11, 0.14) !important;
+  color: #d97706 !important;
+  border: 1px solid rgba(245, 158, 11, 0.3) !important;
+}
+html[data-theme="dark"] .faq-pill-amber {
+  background: rgba(245, 158, 11, 0.22) !important;
+  color: #fbbf24 !important;
+  border-color: rgba(245, 158, 11, 0.45) !important;
+  box-shadow: 0 0 10px rgba(245, 158, 11, 0.22) !important;
+}
+
+.faq-pill-blue {
+  background: rgba(59, 130, 246, 0.14) !important;
+  color: #2563eb !important;
+  border: 1px solid rgba(59, 130, 246, 0.3) !important;
+}
+html[data-theme="dark"] .faq-pill-blue {
+  background: rgba(59, 130, 246, 0.22) !important;
+  color: #60a5fa !important;
+  border-color: rgba(59, 130, 246, 0.45) !important;
+  box-shadow: 0 0 10px rgba(59, 130, 246, 0.22) !important;
+}
+
+.faq-pill-purple {
+  background: rgba(168, 85, 247, 0.14) !important;
+  color: #9333ea !important;
+  border: 1px solid rgba(168, 85, 247, 0.3) !important;
+}
+html[data-theme="dark"] .faq-pill-purple {
+  background: rgba(168, 85, 247, 0.22) !important;
+  color: #c084fc !important;
+  border-color: rgba(168, 85, 247, 0.45) !important;
+  box-shadow: 0 0 10px rgba(168, 85, 247, 0.22) !important;
+}
+
+.faq-pill-rose {
+  background: rgba(244, 63, 94, 0.14) !important;
+  color: #e11d48 !important;
+  border: 1px solid rgba(244, 63, 94, 0.3) !important;
+}
+html[data-theme="dark"] .faq-pill-rose {
+  background: rgba(244, 63, 94, 0.22) !important;
+  color: #fb7185 !important;
+  border-color: rgba(244, 63, 94, 0.45) !important;
+  box-shadow: 0 0 10px rgba(244, 63, 94, 0.22) !important;
+}
+
+.faq-pill-teal {
+  background: rgba(20, 184, 166, 0.14) !important;
+  color: #0d9488 !important;
+  border: 1px solid rgba(20, 184, 166, 0.3) !important;
+}
+html[data-theme="dark"] .faq-pill-teal {
+  background: rgba(20, 184, 166, 0.22) !important;
+  color: #2dd4bf !important;
+  border-color: rgba(20, 184, 166, 0.45) !important;
+  box-shadow: 0 0 10px rgba(20, 184, 166, 0.22) !important;
+}
+
+.faq-pill-indigo {
+  background: rgba(99, 102, 241, 0.14) !important;
+  color: #4f46e5 !important;
+  border: 1px solid rgba(99, 102, 241, 0.3) !important;
+}
+html[data-theme="dark"] .faq-pill-indigo {
+  background: rgba(99, 102, 241, 0.22) !important;
+  color: #818cf8 !important;
+  border-color: rgba(99, 102, 241, 0.45) !important;
+  box-shadow: 0 0 10px rgba(99, 102, 241, 0.22) !important;
+}
