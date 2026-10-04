@@ -2090,58 +2090,61 @@ ol {
   width: 24px;
 }
 
+/* Service Table Item Icon Box - Official Brand Logos */
 .svc-icon-box {
-  width: 48px;
-  height: 48px;
+  width: 52px;
+  height: 52px;
   border-radius: 14px;
   background: rgba(15, 23, 42, 0.85);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.12);
   display: flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35);
+  transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+}
+
+.service-table-item:hover .svc-icon-box {
+  transform: scale(1.08);
+  border-color: rgba(56, 189, 248, 0.45);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45), 0 0 16px rgba(56, 189, 248, 0.18);
 }
 
 .svc-icon-box svg {
-  width: 22px;
-  height: 22px;
+  width: 26px;
+  height: 26px;
+  display: block;
 }
 
 .svc-icon-box.is-google {
-  color: #fbbc04;
-  border-color: rgba(251, 188, 4, 0.25);
   background: rgba(251, 188, 4, 0.08);
-}
-
-.svc-icon-box.is-gtm {
-  color: #38bdf8;
-  border-color: rgba(56, 189, 248, 0.25);
-  background: rgba(56, 189, 248, 0.08);
-}
-
-.svc-icon-box.is-ga4 {
-  color: #f97316;
-  border-color: rgba(249, 115, 22, 0.25);
-  background: rgba(249, 115, 22, 0.08);
-}
-
-.svc-icon-box.is-server {
-  color: #10b981;
-  border-color: rgba(16, 185, 129, 0.25);
-  background: rgba(16, 185, 129, 0.08);
+  border-color: rgba(251, 188, 4, 0.28);
 }
 
 .svc-icon-box.is-meta {
-  color: #3b82f6;
-  border-color: rgba(59, 130, 246, 0.25);
-  background: rgba(59, 130, 246, 0.08);
+  background: rgba(0, 100, 224, 0.10);
+  border-color: rgba(0, 129, 251, 0.32);
 }
 
-.svc-icon-box.is-ecommerce {
-  color: #10b981;
-  border-color: rgba(16, 185, 129, 0.25);
-  background: rgba(16, 185, 129, 0.08);
+.svc-icon-box.is-ga4 {
+  background: rgba(249, 171, 0, 0.09);
+  border-color: rgba(249, 171, 0, 0.30);
+}
+
+.svc-icon-box.is-gtm {
+  background: rgba(36, 111, 219, 0.10);
+  border-color: rgba(66, 133, 244, 0.32);
+}
+
+.svc-icon-box.is-server {
+  background: rgba(16, 185, 129, 0.10);
+  border-color: rgba(16, 185, 129, 0.32);
+}
+
+.svc-icon-box.is-crm {
+  background: rgba(255, 122, 89, 0.10);
+  border-color: rgba(255, 122, 89, 0.32);
 }
 
 .svc-content {
@@ -2228,18 +2231,64 @@ ol {
     width: 20px;
   }
 
-  .svc-icon-box {
-    width: 42px;
-    height: 42px;
-    border-radius: 12px;
-  }
+  /* Service Table Item Icon Box - Official Brand Logos */
+.svc-icon-box {
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  background: rgba(15, 23, 42, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35);
+  transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+}
 
-  .svc-icon-box svg {
-    width: 19px;
-    height: 19px;
-  }
+.service-table-item:hover .svc-icon-box {
+  transform: scale(1.08);
+  border-color: rgba(56, 189, 248, 0.45);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45), 0 0 16px rgba(56, 189, 248, 0.18);
+}
 
-  .svc-title {
+.svc-icon-box svg {
+  width: 26px;
+  height: 26px;
+  display: block;
+}
+
+.svc-icon-box.is-google {
+  background: rgba(251, 188, 4, 0.08);
+  border-color: rgba(251, 188, 4, 0.28);
+}
+
+.svc-icon-box.is-meta {
+  background: rgba(0, 100, 224, 0.10);
+  border-color: rgba(0, 129, 251, 0.32);
+}
+
+.svc-icon-box.is-ga4 {
+  background: rgba(249, 171, 0, 0.09);
+  border-color: rgba(249, 171, 0, 0.30);
+}
+
+.svc-icon-box.is-gtm {
+  background: rgba(36, 111, 219, 0.10);
+  border-color: rgba(66, 133, 244, 0.32);
+}
+
+.svc-icon-box.is-server {
+  background: rgba(16, 185, 129, 0.10);
+  border-color: rgba(16, 185, 129, 0.32);
+}
+
+.svc-icon-box.is-crm {
+  background: rgba(255, 122, 89, 0.10);
+  border-color: rgba(255, 122, 89, 0.32);
+}
+
+.svc-title {
     font-size: 1.05rem;
   }
 
