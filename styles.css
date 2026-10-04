@@ -3481,30 +3481,102 @@ ol {
 }
 
 /* ---------------------------------------------------------
-   Tools
+   Tools & Expertise Showcase (Matching Reference Design)
    --------------------------------------------------------- */
 
+.section-tools {
+  background: #f8fafc;
+  padding: 96px 0;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.grid-tools {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 26px;
+}
+
 .tool-group {
-  padding: 25px;
-  border: 1px solid var(--line);
-  border-radius: 18px;
-  background: var(--white);
-  box-shadow: var(--shadow-sm);
+  padding: 34px 30px !important;
+  border: 1px solid #e2e8f0 !important;
+  border-radius: 22px !important;
+  background: #ffffff !important;
+  box-shadow: 0 4px 20px -2px rgba(15, 23, 42, 0.05), 0 2px 6px -1px rgba(15, 23, 42, 0.03) !important;
+  transition: transform 260ms cubic-bezier(0.16, 1, 0.3, 1), box-shadow 260ms cubic-bezier(0.16, 1, 0.3, 1), border-color 260ms ease !important;
+  display: flex;
+  flex-direction: column;
+}
+
+.tool-group:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px -6px rgba(15, 23, 42, 0.1), 0 8px 16px -3px rgba(15, 23, 42, 0.05) !important;
+  border-color: #cbd5e1 !important;
 }
 
 .tool-group h3 {
   display: flex;
   align-items: center;
-  gap: 9px;
-  margin: 0;
+  gap: 12px;
+  margin: 0 0 22px;
   font-family: var(--font-heading);
-  font-size: 1.05rem;
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #0f172a;
+  letter-spacing: -0.02em;
 }
 
 .tool-group h3 .icon {
-  width: 20px;
-  height: 20px;
-  color: var(--accent-strong);
+  width: 22px;
+  height: 22px;
+  color: #ea580c !important;
+  flex-shrink: 0;
+  stroke-width: 2.2;
+}
+
+.tool-group .chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.tool-group .chips li {
+  display: inline-flex;
+  align-items: center;
+  min-height: 36px;
+  padding: 7px 15px;
+  border: 1px solid #e2e8f0;
+  border-radius: 999px;
+  background: #f8fafc;
+  color: #334155;
+  font-size: 0.80rem;
+  font-weight: 600;
+  line-height: 1.25;
+  transition: all 180ms ease;
+  white-space: nowrap;
+}
+
+.tool-group .chips li:hover {
+  background: #ffffff;
+  border-color: #cbd5e1;
+  color: #0f172a;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+@media (max-width: 860px) {
+  .grid-tools {
+    grid-template-columns: 1fr !important;
+    gap: 18px;
+  }
+  .tool-group {
+    padding: 26px 20px !important;
+  }
+  .tool-group h3 {
+    font-size: 1.15rem;
+  }
 }
 
 /* ---------------------------------------------------------
