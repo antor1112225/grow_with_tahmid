@@ -9332,3 +9332,167 @@ html[data-theme="light"] .theme-switch-option.is-dark {
     padding: 6px 8px;
   }
 }
+
+/* ==========================================================================
+   Tahmid Hasan Antor - Signature High-Ticket Performance Marketing Palette
+   "Cyber-ROI Hyper-Signal" Brand Identity (Unforgettable & Unique)
+   ========================================================================== */
+
+/* --- Primary High-Converting CTA Buttons (Electric Flame & Luxury Warm Glow) --- */
+.btn-primary,
+.cta-header-book-call,
+.btn-faq-call {
+  background: linear-gradient(135deg, #ff5500 0%, #ff7700 50%, #ff9500 100%) !important;
+  color: #ffffff !important;
+  border: 1px solid rgba(255, 255, 255, 0.22) !important;
+  box-shadow: 0 8px 24px -4px rgba(255, 85, 0, 0.45), 0 0 12px rgba(255, 119, 0, 0.2) !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.01em !important;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+.btn-primary:hover,
+.cta-header-book-call:hover,
+.btn-faq-call:hover {
+  background: linear-gradient(135deg, #ff6600 0%, #ff8800 50%, #ffa500 100%) !important;
+  color: #ffffff !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 12px 32px -4px rgba(255, 85, 0, 0.6), 0 0 22px rgba(255, 136, 0, 0.35) !important;
+}
+
+/* --- Brand Avatar Signature Aura --- */
+.brand-avatar-wrap {
+  position: relative;
+  border-radius: 50%;
+  padding: 2px;
+  background: linear-gradient(135deg, #00e5ff 0%, #2563eb 50%, #00f5a0 100%) !important;
+  box-shadow: 0 0 14px rgba(0, 229, 255, 0.35) !important;
+  display: inline-flex;
+}
+
+.brand-status-dot {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #00f5a0 !important;
+  box-shadow: 0 0 8px #00f5a0 !important;
+  margin-left: 6px;
+  vertical-align: middle;
+  animation: pulseDot 2s infinite ease-in-out;
+}
+
+/* --- Hero Section Brand Signature Polish --- */
+.hero-status-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 18px;
+  background: rgba(11, 23, 44, 0.88) !important;
+  border: 1px solid rgba(0, 229, 255, 0.4) !important;
+  border-radius: 999px;
+  box-shadow: 0 0 22px rgba(0, 229, 255, 0.15), inset 0 0 12px rgba(0, 229, 255, 0.06) !important;
+  color: #e2e8f0;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  margin-bottom: 24px;
+}
+
+.status-dot-live {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #00f5a0 !important;
+  box-shadow: 0 0 10px #00f5a0 !important;
+  animation: pulseDot 2s infinite ease-in-out;
+}
+
+/* Hero Gradient Highlight Text */
+.hero h1 em,
+.hero-headline em {
+  font-style: normal;
+  background: linear-gradient(135deg, #00f5a0 0%, #00e5ff 50%, #38bdf8 100%) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  filter: drop-shadow(0 0 24px rgba(0, 245, 160, 0.32));
+  display: inline-block;
+}
+
+html[data-theme="light"] .hero h1 em,
+:root:not([data-theme="dark"]) .hero h1 em {
+  background: linear-gradient(135deg, #059669 0%, #0284c7 60%, #2563eb 100%) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+}
+
+/* Hero Floating Metric Cards */
+.hero-float-card {
+  background: rgba(11, 23, 44, 0.92) !important;
+  border: 1.5px solid rgba(0, 229, 255, 0.32) !important;
+  border-radius: 16px !important;
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.65), 0 0 22px rgba(0, 229, 255, 0.18) !important;
+  backdrop-filter: blur(12px) !important;
+}
+
+.hero-float-card.card-top .float-stat-val,
+.hero-float-card .is-profit {
+  color: #00f5a0 !important;
+  font-weight: 800;
+  text-shadow: 0 0 14px rgba(0, 245, 160, 0.45);
+}
+
+.hero-float-card.card-bottom .float-stat-val,
+.hero-float-card .is-leads {
+  color: #38bdf8 !important;
+  font-weight: 800;
+  text-shadow: 0 0 14px rgba(56, 189, 248, 0.45);
+}
+
+/* --- Section Title Gradients (Universal Niche Highlight) --- */
+.section-head h2 em,
+.faq-title em,
+.tools-main-headline em,
+.cta-band h2 em {
+  font-style: normal;
+  background: linear-gradient(135deg, #00f5a0 0%, #00e5ff 50%, #38bdf8 100%) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+}
+
+html[data-theme="light"] .section-head h2 em,
+html[data-theme="light"] .faq-title em,
+html[data-theme="light"] .tools-main-headline em,
+html[data-theme="light"] .cta-band h2 em,
+:root:not([data-theme="dark"]) .section-head h2 em,
+:root:not([data-theme="dark"]) .faq-title em,
+:root:not([data-theme="dark"]) .tools-main-headline em,
+:root:not([data-theme="dark"]) .cta-band h2 em {
+  background: linear-gradient(135deg, #059669 0%, #0284c7 60%, #2563eb 100%) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+}
+
+/* --- Metrics & Proof Numbers (Hyper-Signal Glow) --- */
+.testi-metric-val.is-green,
+.cs-kpi-val.is-green {
+  color: #00f5a0 !important;
+  text-shadow: 0 0 10px rgba(0, 245, 160, 0.35);
+}
+
+.testi-metric-val.is-cyan,
+.cs-kpi-val.is-cyan {
+  color: #00e5ff !important;
+  text-shadow: 0 0 10px rgba(0, 229, 255, 0.35);
+}
+
+/* --- Floating WhatsApp High-Signal Button --- */
+.floating-whatsapp-btn {
+  background: linear-gradient(135deg, #25d366 0%, #128c7e 100%) !important;
+  box-shadow: 0 8px 24px rgba(37, 211, 102, 0.45), 0 0 14px rgba(37, 211, 102, 0.25) !important;
+}
+
+.floating-whatsapp-btn:hover {
+  transform: translateY(-3px) scale(1.05) !important;
+  box-shadow: 0 12px 32px rgba(37, 211, 102, 0.6), 0 0 22px rgba(37, 211, 102, 0.4) !important;
+}
