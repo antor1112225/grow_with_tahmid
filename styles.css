@@ -7112,3 +7112,282 @@ tbody tr:last-child td {
     animation-iteration-count: 1 !important;
   }
 }
+
+
+/* ==========================================================================
+   Theme Toggle & Dark/Light Mode System (Media Reference 1791148662185)
+   ========================================================================== */
+
+.header-mobile-right {
+  display: none;
+  align-items: center;
+  gap: 10px;
+}
+
+.theme-toggle-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  min-width: 44px;
+  border-radius: 12px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  color: var(--ink);
+  cursor: pointer;
+  transition: transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1),
+              background 0.2s ease,
+              border-color 0.2s ease,
+              box-shadow 0.2s ease,
+              color 0.2s ease;
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.05);
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.theme-toggle-btn:hover {
+  transform: translateY(-1.5px);
+  border-color: #38bdf8;
+  box-shadow: 0 4px 14px rgba(56, 189, 248, 0.25);
+}
+
+.theme-toggle-btn:active {
+  transform: translateY(0);
+}
+
+.theme-toggle-btn svg {
+  width: 20px;
+  height: 20px;
+  display: block;
+  transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1), opacity 0.25s ease;
+}
+
+/* Light Mode: Sun icon visible, Moon icon hidden */
+html[data-theme="light"] .theme-icon-sun,
+:root:not([data-theme="dark"]) .theme-icon-sun {
+  display: block !important;
+  color: #d97706;
+  filter: drop-shadow(0 0 6px rgba(245, 158, 11, 0.45));
+}
+
+html[data-theme="light"] .theme-icon-moon,
+:root:not([data-theme="dark"]) .theme-icon-moon {
+  display: none !important;
+}
+
+/* Dark Mode: Moon icon visible, Sun icon hidden */
+html[data-theme="dark"] .theme-icon-sun {
+  display: none !important;
+}
+
+html[data-theme="dark"] .theme-icon-moon {
+  display: block !important;
+  color: #38bdf8;
+  filter: drop-shadow(0 0 7px rgba(56, 189, 248, 0.65));
+}
+
+html[data-theme="dark"] .theme-toggle-btn {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(255, 255, 255, 0.14);
+  color: #f8fafc;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+}
+
+html[data-theme="dark"] .theme-toggle-btn:hover {
+  background: rgba(56, 189, 248, 0.12);
+  border-color: #38bdf8;
+  box-shadow: 0 4px 18px rgba(56, 189, 248, 0.35);
+}
+
+@media (max-width: 900px) {
+  .header-mobile-right {
+    display: flex;
+  }
+  .header-desktop-theme-btn {
+    display: none !important;
+  }
+}
+
+/* ==========================================================================
+   Comprehensive Dark Theme Engine ([data-theme="dark"])
+   ========================================================================== */
+html[data-theme="dark"] {
+  --ink: #f8fafc;
+  --ink-soft: #cbd5e1;
+  --muted: #94a3b8;
+  --muted-dark: #64748b;
+  --body-dark: #cbd5e1;
+  --offwhite: #060b14;
+  --surface: #0c1527;
+  --surface-soft: #111e36;
+  --line: rgba(255, 255, 255, 0.10);
+  --light-border: rgba(255, 255, 255, 0.09);
+  --dark-border: rgba(255, 255, 255, 0.16);
+  --line-dark: rgba(255, 255, 255, 0.12);
+  --white: #0c1527;
+  --shadow-sm: 0 8px 24px rgba(0, 0, 0, 0.45);
+  --shadow-md: 0 16px 44px rgba(0, 0, 0, 0.55);
+  --shadow-lg: 0 24px 80px rgba(0, 0, 0, 0.65);
+}
+
+html[data-theme="dark"] body {
+  background-color: #060b14 !important;
+  color: #cbd5e1 !important;
+}
+
+html[data-theme="dark"] .site-header {
+  background: rgba(6, 11, 20, 0.88) !important;
+  border-bottom-color: rgba(255, 255, 255, 0.08) !important;
+}
+
+html[data-theme="dark"] .site-header.is-scrolled {
+  background: rgba(8, 14, 26, 0.96) !important;
+  border-bottom-color: rgba(255, 255, 255, 0.12) !important;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.4) !important;
+}
+
+html[data-theme="dark"] .brand {
+  color: #ffffff !important;
+}
+
+html[data-theme="dark"] .brand-text strong {
+  color: #ffffff !important;
+}
+
+html[data-theme="dark"] .brand-text small {
+  color: #38bdf8 !important;
+}
+
+html[data-theme="dark"] .site-nav a:not(.btn) {
+  color: #94a3b8 !important;
+}
+
+html[data-theme="dark"] .site-nav a:not(.btn):hover,
+html[data-theme="dark"] .site-nav a[aria-current="page"] {
+  color: #ffffff !important;
+}
+
+html[data-theme="dark"] .nav-toggle {
+  background: #0f1c30 !important;
+  border-color: rgba(255, 255, 255, 0.12) !important;
+  color: #ffffff !important;
+}
+
+/* Headings & Text in Dark Mode */
+html[data-theme="dark"] h1,
+html[data-theme="dark"] h2,
+html[data-theme="dark"] h3,
+html[data-theme="dark"] h4,
+html[data-theme="dark"] .section-head h2 {
+  color: #f8fafc !important;
+}
+
+html[data-theme="dark"] p,
+html[data-theme="dark"] .lede {
+  color: #94a3b8 !important;
+}
+
+html[data-theme="dark"] strong {
+  color: #ffffff;
+}
+
+/* All Cards, Panels & Containers in Dark Mode */
+html[data-theme="dark"] .card,
+html[data-theme="dark"] .service-card,
+html[data-theme="dark"] .industry-card,
+html[data-theme="dark"] .case-card,
+html[data-theme="dark"] .article-card,
+html[data-theme="dark"] .res-article-card,
+html[data-theme="dark"] .testimonial-card,
+html[data-theme="dark"] .step-card,
+html[data-theme="dark"] .benefit-card,
+html[data-theme="dark"] .comp-card,
+html[data-theme="dark"] .faq-card,
+html[data-theme="dark"] .faq-item,
+html[data-theme="dark"] .form-card,
+html[data-theme="dark"] .about-visual-card,
+html[data-theme="dark"] .booking-hero-card {
+  background-color: #0c1527 !important;
+  border-color: rgba(255, 255, 255, 0.08) !important;
+  color: #cbd5e1 !important;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.35) !important;
+}
+
+html[data-theme="dark"] .card:hover,
+html[data-theme="dark"] .service-card:hover,
+html[data-theme="dark"] .industry-card:hover,
+html[data-theme="dark"] .case-card:hover,
+html[data-theme="dark"] .article-card:hover,
+html[data-theme="dark"] .res-article-card:hover,
+html[data-theme="dark"] .testimonial-card:hover {
+  border-color: rgba(56, 189, 248, 0.35) !important;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.5), 0 0 15px rgba(56, 189, 248, 0.08) !important;
+}
+
+/* Dark Mode Form Inputs, Selects & Textareas */
+html[data-theme="dark"] input[type="text"],
+html[data-theme="dark"] input[type="email"],
+html[data-theme="dark"] input[type="tel"],
+html[data-theme="dark"] input[type="url"],
+html[data-theme="dark"] textarea,
+html[data-theme="dark"] select {
+  background: #0f1c30 !important;
+  border-color: rgba(255, 255, 255, 0.14) !important;
+  color: #ffffff !important;
+}
+
+html[data-theme="dark"] input::placeholder,
+html[data-theme="dark"] textarea::placeholder {
+  color: #64748b !important;
+}
+
+/* Tags, Chips, Pills in Dark Mode */
+html[data-theme="dark"] .tag,
+html[data-theme="dark"] .badge,
+html[data-theme="dark"] .chip,
+html[data-theme="dark"] .industry-card .chips li {
+  background: rgba(255, 255, 255, 0.06) !important;
+  border-color: rgba(255, 255, 255, 0.1) !important;
+  color: #cbd5e1 !important;
+}
+
+/* Tables in Dark Mode */
+html[data-theme="dark"] table,
+html[data-theme="dark"] th,
+html[data-theme="dark"] td {
+  border-color: rgba(255, 255, 255, 0.08) !important;
+}
+
+html[data-theme="dark"] th {
+  background: rgba(255, 255, 255, 0.04) !important;
+  color: #ffffff !important;
+}
+
+/* Mobile Nav Drawer in Dark Mode */
+html[data-theme="dark"] .site-nav {
+  background: #0c1527 !important;
+  border-color: rgba(255, 255, 255, 0.12) !important;
+}
+
+/* Dialog in Dark Mode */
+html[data-theme="dark"] .video-dialog-inner {
+  background: #0c1527 !important;
+  border-color: rgba(255, 255, 255, 0.12) !important;
+  color: #ffffff !important;
+}
+
+/* Mobile Bar in Dark Mode */
+html[data-theme="dark"] .mobilebar {
+  background: rgba(6, 11, 20, 0.92) !important;
+  border-top-color: rgba(255, 255, 255, 0.08) !important;
+}
+
+/* Smooth transition when toggling */
+html.theme-transition,
+html.theme-transition *,
+html.theme-transition *::before,
+html.theme-transition *::after {
+  transition: background-color 0.25s ease, border-color 0.25s ease, color 0.2s ease, box-shadow 0.25s ease !important;
+}
