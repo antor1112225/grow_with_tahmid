@@ -2399,72 +2399,139 @@ ol {
 }
 
 /* ---------------------------------------------------------
-   Process
+   Process (Modern High-Conversion 4-Step Cards)
    --------------------------------------------------------- */
 
 .process {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 14px;
+  gap: 22px;
   padding: 0;
   margin: 0;
   list-style: none;
 }
 
 .process-step {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 32px 26px 26px;
+  border-radius: 22px;
+  background: rgba(15, 23, 42, 0.72);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.4);
   position: relative;
-  min-height: 270px;
-  padding: 24px;
-  border: 1px solid rgba(255,255,255,.10);
-  border-radius: 20px;
-  background: rgba(255,255,255,.04);
+  transition: transform 260ms cubic-bezier(0.16, 1, 0.3, 1), border-color 260ms ease, box-shadow 260ms ease;
+  overflow: hidden;
+}
+
+.process-step:hover {
+  transform: translateY(-6px);
+  border-color: rgba(16, 185, 129, 0.35);
+  box-shadow: 0 22px 45px -10px rgba(0, 0, 0, 0.6), 0 0 24px -2px rgba(16, 185, 129, 0.15);
 }
 
 .process-n {
-  display: inline-grid;
-  width: 42px;
-  height: 42px;
-  place-items: center;
-  border: 1px solid rgba(255,106,61,.36);
-  border-radius: 50%;
-  background: rgba(255,106,61,.10);
-  color: #ffb39c;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 14px;
+  background: rgba(16, 185, 129, 0.12);
+  border: 1px solid rgba(16, 185, 129, 0.28);
+  color: #10b981;
   font-family: var(--font-heading);
-  font-size: .82rem;
+  font-size: 0.95rem;
   font-weight: 800;
+  letter-spacing: 0.02em;
+  margin-bottom: 22px;
+  transition: all 260ms ease;
+}
+
+.process-step:hover .process-n {
+  background: #10b981;
+  color: #030814;
+  border-color: #10b981;
+  box-shadow: 0 0 16px rgba(16, 185, 129, 0.45);
 }
 
 .process-step h3 {
-  margin: 24px 0 10px;
+  margin: 0 0 12px;
   font-family: var(--font-heading);
-  font-size: 1.35rem;
-  letter-spacing: -.025em;
+  font-size: 1.28rem;
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: -0.02em;
+  line-height: 1.28;
 }
 
 .process-step p {
-  color: #c6cfdd;
-  font-size: .91rem;
+  color: #94a3b8;
+  font-size: 0.90rem;
+  line-height: 1.62;
+  margin: 0 0 24px;
+  flex: 1 0 auto;
 }
 
 .process-out {
-  position: absolute;
-  right: 24px;
-  bottom: 22px;
-  left: 24px;
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
-  margin: 0;
-  color: #fff !important;
-  font-size: .82rem !important;
+  position: static !important;
+  margin-top: auto !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 6px !important;
+  padding: 14px 16px !important;
+  border-radius: 14px !important;
+  background: rgba(255, 255, 255, 0.035) !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  color: #e2e8f0 !important;
+  font-size: 0.84rem !important;
+  line-height: 1.48 !important;
+  font-weight: 500 !important;
+  transition: background 200ms ease, border-color 200ms ease !important;
+}
+
+.process-step:hover .process-out {
+  background: rgba(16, 185, 129, 0.06) !important;
+  border-color: rgba(16, 185, 129, 0.25) !important;
 }
 
 .process-out span {
-  color: #ffb39c;
-  font-size: .67rem;
-  font-weight: 800;
-  letter-spacing: .10em;
-  text-transform: uppercase;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 6px !important;
+  color: #10b981 !important;
+  font-size: 0.70rem !important;
+  font-weight: 800 !important;
+  letter-spacing: 0.12em !important;
+  text-transform: uppercase !important;
+}
+
+.process-out span::before {
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #10b981;
+  box-shadow: 0 0 6px #10b981;
+}
+
+@media (max-width: 1080px) {
+  .process {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 640px) {
+  .process {
+    grid-template-columns: 1fr !important;
+    gap: 16px;
+  }
+  .process-step {
+    padding: 24px 20px 20px;
+  }
 }
 
 /* ---------------------------------------------------------
