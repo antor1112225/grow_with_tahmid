@@ -657,8 +657,10 @@ ol {
 }
 
 .hero h1 {
-  max-width: 780px;
-  font-size: clamp(3.2rem, 6.5vw, 5.8rem);
+  max-width: 680px;
+  font-size: clamp(2.1rem, 3.8vw, 3.2rem);
+  line-height: 1.14;
+  letter-spacing: -0.03em;
 }
 
 .hero h1 em {
@@ -4529,7 +4531,8 @@ tbody tr:last-child td {
   }
 
   .hero h1 {
-    font-size: clamp(2.2rem, 11vw, 3.8rem);
+    font-size: clamp(1.85rem, 6.5vw, 2.5rem);
+    line-height: 1.16;
   }
 
   .hero-sub {
@@ -4728,7 +4731,8 @@ tbody tr:last-child td {
   }
 
   .hero h1 {
-    font-size: clamp(1.95rem, 8.5vw, 3rem);
+    font-size: clamp(1.6rem, 6vw, 2rem);
+    line-height: 1.18;
   }
 
   .hero-sub {
