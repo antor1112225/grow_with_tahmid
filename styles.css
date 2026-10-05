@@ -9079,15 +9079,56 @@ html[data-theme="dark"] .faq-pill-indigo {
   transition: transform 0.2s ease, color 0.2s ease;
 }
 
-.res-footer-action a {
-  color: #0284c7 !important;
-  font-weight: 700;
-  text-decoration: none;
-  transition: all 0.2s ease;
+.res-footer-action {
+  text-align: center;
+  margin-top: 40px;
 }
 
+.res-footer-action .btn,
+.res-footer-action a {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 10px !important;
+  padding: 14px 34px !important;
+  background: #00d084 !important;
+  background: linear-gradient(135deg, #00d084 0%, #05b370 100%) !important;
+  color: #061d15 !important;
+  border: 1px solid rgba(0, 208, 132, 0.45) !important;
+  box-shadow: 0 8px 24px -2px rgba(0, 208, 132, 0.42), 0 0 16px rgba(0, 208, 132, 0.25) !important;
+  font-weight: 800 !important;
+  font-size: 1rem !important;
+  letter-spacing: -0.01em !important;
+  border-radius: 12px !important;
+  text-decoration: none !important;
+  text-shadow: none !important;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+.res-footer-action .btn:hover,
 .res-footer-action a:hover {
-  color: #0369a1 !important;
+  background: linear-gradient(135deg, #05b370 0%, #00d084 100%) !important;
+  color: #061d15 !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 12px 32px rgba(0, 208, 132, 0.5), 0 0 24px rgba(0, 208, 132, 0.35) !important;
+}
+
+.res-footer-action .btn .icon,
+.res-footer-action .btn svg,
+.res-footer-action a .icon,
+.res-footer-action a svg {
+  width: 18px !important;
+  height: 18px !important;
+  stroke: #061d15 !important;
+  stroke-width: 2.2 !important;
+  transition: transform 0.22s ease !important;
+}
+
+.res-footer-action .btn:hover .icon,
+.res-footer-action .btn:hover svg,
+.res-footer-action a:hover .icon,
+.res-footer-action a:hover svg {
+  transform: translateX(4px) !important;
 }
 
 /* --- DARK MODE OVERRIDES (HIGH CONTRAST & COLOURFUL GLOW) --- */
@@ -9193,13 +9234,26 @@ html[data-theme="dark"] .res-tag-cro {
   border: 1px solid rgba(245, 158, 11, 0.35) !important;
 }
 
+html[data-theme="dark"] .res-footer-action .btn,
 html[data-theme="dark"] .res-footer-action a {
-  color: #38bdf8 !important;
-  text-shadow: 0 0 12px rgba(56, 189, 248, 0.3) !important;
+  background: #00d084 !important;
+  background: linear-gradient(135deg, #00d084 0%, #05b370 100%) !important;
+  color: #061d15 !important;
+  border: 1px solid rgba(0, 208, 132, 0.55) !important;
+  box-shadow: 0 8px 28px -2px rgba(0, 208, 132, 0.5), 0 0 20px rgba(0, 208, 132, 0.35) !important;
+  text-shadow: none !important;
 }
 
+html[data-theme="dark"] .res-footer-action .btn:hover,
 html[data-theme="dark"] .res-footer-action a:hover {
-  color: #7dd3fc !important;
+  background: linear-gradient(135deg, #05b370 0%, #00d084 100%) !important;
+  color: #061d15 !important;
+  box-shadow: 0 12px 36px rgba(0, 208, 132, 0.6), 0 0 28px rgba(0, 208, 132, 0.45) !important;
+}
+
+html[data-theme="dark"] .res-footer-action .btn svg,
+html[data-theme="dark"] .res-footer-action a svg {
+  stroke: #061d15 !important;
 }
 
 /* Industries Section in Dark Mode */
