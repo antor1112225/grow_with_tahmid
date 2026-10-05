@@ -9927,3 +9927,381 @@ html[data-theme="light"] .cta-band h2 em,
   color: #38bdf8;
   line-height: 1.2;
 }
+
+
+
+/* =========================================================
+   Ultra-Visible, Crisp & Beautiful Industry Cards & Chips
+   ========================================================= */
+.grid-industries {
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr) !important;
+  gap: 26px !important;
+}
+
+@media (max-width: 1024px) {
+  .grid-industries {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+@media (max-width: 640px) {
+  .grid-industries {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+.industry-card {
+  display: flex !important;
+  flex-direction: column !important;
+  height: 100% !important;
+  padding: 30px 26px !important;
+  background: #ffffff !important;
+  border: 1.5px solid #cbd5e1 !important;
+  border-radius: 22px !important;
+  box-shadow: 0 8px 30px -4px rgba(15, 23, 42, 0.08), 0 2px 6px -1px rgba(15, 23, 42, 0.04) !important;
+  transition: all 0.28s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  position: relative !important;
+}
+
+.industry-card:hover {
+  transform: translateY(-5px) !important;
+  border-color: #38bdf8 !important;
+  box-shadow: 0 20px 42px -6px rgba(15, 23, 42, 0.12), 0 0 20px rgba(56, 189, 248, 0.15) !important;
+}
+
+html[data-theme="dark"] .industry-card {
+  background: #0d1527 !important;
+  border: 1.5px solid rgba(56, 189, 248, 0.22) !important;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.5) !important;
+}
+
+html[data-theme="dark"] .industry-card:hover {
+  border-color: #38bdf8 !important;
+  box-shadow: 0 22px 50px rgba(0, 0, 0, 0.7), 0 0 25px rgba(56, 189, 248, 0.28) !important;
+}
+
+.industry-head {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 12px !important;
+  margin-bottom: 18px !important;
+}
+
+.ind-badge-wrap {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 7px !important;
+}
+
+.ind-live-dot {
+  width: 7px !important;
+  height: 7px !important;
+  border-radius: 50% !important;
+  display: inline-block !important;
+}
+
+.tag-core {
+  background: rgba(16, 185, 129, 0.12) !important;
+  border: 1.5px solid rgba(16, 185, 129, 0.4) !important;
+  color: #059669 !important;
+  font-size: 0.75rem !important;
+  font-weight: 800 !important;
+  padding: 4px 12px !important;
+  border-radius: 999px !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.04em !important;
+}
+
+html[data-theme="dark"] .tag-core {
+  background: rgba(16, 185, 129, 0.18) !important;
+  border-color: rgba(16, 185, 129, 0.5) !important;
+  color: #10b981 !important;
+}
+
+.tag-muted {
+  background: rgba(14, 165, 233, 0.12) !important;
+  border: 1.5px solid rgba(14, 165, 233, 0.35) !important;
+  color: #0284c7 !important;
+  font-size: 0.75rem !important;
+  font-weight: 800 !important;
+  padding: 4px 12px !important;
+  border-radius: 999px !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.04em !important;
+}
+
+html[data-theme="dark"] .tag-muted {
+  background: rgba(14, 165, 233, 0.18) !important;
+  border-color: rgba(14, 165, 233, 0.45) !important;
+  color: #38bdf8 !important;
+}
+
+.industry-card .count {
+  color: #64748b !important;
+  font-size: 0.82rem !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.01em !important;
+}
+
+html[data-theme="dark"] .industry-card .count {
+  color: #94a3b8 !important;
+}
+
+.industry-title-row {
+  display: flex !important;
+  align-items: center !important;
+  gap: 14px !important;
+  margin-bottom: 14px !important;
+}
+
+.industry-icon-box {
+  width: 44px !important;
+  height: 44px !important;
+  border-radius: 12px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  flex-shrink: 0 !important;
+}
+
+.industry-icon-box.is-auto {
+  background: #f0fdf4 !important;
+  border: 1px solid #bbf7d0 !important;
+  color: #16a34a !important;
+}
+
+.industry-icon-box.is-home {
+  background: #f0fdf4 !important;
+  border: 1px solid #bbf7d0 !important;
+  color: #10b981 !important;
+}
+
+.industry-icon-box.is-legal {
+  background: #fffbeb !important;
+  border: 1px solid #fef3c7 !important;
+  color: #d97706 !important;
+}
+
+.industry-icon-box.is-health {
+  background: #fdf2f8 !important;
+  border: 1px solid #fbcfe8 !important;
+  color: #db2777 !important;
+}
+
+.industry-icon-box.is-b2c {
+  background: #faf5ff !important;
+  border: 1px solid #f3e8ff !important;
+  color: #9333ea !important;
+}
+
+.industry-icon-box.is-b2b {
+  background: #f0f9ff !important;
+  border: 1px solid #bae6fd !important;
+  color: #0284c7 !important;
+}
+
+html[data-theme="dark"] .industry-icon-box.is-auto {
+  background: rgba(22, 163, 74, 0.15) !important;
+  border-color: rgba(22, 163, 74, 0.35) !important;
+  color: #4ade80 !important;
+}
+
+html[data-theme="dark"] .industry-icon-box.is-home {
+  background: rgba(16, 185, 129, 0.15) !important;
+  border-color: rgba(16, 185, 129, 0.35) !important;
+  color: #34d399 !important;
+}
+
+html[data-theme="dark"] .industry-icon-box.is-legal {
+  background: rgba(217, 119, 6, 0.15) !important;
+  border-color: rgba(217, 119, 6, 0.35) !important;
+  color: #fbbf24 !important;
+}
+
+html[data-theme="dark"] .industry-icon-box.is-health {
+  background: rgba(219, 39, 119, 0.15) !important;
+  border-color: rgba(219, 39, 119, 0.35) !important;
+  color: #f472b6 !important;
+}
+
+html[data-theme="dark"] .industry-icon-box.is-b2c {
+  background: rgba(147, 51, 234, 0.15) !important;
+  border-color: rgba(147, 51, 234, 0.35) !important;
+  color: #c084fc !important;
+}
+
+html[data-theme="dark"] .industry-icon-box.is-b2b {
+  background: rgba(14, 165, 233, 0.15) !important;
+  border-color: rgba(14, 165, 233, 0.35) !important;
+  color: #38bdf8 !important;
+}
+
+.industry-card h3 {
+  font-family: var(--font-heading) !important;
+  font-size: 1.32rem !important;
+  font-weight: 800 !important;
+  line-height: 1.25 !important;
+  margin: 0 !important;
+  letter-spacing: -0.02em !important;
+}
+
+.industry-card h3 a {
+  color: #0f172a !important;
+  text-decoration: none !important;
+  transition: color 200ms ease !important;
+}
+
+.industry-card h3 a:hover {
+  color: #0284c7 !important;
+}
+
+html[data-theme="dark"] .industry-card h3 a {
+  color: #ffffff !important;
+}
+
+html[data-theme="dark"] .industry-card h3 a:hover {
+  color: #38bdf8 !important;
+}
+
+.industry-desc {
+  margin: 0 0 20px !important;
+  color: #475569 !important;
+  font-size: 0.90rem !important;
+  line-height: 1.62 !important;
+  flex-grow: 1 !important;
+}
+
+html[data-theme="dark"] .industry-desc {
+  color: #94a3b8 !important;
+}
+
+/* High-Contrast, Ultra-Visible Chips / Tags */
+.industry-card .chips {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 8px 7px !important;
+  margin: 0 0 24px !important;
+  padding: 0 !important;
+  list-style: none !important;
+}
+
+.industry-card .chips li {
+  padding: 6px 12px !important;
+  border: 1.5px solid #cbd5e1 !important;
+  border-radius: 999px !important;
+  background: #f1f5f9 !important;
+  color: #1e293b !important;
+  font-size: 0.78rem !important;
+  font-weight: 600 !important;
+  line-height: 1.2 !important;
+  transition: all 180ms ease !important;
+  white-space: nowrap !important;
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.04) !important;
+}
+
+.industry-card .chips li:hover {
+  background: #0284c7 !important;
+  border-color: #0284c7 !important;
+  color: #ffffff !important;
+  transform: translateY(-1px) !important;
+  box-shadow: 0 4px 10px rgba(2, 132, 199, 0.25) !important;
+}
+
+html[data-theme="dark"] .industry-card .chips li {
+  background: rgba(255, 255, 255, 0.08) !important;
+  border-color: rgba(255, 255, 255, 0.15) !important;
+  color: #e2e8f0 !important;
+  box-shadow: none !important;
+}
+
+html[data-theme="dark"] .industry-card .chips li:hover {
+  background: rgba(56, 189, 248, 0.25) !important;
+  border-color: #38bdf8 !important;
+  color: #ffffff !important;
+  box-shadow: 0 0 12px rgba(56, 189, 248, 0.35) !important;
+}
+
+.industry-card .chip-more {
+  background: #fff7ed !important;
+  border: 1.5px solid #fdba74 !important;
+  color: #c2410c !important;
+  font-weight: 800 !important;
+}
+
+.industry-card .chip-more:hover {
+  background: #ea580c !important;
+  border-color: #ea580c !important;
+  color: #ffffff !important;
+}
+
+html[data-theme="dark"] .industry-card .chip-more {
+  background: rgba(249, 115, 22, 0.18) !important;
+  border-color: rgba(249, 115, 22, 0.45) !important;
+  color: #fb923c !important;
+}
+
+html[data-theme="dark"] .industry-card .chip-more:hover {
+  background: #f97316 !important;
+  border-color: #f97316 !important;
+  color: #0f172a !important;
+}
+
+/* Card Action Button */
+.industry-card-footer {
+  margin-top: auto !important;
+  padding-top: 14px !important;
+  border-top: 1px solid #f1f5f9 !important;
+}
+
+html[data-theme="dark"] .industry-card-footer {
+  border-top-color: rgba(255, 255, 255, 0.08) !important;
+}
+
+.industry-action-btn {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  width: 100% !important;
+  padding: 11px 18px !important;
+  border-radius: 12px !important;
+  background: #f0f9ff !important;
+  border: 1.5px solid #bae6fd !important;
+  color: #0284c7 !important;
+  font-weight: 700 !important;
+  font-size: 0.88rem !important;
+  text-decoration: none !important;
+  transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+.industry-action-btn:hover {
+  background: #0284c7 !important;
+  border-color: #0284c7 !important;
+  color: #ffffff !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 6px 18px rgba(2, 132, 199, 0.32) !important;
+}
+
+.industry-action-btn .icon {
+  width: 17px !important;
+  height: 17px !important;
+  transition: transform 0.2s ease !important;
+}
+
+.industry-action-btn:hover .icon {
+  transform: translateX(4px) !important;
+}
+
+html[data-theme="dark"] .industry-action-btn {
+  background: rgba(56, 189, 248, 0.1) !important;
+  border-color: rgba(56, 189, 248, 0.3) !important;
+  color: #38bdf8 !important;
+}
+
+html[data-theme="dark"] .industry-action-btn:hover {
+  background: #38bdf8 !important;
+  border-color: #38bdf8 !important;
+  color: #04101e !important;
+  box-shadow: 0 0 20px rgba(56, 189, 248, 0.4) !important;
+}
