@@ -188,4 +188,35 @@
     }
   };
   initTheme();
+
+  // Top Offer Banner Dismissal
+  var offerBanner = document.getElementById('top-offer-banner');
+  if (offerBanner) {
+    try {
+      if (sessionStorage.getItem('top_offer_dismissed') === '1') {
+        offerBanner.style.display = 'none';
+      }
+    } catch (_) {}
+
+    var closeBtn = document.getElementById('top-offer-close-btn');
+    if (closeBtn) {
+      closeBtn.addEventListener('click', function () {
+        offerBanner.style.maxHeight = offerBanner.scrollHeight + 'px';
+        offerBanner.style.transition = 'max-height 0.3s ease, opacity 0.25s ease, padding 0.3s ease';
+        requestAnimationFrame(function () {
+          offerBanner.style.maxHeight = '0';
+          offerBanner.style.opacity = '0';
+          offerBanner.style.paddingTop = '0';
+          offerBanner.style.paddingBottom = '0';
+          setTimeout(function () {
+            offerBanner.style.display = 'none';
+          }, 320);
+        });
+        try {
+          sessionStorage.setItem('top_offer_dismissed', '1');
+        } catch (_) {}
+        push('offer_banner_dismiss', { cta_location: 'top_offer_banner' });
+      });
+    }
+  }
 })()
