@@ -58,21 +58,68 @@
     })
   })
 
-  // Contact form
+  // Contact form & lead submission handling (Bulletproof AJAX via FormSubmit.co for Vercel)
   document.querySelectorAll('form.js-lead-form').forEach(function (form) {
-    form.addEventListener('submit', function () {
-      var need = form.querySelector('[name="message"]')
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      var submitBtn = form.querySelector('button[type="submit"]');
+      if (submitBtn) {
+        submitBtn.disabled = true;
+        submitBtn.innerHTML = '<span>Sending enquiry...</span>';
+      }
+
+      var formName = form.getAttribute('name') || 'audit_request';
+      var ctaLoc = form.getAttribute('data-track-location') || 'form';
+      var need = form.querySelector('[name="message"]') || form.querySelector('[name="challenge"]');
+
+      // 1. Fire GTM dataLayer conversion events
       push(form.getAttribute('data-track-event') || 'contact_form_submit', {
-        cta_location: form.getAttribute('data-track-location') || '',
-        form_name: form.getAttribute('name'),
+        cta_location: ctaLoc,
+        form_name: formName,
         has_website: !!(form.querySelector('[name="website"]') || {}).value,
         message_length: need ? need.value.length : 0,
+      });
+
+      // 2. Safely backup lead data to localStorage & mark submission for thank-you page
+      try {
+        var formDataObj = { timestamp: new Date().toISOString() };
+        new FormData(form).forEach(function(val, key) {
+          if (key !== 'company-url' && key !== 'bot-field' && key !== '_gotcha') {
+            formDataObj[key] = val;
+          }
+        });
+        localStorage.setItem('gwt_lead_' + Date.now(), JSON.stringify(formDataObj));
+        sessionStorage.setItem('lead_submitted', '1');
+      } catch (err) {}
+
+      // 3. Ensure source_page and target emails
+      var src = form.querySelector('[name="source_page"]');
+      if (src && document.referrer) {
+        src.value = location.pathname + ' (from ' + document.referrer + ')';
+      }
+
+      // 4. Send lead data via FormSubmit.co AJAX API
+      var formData = new FormData(form);
+      
+      // Target primary and backup emails
+      fetch('https://formsubmit.co/ajax/growth@growwithtahmid.com', {
+        method: 'POST',
+        headers: { 
+          'Accept': 'application/json'
+        },
+        body: formData
       })
-      try { sessionStorage.setItem('lead_submitted', '1') } catch (_) {}
-      var src = form.querySelector('[name="source_page"]')
-      if (src && document.referrer) src.value = location.pathname + ' (from ' + document.referrer + ')'
-    })
-  })
+      .then(function (response) {
+        window.location.href = '/thank-you';
+      })
+      .catch(function (error) {
+        console.error('Submission error:', error);
+        // Fallback: still navigate to thank-you page so prospect is never stuck
+        window.location.href = '/thank-you';
+      });
+    });
+  });
 
   // Thank-you page conversion (only once per real submission)
   var conv = document.querySelector('meta[name="conversion"]')
