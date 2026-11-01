@@ -991,10 +991,15 @@ html[data-theme="light"] .territory-box {
       <h3 style="margin-bottom: 8px; font-size: 1.35rem;">Request Your 5-Min Video Audit</h3>
       <p class="muted" style="font-size: 0.88rem; margin-bottom: 20px;">Fill out your details below and I will inspect your search territory within 24 hours.</p>
 
-      <form id="boiler-audit-form" class="contact-form js-lead-form" name="boiler-audit" method="POST" action="/thank-you" data-netlify="true" netlify-honeypot="company-url" data-track-event="contact_form_submit" data-track-location="boiler_landing_page">
+      <form id="boiler-audit-form" class="contact-form js-lead-form" name="boiler-audit" method="POST" data-track-event="contact_form_submit" data-track-location="boiler_landing_page">
+        <!-- FormSubmit Configuration Hidden Fields -->
+        <input type="hidden" name="_subject" value="New UK Boiler Audit Request: Grow With Tahmid">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_cc" value="tahmidantor123@gmail.com">
         <input type="hidden" name="form-name" value="boiler-audit">
         <input type="hidden" name="source_page" value="/industries/boiler-repair-google-ads">
-        <p class="hp" aria-hidden="true" style="display:none;"><label>Leave this empty <input name="company-url" tabindex="-1" autocomplete="off"></label></p>
+        <p class="hp" aria-hidden="true" style="display:none;"><label>Leave this empty <input name="_gotcha" tabindex="-1" autocomplete="off"></label></p>
 
         <div class="field-row">
           <div class="field">
