@@ -279,21 +279,24 @@ html[data-theme="light"] .math-highlight {
 }
 
 /* 4 CASE STUDIES GRID & DETAIL CARDS */
+/* Case Study Master Card - Dark/Light Theme & High-Contrast Typography */
 .cs-master-card {
   background: #0d1527;
   border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: 18px;
   overflow: hidden;
   margin-bottom: 40px;
-  box-shadow: 0 16px 40px -10px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 16px 40px -10px rgba(0, 0, 0, 0.5);
+  color: #e2e8f0 !important;
 }
 html[data-theme="light"] .cs-master-card {
   background: #ffffff;
   border-color: #e2e8f0;
   box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
+  color: #1e293b !important;
 }
 .cs-master-header {
-  padding: 24px 28px;
+  padding: 22px 28px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   display: flex;
   align-items: center;
@@ -316,7 +319,7 @@ html[data-theme="light"] .cs-master-header {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  padding: 4px 10px;
+  padding: 5px 12px;
   border-radius: 6px;
   font-size: 0.78rem;
   font-weight: 700;
@@ -345,13 +348,19 @@ html[data-theme="light"] .cs-tag-territory {
   display: grid;
   grid-template-columns: 1.15fr 0.85fr;
   gap: 28px;
-  align-items: center;
+  align-items: start;
 }
-@media (max-width: 960px) {
-  .cs-master-body {
-    grid-template-columns: 1fr;
-  }
+.cs-master-title {
+  font-size: 1.35rem;
+  line-height: 1.4;
+  margin-bottom: 14px;
+  color: #ffffff !important;
+  font-weight: 800;
 }
+html[data-theme="light"] .cs-master-title {
+  color: #0f172a !important;
+}
+
 .cs-dash-img-wrap {
   border-radius: 12px;
   overflow: hidden;
@@ -393,7 +402,7 @@ html[data-theme="light"] .cs-stat-mini {
 }
 .cs-stat-mini strong {
   display: block;
-  font-size: 1.3rem;
+  font-size: 1.35rem;
   font-weight: 800;
   color: #00d084;
 }
@@ -403,8 +412,101 @@ html[data-theme="light"] .cs-stat-mini strong {
 .cs-stat-mini span {
   font-size: 0.74rem;
   text-transform: uppercase;
-  color: var(--ink-soft);
+  color: #94a3b8 !important;
   font-weight: 600;
+}
+html[data-theme="light"] .cs-stat-mini span {
+  color: #64748b !important;
+}
+
+/* Narrative Breakdown High-Contrast Cards */
+.cs-narrative-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 18px;
+}
+.cs-narrative-box {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  border-radius: 10px;
+  padding: 14px 16px;
+  font-size: 0.92rem;
+  line-height: 1.6;
+  color: #cbd5e1 !important; /* Crystal clear high-contrast slate-white */
+}
+html[data-theme="light"] .cs-narrative-box {
+  background: #f8fafc;
+  border-color: #e2e8f0;
+  color: #334155 !important;
+}
+html[data-theme="light"] .cs-narrative-box p {
+  color: #334155 !important;
+}
+.cs-narrative-box strong {
+  color: #ffffff;
+}
+html[data-theme="light"] .cs-narrative-box strong {
+  color: #0f172a;
+}
+.cs-label {
+  display: block;
+  font-weight: 800;
+  font-size: 0.82rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+.cs-label-red { color: #fb7185 !important; }
+.cs-label-yellow { color: #fbbf24 !important; }
+.cs-label-blue { color: #38bdf8 !important; }
+.cs-label-green { color: #00d084 !important; }
+
+/* Responsive Mobile Layout */
+@media (max-width: 960px) {
+  .cs-master-body {
+    grid-template-columns: 1fr !important;
+    gap: 22px;
+    padding: 20px;
+  }
+  .cs-dash-img-wrap {
+    order: -1; /* Display live verified screenshot FIRST on mobile devices */
+    margin-bottom: 12px;
+  }
+}
+@media (max-width: 600px) {
+  .cs-master-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 16px 20px;
+  }
+  .cs-stat-row {
+    grid-template-columns: 1fr !important;
+    gap: 8px;
+  }
+  .cs-stat-mini {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 14px;
+    text-align: left;
+  }
+  .cs-stat-mini strong {
+    font-size: 1.15rem;
+    order: 2;
+  }
+  .cs-stat-mini span {
+    font-size: 0.78rem;
+    order: 1;
+  }
+  .cs-master-title {
+    font-size: 1.18rem !important;
+  }
+  .cs-narrative-box {
+    padding: 12px 14px;
+    font-size: 0.88rem;
+  }
 }
 
 /* Postcode Territory Box */
@@ -669,7 +771,7 @@ html[data-theme="light"] .territory-box {
 
       <div class="cs-master-body">
         <div>
-          <h3 style="font-size: 1.35rem; margin-bottom: 12px; color: var(--ink);">From Bleeding Budget on Shared Inquiries to 381 Direct Phone Calls at &euro;17.27 CPL</h3>
+          <h3 class="cs-master-title">From Bleeding Budget on Shared Inquiries to 381 Direct Phone Calls at &euro;17.27 CPL</h3>
           
           <div class="cs-stat-row">
             <div class="cs-stat-mini">
@@ -686,22 +788,25 @@ html[data-theme="light"] .territory-box {
             </div>
           </div>
 
-          <div style="font-size: 0.93rem; line-height: 1.6; display: flex; flex-direction: column; gap: 12px;">
-            <div>
-              <strong style="color: #fb7185;">1. Initial Business Situation:</strong> The contractor was running an unmanaged Google campaign that generated clicks across all of Ireland. Phone calls were sporadic, and their 4 Gas Safe engineers frequently sat idle between jobs while pay-per-lead directories charged them monthly for cold inquiries.
+          <div class="cs-narrative-list">
+            <div class="cs-narrative-box">
+              <span class="cs-label cs-label-red">1. Initial Business Situation:</span>
+              <p style="margin: 0; line-height: 1.65; color: #cbd5e1;">The contractor was running an unmanaged Google campaign that generated clicks across all of Ireland. Phone calls were sporadic, and their 4 Gas Safe engineers frequently sat idle between jobs while pay-per-lead directories charged them monthly for cold inquiries.</p>
             </div>
-            <div>
-              <strong style="color: #fbbf24;">2. Core Bottlenecks &amp; Challenges:</strong> Over 45% of budget was burning on broad terms like <em>"boiler parts screwfix"</em>, <em>"council grant heating"</em>, and homeowners calling from towns 50km outside their service radius.
+            <div class="cs-narrative-box">
+              <span class="cs-label cs-label-yellow">2. Core Bottlenecks &amp; Challenges:</span>
+              <p style="margin: 0; line-height: 1.65; color: #cbd5e1;">Over 45% of budget was burning on broad terms like <em>"boiler parts screwfix"</em>, <em>"council grant heating"</em>, and homeowners calling from towns 50km outside their service radius.</p>
             </div>
-            <div>
-              <strong style="color: #38bdf8;">3. Tahmid's Strategy &amp; Engineering:</strong> Built a strict Call-Only Google Ads silo locked strictly to mobile users searching with commercial intent (e.g. <em>"emergency boiler repair dublin"</em>, <em>"combi boiler replacement cost"</em>). Uploaded a 500+ negative keyword vault, disabled desktop traffic, and scheduled bids strictly during office dispatch hours.
+            <div class="cs-narrative-box">
+              <span class="cs-label cs-label-blue">3. Tahmid's Strategy &amp; Engineering:</span>
+              <p style="margin: 0; line-height: 1.65; color: #cbd5e1;">Built a strict Call-Only Google Ads silo locked strictly to mobile users searching with commercial intent (e.g. <em>"emergency boiler repair dublin"</em>, <em>"combi boiler replacement cost"</em>). Uploaded a 500+ negative keyword vault, disabled desktop traffic, and scheduled bids strictly during office dispatch hours.</p>
             </div>
-            <div>
-              <strong style="color: #00d084;">4. Measurable Commercial Outcome:</strong> Delivered <strong>381 verified phone calls</strong> on a total spend of &euro;6.58K at an ultra-lean <strong>&euro;17.27 per qualified lead</strong> with a 16.79% conversion rate. The firm filled dispatch schedules 3 weeks in advance and ceased all directory advertising.
+            <div class="cs-narrative-box">
+              <span class="cs-label cs-label-green">4. Measurable Commercial Outcome:</span>
+              <p style="margin: 0; line-height: 1.65; color: #cbd5e1;">Delivered <strong>381 verified phone calls</strong> on a total spend of &euro;6.58K at an ultra-lean <strong>&euro;17.27 per qualified lead</strong> with a 16.79% conversion rate. The firm filled dispatch schedules 3 weeks in advance and ceased all directory advertising.</p>
             </div>
           </div>
         </div>
-
         <div class="cs-dash-img-wrap">
           <img src="/images/case-study-boilers-ireland-381-calls.png" alt="Google Ads Dashboard showing Call campaign for Boilers Ireland with 381 conversions at 17.27 euro cost per conversion" class="cs-dash-img" loading="lazy">
           <div style="padding: 10px 14px; font-size: 0.78rem; color: #94a3b8; border-top: 1px solid rgba(255, 255, 255, 0.08); background: rgba(0,0,0,0.3);">
@@ -724,7 +829,7 @@ html[data-theme="light"] .territory-box {
 
       <div class="cs-master-body">
         <div>
-          <h3 style="font-size: 1.35rem; margin-bottom: 12px; color: var(--ink);">Scaling Emergency Breakdown &amp; Combi Installs to 374 Qualified Conversions</h3>
+          <h3 class="cs-master-title">Scaling Emergency Breakdown &amp; Combi Installs to 374 Qualified Conversions</h3>
           
           <div class="cs-stat-row">
             <div class="cs-stat-mini">
@@ -741,22 +846,25 @@ html[data-theme="light"] .territory-box {
             </div>
           </div>
 
-          <div style="font-size: 0.93rem; line-height: 1.6; display: flex; flex-direction: column; gap: 12px;">
-            <div>
-              <strong style="color: #fb7185;">1. Initial Business Situation:</strong> A fast-growing heating specialist needed a predictable stream of urgent boiler breakdown calls to keep 5 van crews deployed year-round, but previous digital agencies delivered tire-kickers and low-value radiator bleeds.
+          <div class="cs-narrative-list">
+            <div class="cs-narrative-box">
+              <span class="cs-label cs-label-red">1. Initial Business Situation:</span>
+              <p style="margin: 0; line-height: 1.65; color: #cbd5e1;">A fast-growing heating specialist needed a predictable stream of urgent boiler breakdown calls to keep 5 van crews deployed year-round, but previous digital agencies delivered tire-kickers and low-value radiator bleeds.</p>
             </div>
-            <div>
-              <strong style="color: #fbbf24;">2. Core Bottlenecks &amp; Challenges:</strong> High cost-per-click (&euro;18&ndash;&euro;24) in metro areas meant minor search term waste wiped out daily ad budgets by 11:00 AM before high-margin afternoon combi replacement inquiries arrived.
+            <div class="cs-narrative-box">
+              <span class="cs-label cs-label-yellow">2. Core Bottlenecks &amp; Challenges:</span>
+              <p style="margin: 0; line-height: 1.65; color: #cbd5e1;">High cost-per-click (&euro;18&ndash;&euro;24) in metro areas meant minor search term waste wiped out daily ad budgets by 11:00 AM before high-margin afternoon combi replacement inquiries arrived.</p>
             </div>
-            <div>
-              <strong style="color: #38bdf8;">3. Tahmid's Strategy &amp; Engineering:</strong> Restructured the account into segmented intent tiers: Tier 1 (Emergency Same-Day Breakdown) and Tier 2 (Next-Day Combi Swaps). Integrated dynamic call tracking and dayparting to capture distressed homeowners with zero heating or hot water.
+            <div class="cs-narrative-box">
+              <span class="cs-label cs-label-blue">3. Tahmid's Strategy &amp; Engineering:</span>
+              <p style="margin: 0; line-height: 1.65; color: #cbd5e1;">Restructured the account into segmented intent tiers: Tier 1 (Emergency Same-Day Breakdown) and Tier 2 (Next-Day Combi Swaps). Integrated dynamic call tracking and dayparting to capture distressed homeowners with zero heating or hot water.</p>
             </div>
-            <div>
-              <strong style="color: #00d084;">4. Measurable Commercial Outcome:</strong> Generated <strong>374 verified conversions</strong> at <strong>&euro;31.36 per conversion</strong> (total spend &euro;11.7K). With full combi replacements billing at &euro;2,800&ndash;&euro;3,500, the firm realized over &euro;320K in top-line pipeline revenue.
+            <div class="cs-narrative-box">
+              <span class="cs-label cs-label-green">4. Measurable Commercial Outcome:</span>
+              <p style="margin: 0; line-height: 1.65; color: #cbd5e1;">Generated <strong>374 verified conversions</strong> at <strong>&euro;31.36 per conversion</strong> (total spend &euro;11.7K). With full combi replacements billing at &euro;2,800&ndash;&euro;3,500, the firm realized over &euro;320K in top-line pipeline revenue.</p>
             </div>
           </div>
         </div>
-
         <div class="cs-dash-img-wrap">
           <img src="/images/case-study-emergency-heating-374-calls.png" alt="Google Ads Performance Summary showing 374 conversions at 31.36 euro cost per conversion and 15.40 percent conversion rate" class="cs-dash-img" loading="lazy">
           <div style="padding: 10px 14px; font-size: 0.78rem; color: #94a3b8; border-top: 1px solid rgba(255, 255, 255, 0.08); background: rgba(0,0,0,0.3);">
@@ -779,7 +887,7 @@ html[data-theme="light"] .territory-box {
 
       <div class="cs-master-body">
         <div>
-          <h3 style="font-size: 1.35rem; margin-bottom: 12px; color: var(--ink);">&pound;6,000+ Ticket Heat Pump Installation: 31 Qualified Enquiries on &euro;674 Spend</h3>
+          <h3 class="cs-master-title">&pound;6,000+ Ticket Heat Pump Installation: 31 Qualified Enquiries on &euro;674 Spend</h3>
           
           <div class="cs-stat-row">
             <div class="cs-stat-mini">
@@ -796,22 +904,25 @@ html[data-theme="light"] .territory-box {
             </div>
           </div>
 
-          <div style="font-size: 0.93rem; line-height: 1.6; display: flex; flex-direction: column; gap: 12px;">
-            <div>
-              <strong style="color: #fb7185;">1. Initial Business Situation:</strong> Heating company wanted to capture higher-margin system conversions and air-source heat pump projects (&euro;6,000&ndash;&euro;12,000 job values) but previous generic Google campaigns generated low click-through rates and tire-kickers.
+          <div class="cs-narrative-list">
+            <div class="cs-narrative-box">
+              <span class="cs-label cs-label-red">1. Initial Business Situation:</span>
+              <p style="margin: 0; line-height: 1.65; color: #cbd5e1;">Heating company wanted to capture higher-margin system conversions and air-source heat pump projects (&euro;6,000&ndash;&euro;12,000 job values) but previous generic Google campaigns generated low click-through rates and tire-kickers.</p>
             </div>
-            <div>
-              <strong style="color: #fbbf24;">2. Core Bottlenecks &amp; Challenges:</strong> General keywords attracted students researching eco-policy, suppliers comparing wholesale units, and homeowners seeking 100% free grants without qualifying properties.
+            <div class="cs-narrative-box">
+              <span class="cs-label cs-label-yellow">2. Core Bottlenecks &amp; Challenges:</span>
+              <p style="margin: 0; line-height: 1.65; color: #cbd5e1;">General keywords attracted students researching eco-policy, suppliers comparing wholesale units, and homeowners seeking 100% free grants without qualifying properties.</p>
             </div>
-            <div>
-              <strong style="color: #38bdf8;">3. Tahmid's Strategy &amp; Engineering:</strong> Designed an ad copy framework highlighting grant eligibility qualification (SEAI / Boiler Upgrade Scheme), home suitability requirements, and accredited installer trust badges. Laser-focused bids on high-intent terms like <em>"heat pump installer near me"</em> and <em>"replace combi with heat pump"</em>.
+            <div class="cs-narrative-box">
+              <span class="cs-label cs-label-blue">3. Tahmid's Strategy &amp; Engineering:</span>
+              <p style="margin: 0; line-height: 1.65; color: #cbd5e1;">Designed an ad copy framework highlighting grant eligibility qualification (SEAI / Boiler Upgrade Scheme), home suitability requirements, and accredited installer trust badges. Laser-focused bids on high-intent terms like <em>"heat pump installer near me"</em> and <em>"replace combi with heat pump"</em>.</p>
             </div>
-            <div>
-              <strong style="color: #00d084;">4. Measurable Commercial Outcome:</strong> Achieved a <strong>5.20% search CTR</strong>, generating <strong>31 high-ticket installation inquiries</strong> from just &euro;674.66 total spend (&euro;21.76 CPL), closing 9 full installations representing over &euro;65,000 in gross revenue.
+            <div class="cs-narrative-box">
+              <span class="cs-label cs-label-green">4. Measurable Commercial Outcome:</span>
+              <p style="margin: 0; line-height: 1.65; color: #cbd5e1;">Achieved a <strong>5.20% search CTR</strong>, generating <strong>31 high-ticket installation inquiries</strong> from just &euro;674.66 total spend (&euro;21.76 CPL), closing 9 full installations representing over &euro;65,000 in gross revenue.</p>
             </div>
           </div>
         </div>
-
         <div class="cs-dash-img-wrap">
           <img src="/images/case-study-heat-pump-31-installs.png" alt="Google Ads Ad Group data for Heat Pump Installation showing 3884 impressions, 31 conversions and 5.20 percent CTR" class="cs-dash-img" loading="lazy">
           <div style="padding: 10px 14px; font-size: 0.78rem; color: #94a3b8; border-top: 1px solid rgba(255, 255, 255, 0.08); background: rgba(0,0,0,0.3);">
@@ -834,7 +945,7 @@ html[data-theme="light"] .territory-box {
 
       <div class="cs-master-body">
         <div>
-          <h3 style="font-size: 1.35rem; margin-bottom: 12px; color: var(--ink);">UK Gas Safe Heating Firm: 121 Qualified Conversions at &pound;25.13 CPL With Zero Checkatrade Reliance</h3>
+          <h3 class="cs-master-title">UK Gas Safe Heating Firm: 121 Qualified Conversions at &pound;25.13 CPL With Zero Checkatrade Reliance</h3>
           
           <div class="cs-stat-row">
             <div class="cs-stat-mini">
@@ -851,22 +962,25 @@ html[data-theme="light"] .territory-box {
             </div>
           </div>
 
-          <div style="font-size: 0.93rem; line-height: 1.6; display: flex; flex-direction: column; gap: 12px;">
-            <div>
-              <strong style="color: #fb7185;">1. Initial Business Situation:</strong> Independent contractor with 3 vans running across M and SK postcodes. Trapped in Checkatrade's shared-lead race to the bottom, bidding against 4 other local plumbers who undercut prices on basic diagnostic calls.
+          <div class="cs-narrative-list">
+            <div class="cs-narrative-box">
+              <span class="cs-label cs-label-red">1. Initial Business Situation:</span>
+              <p style="margin: 0; line-height: 1.65; color: #cbd5e1;">Independent contractor with 3 vans running across M and SK postcodes. Trapped in Checkatrade's shared-lead race to the bottom, bidding against 4 other local plumbers who undercut prices on basic diagnostic calls.</p>
             </div>
-            <div>
-              <strong style="color: #fbbf24;">2. Core Bottlenecks &amp; Challenges:</strong> Previous agency setup targeted broad Manchester radius, triggering clicks from towns 25 miles away across the Pennines where sending a van incurred &pound;40 in fuel and 2 hours of travel time.
+            <div class="cs-narrative-box">
+              <span class="cs-label cs-label-yellow">2. Core Bottlenecks &amp; Challenges:</span>
+              <p style="margin: 0; line-height: 1.65; color: #cbd5e1;">Previous agency setup targeted broad Manchester radius, triggering clicks from towns 25 miles away across the Pennines where sending a van incurred &pound;40 in fuel and 2 hours of travel time.</p>
             </div>
-            <div>
-              <strong style="color: #38bdf8;">3. Tahmid's Strategy &amp; Engineering:</strong> Enforced strict 'Presence-Only' postcode radius (M1&ndash;M34, SK1&ndash;SK12). Implemented the 500+ negative keyword vault blocking DIY error codes (F22, F75, E119), utility 0800 helplines, and social housing grants. Added mobile click-to-call with CallRail whisper audio.
+            <div class="cs-narrative-box">
+              <span class="cs-label cs-label-blue">3. Tahmid's Strategy &amp; Engineering:</span>
+              <p style="margin: 0; line-height: 1.65; color: #cbd5e1;">Enforced strict 'Presence-Only' postcode radius (M1&ndash;M34, SK1&ndash;SK12). Implemented the 500+ negative keyword vault blocking DIY error codes (F22, F75, E119), utility 0800 helplines, and social housing grants. Added mobile click-to-call with CallRail whisper audio.</p>
             </div>
-            <div>
-              <strong style="color: #00d084;">4. Measurable Commercial Outcome:</strong> Produced <strong>121 verified conversions at &pound;25.13 CPL</strong> across 2,170 screened clicks. Resulted in 24 full boiler replacements and 41 paid diagnostics, allowing the contractor to hire a 4th Gas Safe installer and cancel Checkatrade permanently.
+            <div class="cs-narrative-box">
+              <span class="cs-label cs-label-green">4. Measurable Commercial Outcome:</span>
+              <p style="margin: 0; line-height: 1.65; color: #cbd5e1;">Produced <strong>121 verified conversions at &pound;25.13 CPL</strong> across 2,170 screened clicks. Resulted in 24 full boiler replacements and 41 paid diagnostics, allowing the contractor to hire a 4th Gas Safe installer and cancel Checkatrade permanently.</p>
             </div>
           </div>
         </div>
-
         <div class="cs-dash-img-wrap">
           <img src="/images/case-study-uk-gas-safe-121-leads.png" alt="Google Ads Scorecard showing 2.17K Clicks, 8.13K Impressions, 121 Conversions and 25.13 pounds Cost per conversion" class="cs-dash-img" loading="lazy">
           <div style="padding: 10px 14px; font-size: 0.78rem; color: #94a3b8; border-top: 1px solid rgba(255, 255, 255, 0.08); background: rgba(0,0,0,0.3);">
