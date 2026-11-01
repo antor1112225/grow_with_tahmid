@@ -780,6 +780,210 @@ html[data-theme="light"] .field label {
     grid-template-columns: 1fr;
   }
 }
+
+/* ==========================================================================
+   PRISTINE DUAL-THEME ENGINE (WCAG AAA CONTRAST IN LIGHT & DARK MODES)
+   ========================================================================== */
+
+/* Dashboard Image Container & Caption */
+.cs-dash-img-wrap {
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: #060d1a;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.45);
+  display: flex;
+  flex-direction: column;
+}
+.cs-dash-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.cs-dash-caption {
+  padding: 10px 16px;
+  font-size: 0.8rem;
+  line-height: 1.45;
+  color: #94a3b8;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  background: #081222;
+  font-weight: 500;
+}
+.cs-dash-caption em {
+  color: #e2e8f0;
+  font-style: normal;
+  font-weight: 600;
+}
+
+/* Light Theme Overrides for Dashboard */
+html[data-theme="light"] .cs-dash-img-wrap {
+  border: 1px solid #cbd5e1 !important;
+  background: #ffffff !important;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06) !important;
+}
+html[data-theme="light"] .cs-dash-caption {
+  background: #f1f5f9 !important;
+  border-top: 1px solid #e2e8f0 !important;
+  color: #475569 !important;
+}
+html[data-theme="light"] .cs-dash-caption em {
+  color: #0f172a !important;
+}
+
+/* Service Type in Header */
+.cs-service-type {
+  font-size: 0.85rem;
+  color: #94a3b8;
+  font-weight: 600;
+}
+html[data-theme="light"] .cs-service-type {
+  color: #475569 !important;
+}
+
+/* Narrative Text */
+.cs-narrative-text {
+  margin: 0;
+  line-height: 1.65;
+  color: #cbd5e1;
+}
+html[data-theme="light"] .cs-narrative-text {
+  color: #1e293b !important;
+}
+html[data-theme="light"] .cs-narrative-text strong {
+  color: #0f172a !important;
+}
+
+/* Stat Box Colors (High Contrast in both themes) */
+.cs-stat-mini strong {
+  display: block;
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: #00d084;
+}
+.cs-stat-mini .stat-cyan {
+  color: #38bdf8;
+}
+.cs-stat-mini .stat-yellow {
+  color: #fbbf24;
+}
+
+/* Light Theme Adjustments for Stat Colors (Zero eye strain) */
+html[data-theme="light"] .cs-stat-mini strong {
+  color: #16a34a !important;
+}
+html[data-theme="light"] .cs-stat-mini .stat-cyan {
+  color: #0284c7 !important;
+}
+html[data-theme="light"] .cs-stat-mini .stat-yellow {
+  color: #b45309 !important; /* Rich amber with AAA contrast */
+}
+
+/* Light Theme Labels for Narrative */
+html[data-theme="light"] .cs-label-red {
+  color: #dc2626 !important;
+}
+html[data-theme="light"] .cs-label-yellow {
+  color: #b45309 !important;
+}
+html[data-theme="light"] .cs-label-blue {
+  color: #0284c7 !important;
+}
+html[data-theme="light"] .cs-label-green {
+  color: #16a34a !important;
+}
+
+/* Light Theme Testimonials */
+html[data-theme="light"] #testimonials {
+  background: #ffffff !important;
+}
+html[data-theme="light"] .testimonial-card {
+  background: #f8fafc !important;
+  border: 1px solid #e2e8f0 !important;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.05) !important;
+}
+html[data-theme="light"] .testimonial-quote {
+  color: #1e293b !important;
+}
+html[data-theme="light"] .testi-metrics-grid {
+  background: #ffffff !important;
+  border: 1px solid #e2e8f0 !important;
+}
+html[data-theme="light"] .testi-metric-box {
+  border-right-color: #e2e8f0 !important;
+}
+html[data-theme="light"] .testi-metric-val {
+  color: #0f172a !important;
+}
+html[data-theme="light"] .testi-metric-val.is-cyan {
+  color: #0284c7 !important;
+}
+html[data-theme="light"] .testi-metric-val.is-green {
+  color: #16a34a !important;
+}
+html[data-theme="light"] .testimonial-author {
+  border-top-color: #e2e8f0 !important;
+}
+html[data-theme="light"] .testimonial-name {
+  color: #0f172a !important;
+}
+html[data-theme="light"] .testimonial-role,
+html[data-theme="light"] .testimonial-company {
+  color: #475569 !important;
+}
+html[data-theme="light"] .testimonial-badge {
+  background: rgba(22, 163, 74, 0.1) !important;
+  color: #16a34a !important;
+  border-color: rgba(22, 163, 74, 0.25) !important;
+}
+
+/* Light Theme Comparison (Bleed vs Protect) */
+html[data-theme="light"] .comparison-col.col-bleeding {
+  background: #fff5f5 !important;
+  border: 1.5px solid #fecaca !important;
+}
+html[data-theme="light"] .comparison-col.col-bleeding h3 {
+  color: #991b1b !important;
+}
+html[data-theme="light"] .comparison-col.col-bleeding p,
+html[data-theme="light"] .comparison-col.col-bleeding .comp-item {
+  color: #450a0a !important;
+}
+html[data-theme="light"] .comparison-col.col-protected {
+  background: #f0fdf4 !important;
+  border: 2px solid #86efac !important;
+  box-shadow: 0 10px 30px rgba(22, 163, 74, 0.08) !important;
+}
+html[data-theme="light"] .comparison-col.col-protected h3 {
+  color: #14532d !important;
+}
+html[data-theme="light"] .comparison-col.col-protected p,
+html[data-theme="light"] .comparison-col.col-protected .comp-item {
+  color: #14532d !important;
+}
+
+/* Light Theme Audit Section */
+html[data-theme="light"] #audit {
+  background: #f8fafc !important;
+}
+html[data-theme="light"] #boiler-audit-form {
+  background: #ffffff !important;
+  border: 1px solid #e2e8f0 !important;
+  box-shadow: 0 16px 40px rgba(15, 23, 42, 0.06) !important;
+}
+html[data-theme="light"] #boiler-audit-form .field label {
+  color: #1e293b !important;
+}
+html[data-theme="light"] #boiler-audit-form input,
+html[data-theme="light"] #boiler-audit-form select,
+html[data-theme="light"] #boiler-audit-form textarea {
+  background: #ffffff !important;
+  border: 1.5px solid #cbd5e1 !important;
+  color: #0f172a !important;
+}
+html[data-theme="light"] #boiler-audit-form input::placeholder,
+html[data-theme="light"] #boiler-audit-form textarea::placeholder {
+  color: #94a3b8 !important;
+}
 </style>
 
 <script>window.dataLayer=window.dataLayer||[];</script>
@@ -1074,7 +1278,7 @@ html[data-theme="light"] .field label {
         <div class="cs-badge-group">
           <span class="cs-tag cs-tag-verified">&bull; Case Study 01</span>
           <span class="cs-tag cs-tag-territory">Call-Only Campaign &bull; Dublin &amp; Surrounds</span>
-          <span style="font-size: 0.85rem; color: #94a3b8; font-weight: 600;">ICP: 4-Van Commercial &amp; Domestic Heating Firm</span>
+          <span class="cs-service-type">ICP: 4-Van Commercial &amp; Domestic Heating Firm</span>
         </div>
         <span style="font-size: 0.9rem; font-weight: 800; color: #00d084;">381.00 Total Inbound Conversions</span>
       </div>
@@ -1089,11 +1293,11 @@ html[data-theme="light"] .field label {
               <span>Verified Calls</span>
             </div>
             <div class="cs-stat-mini">
-              <strong style="color: #38bdf8;">&euro;17.27</strong>
+              <strong class="stat-cyan">&euro;17.27</strong>
               <span>Cost Per Call</span>
             </div>
             <div class="cs-stat-mini">
-              <strong style="color: #fbbf24;">16.79%</strong>
+              <strong class="stat-yellow">16.79%</strong>
               <span>Conversion Rate</span>
             </div>
           </div>
@@ -1101,25 +1305,25 @@ html[data-theme="light"] .field label {
           <div class="cs-narrative-list">
             <div class="cs-narrative-box">
               <span class="cs-label cs-label-red">1. Initial Business Situation:</span>
-              <p style="margin: 0; line-height: 1.65; color: #cbd5e1;">The contractor was running an unmanaged Google campaign that generated clicks across all of Ireland. Phone calls were sporadic, and their 4 Gas Safe engineers frequently sat idle between jobs while pay-per-lead directories charged them monthly for cold inquiries.</p>
+              <p class="cs-narrative-text">The contractor was running an unmanaged Google campaign that generated clicks across all of Ireland. Phone calls were sporadic, and their 4 Gas Safe engineers frequently sat idle between jobs while pay-per-lead directories charged them monthly for cold inquiries.</p>
             </div>
             <div class="cs-narrative-box">
               <span class="cs-label cs-label-yellow">2. Core Bottlenecks &amp; Challenges:</span>
-              <p style="margin: 0; line-height: 1.65; color: #cbd5e1;">Over 45% of budget was burning on broad terms like <em>"boiler parts screwfix"</em>, <em>"council grant heating"</em>, and homeowners calling from towns 50km outside their service radius.</p>
+              <p class="cs-narrative-text">Over 45% of budget was burning on broad terms like <em>"boiler parts screwfix"</em>, <em>"council grant heating"</em>, and homeowners calling from towns 50km outside their service radius.</p>
             </div>
             <div class="cs-narrative-box">
               <span class="cs-label cs-label-blue">3. Tahmid's Strategy &amp; Engineering:</span>
-              <p style="margin: 0; line-height: 1.65; color: #cbd5e1;">Built a strict Call-Only Google Ads silo locked strictly to mobile users searching with commercial intent (e.g. <em>"emergency boiler repair dublin"</em>, <em>"combi boiler replacement cost"</em>). Uploaded a 500+ negative keyword vault, disabled desktop traffic, and scheduled bids strictly during office dispatch hours.</p>
+              <p class="cs-narrative-text">Built a strict Call-Only Google Ads silo locked strictly to mobile users searching with commercial intent (e.g. <em>"emergency boiler repair dublin"</em>, <em>"combi boiler replacement cost"</em>). Uploaded a 500+ negative keyword vault, disabled desktop traffic, and scheduled bids strictly during office dispatch hours.</p>
             </div>
             <div class="cs-narrative-box">
               <span class="cs-label cs-label-green">4. Measurable Commercial Outcome:</span>
-              <p style="margin: 0; line-height: 1.65; color: #cbd5e1;">Delivered <strong>381 verified phone calls</strong> on a total spend of &euro;6.58K at an ultra-lean <strong>&euro;17.27 per qualified lead</strong> with a 16.79% conversion rate. The firm filled dispatch schedules 3 weeks in advance and ceased all directory advertising.</p>
+              <p class="cs-narrative-text">Delivered <strong>381 verified phone calls</strong> on a total spend of &euro;6.58K at an ultra-lean <strong>&euro;17.27 per qualified lead</strong> with a 16.79% conversion rate. The firm filled dispatch schedules 3 weeks in advance and ceased all directory advertising.</p>
             </div>
           </div>
         </div>
         <div class="cs-dash-img-wrap">
           <img src="/images/case-study-boilers-ireland-381-calls.png" alt="Google Ads Dashboard showing Call campaign for Boilers Ireland with 381 conversions at 17.27 euro cost per conversion" class="cs-dash-img" loading="lazy">
-          <div style="padding: 10px 14px; font-size: 0.78rem; color: #94a3b8; border-top: 1px solid rgba(255, 255, 255, 0.08); background: rgba(0,0,0,0.3);">
+          <div class="cs-dash-caption">
             &bull; Live Google Ads Dashboard Verification &mdash; Campaign: <em>Call campaign for Boilers Ireland</em>
           </div>
         </div>
@@ -1132,7 +1336,7 @@ html[data-theme="light"] .field label {
         <div class="cs-badge-group">
           <span class="cs-tag cs-tag-verified">&bull; Case Study 02</span>
           <span class="cs-tag cs-tag-territory">High-Urgency Search Silo &bull; Metro Catchment</span>
-          <span style="font-size: 0.85rem; color: #94a3b8; font-weight: 600;">ICP: 5-Van Gas Safe Heating &amp; Plumbing Specialist</span>
+          <span class="cs-service-type">ICP: 5-Van Gas Safe Heating &amp; Plumbing Specialist</span>
         </div>
         <span style="font-size: 0.9rem; font-weight: 800; color: #00d084;">374.00 Booked Jobs at &euro;31.36 CPL</span>
       </div>
@@ -1147,11 +1351,11 @@ html[data-theme="light"] .field label {
               <span>Conversions</span>
             </div>
             <div class="cs-stat-mini">
-              <strong style="color: #38bdf8;">&euro;31.36</strong>
+              <strong class="stat-cyan">&euro;31.36</strong>
               <span>Cost Per Conv.</span>
             </div>
             <div class="cs-stat-mini">
-              <strong style="color: #fbbf24;">15.40%</strong>
+              <strong class="stat-yellow">15.40%</strong>
               <span>Conversion Rate</span>
             </div>
           </div>
@@ -1159,25 +1363,25 @@ html[data-theme="light"] .field label {
           <div class="cs-narrative-list">
             <div class="cs-narrative-box">
               <span class="cs-label cs-label-red">1. Initial Business Situation:</span>
-              <p style="margin: 0; line-height: 1.65; color: #cbd5e1;">A fast-growing heating specialist needed a predictable stream of urgent boiler breakdown calls to keep 5 van crews deployed year-round, but previous digital agencies delivered tire-kickers and low-value radiator bleeds.</p>
+              <p class="cs-narrative-text">A fast-growing heating specialist needed a predictable stream of urgent boiler breakdown calls to keep 5 van crews deployed year-round, but previous digital agencies delivered tire-kickers and low-value radiator bleeds.</p>
             </div>
             <div class="cs-narrative-box">
               <span class="cs-label cs-label-yellow">2. Core Bottlenecks &amp; Challenges:</span>
-              <p style="margin: 0; line-height: 1.65; color: #cbd5e1;">High cost-per-click (&euro;18&ndash;&euro;24) in metro areas meant minor search term waste wiped out daily ad budgets by 11:00 AM before high-margin afternoon combi replacement inquiries arrived.</p>
+              <p class="cs-narrative-text">High cost-per-click (&euro;18&ndash;&euro;24) in metro areas meant minor search term waste wiped out daily ad budgets by 11:00 AM before high-margin afternoon combi replacement inquiries arrived.</p>
             </div>
             <div class="cs-narrative-box">
               <span class="cs-label cs-label-blue">3. Tahmid's Strategy &amp; Engineering:</span>
-              <p style="margin: 0; line-height: 1.65; color: #cbd5e1;">Restructured the account into segmented intent tiers: Tier 1 (Emergency Same-Day Breakdown) and Tier 2 (Next-Day Combi Swaps). Integrated dynamic call tracking and dayparting to capture distressed homeowners with zero heating or hot water.</p>
+              <p class="cs-narrative-text">Restructured the account into segmented intent tiers: Tier 1 (Emergency Same-Day Breakdown) and Tier 2 (Next-Day Combi Swaps). Integrated dynamic call tracking and dayparting to capture distressed homeowners with zero heating or hot water.</p>
             </div>
             <div class="cs-narrative-box">
               <span class="cs-label cs-label-green">4. Measurable Commercial Outcome:</span>
-              <p style="margin: 0; line-height: 1.65; color: #cbd5e1;">Generated <strong>374 verified conversions</strong> at <strong>&euro;31.36 per conversion</strong> (total spend &euro;11.7K). With full combi replacements billing at &euro;2,800&ndash;&euro;3,500, the firm realized over &euro;320K in top-line pipeline revenue.</p>
+              <p class="cs-narrative-text">Generated <strong>374 verified conversions</strong> at <strong>&euro;31.36 per conversion</strong> (total spend &euro;11.7K). With full combi replacements billing at &euro;2,800&ndash;&euro;3,500, the firm realized over &euro;320K in top-line pipeline revenue.</p>
             </div>
           </div>
         </div>
         <div class="cs-dash-img-wrap">
           <img src="/images/case-study-emergency-heating-374-calls.png" alt="Google Ads Performance Summary showing 374 conversions at 31.36 euro cost per conversion and 15.40 percent conversion rate" class="cs-dash-img" loading="lazy">
-          <div style="padding: 10px 14px; font-size: 0.78rem; color: #94a3b8; border-top: 1px solid rgba(255, 255, 255, 0.08); background: rgba(0,0,0,0.3);">
+          <div class="cs-dash-caption">
             &bull; Live Google Ads Performance Summary &mdash; <em>374.00 Conversions at 15.40% Conversion Rate</em>
           </div>
         </div>
@@ -1190,7 +1394,7 @@ html[data-theme="light"] .field label {
         <div class="cs-badge-group">
           <span class="cs-tag cs-tag-verified">&bull; Case Study 03</span>
           <span class="cs-tag cs-tag-territory">Premium Install Silo &bull; Air-Source &amp; System Upgrades</span>
-          <span style="font-size: 0.85rem; color: #94a3b8; font-weight: 600;">ICP: Certified Renewable &amp; Advanced Boiler Contractor</span>
+          <span class="cs-service-type">ICP: Certified Renewable &amp; Advanced Boiler Contractor</span>
         </div>
         <span style="font-size: 0.9rem; font-weight: 800; color: #00d084;">31 High-Ticket Installations Booked</span>
       </div>
@@ -1205,11 +1409,11 @@ html[data-theme="light"] .field label {
               <span>Install Enquiries</span>
             </div>
             <div class="cs-stat-mini">
-              <strong style="color: #38bdf8;">&euro;21.76</strong>
+              <strong class="stat-cyan">&euro;21.76</strong>
               <span>Cost Per Lead</span>
             </div>
             <div class="cs-stat-mini">
-              <strong style="color: #fbbf24;">5.20%</strong>
+              <strong class="stat-yellow">5.20%</strong>
               <span>Search CTR</span>
             </div>
           </div>
@@ -1217,25 +1421,25 @@ html[data-theme="light"] .field label {
           <div class="cs-narrative-list">
             <div class="cs-narrative-box">
               <span class="cs-label cs-label-red">1. Initial Business Situation:</span>
-              <p style="margin: 0; line-height: 1.65; color: #cbd5e1;">Heating company wanted to capture higher-margin system conversions and air-source heat pump projects (&euro;6,000&ndash;&euro;12,000 job values) but previous generic Google campaigns generated low click-through rates and tire-kickers.</p>
+              <p class="cs-narrative-text">Heating company wanted to capture higher-margin system conversions and air-source heat pump projects (&euro;6,000&ndash;&euro;12,000 job values) but previous generic Google campaigns generated low click-through rates and tire-kickers.</p>
             </div>
             <div class="cs-narrative-box">
               <span class="cs-label cs-label-yellow">2. Core Bottlenecks &amp; Challenges:</span>
-              <p style="margin: 0; line-height: 1.65; color: #cbd5e1;">General keywords attracted students researching eco-policy, suppliers comparing wholesale units, and homeowners seeking 100% free grants without qualifying properties.</p>
+              <p class="cs-narrative-text">General keywords attracted students researching eco-policy, suppliers comparing wholesale units, and homeowners seeking 100% free grants without qualifying properties.</p>
             </div>
             <div class="cs-narrative-box">
               <span class="cs-label cs-label-blue">3. Tahmid's Strategy &amp; Engineering:</span>
-              <p style="margin: 0; line-height: 1.65; color: #cbd5e1;">Designed an ad copy framework highlighting grant eligibility qualification (SEAI / Boiler Upgrade Scheme), home suitability requirements, and accredited installer trust badges. Laser-focused bids on high-intent terms like <em>"heat pump installer near me"</em> and <em>"replace combi with heat pump"</em>.</p>
+              <p class="cs-narrative-text">Designed an ad copy framework highlighting grant eligibility qualification (SEAI / Boiler Upgrade Scheme), home suitability requirements, and accredited installer trust badges. Laser-focused bids on high-intent terms like <em>"heat pump installer near me"</em> and <em>"replace combi with heat pump"</em>.</p>
             </div>
             <div class="cs-narrative-box">
               <span class="cs-label cs-label-green">4. Measurable Commercial Outcome:</span>
-              <p style="margin: 0; line-height: 1.65; color: #cbd5e1;">Achieved a <strong>5.20% search CTR</strong>, generating <strong>31 high-ticket installation inquiries</strong> from just &euro;674.66 total spend (&euro;21.76 CPL), closing 9 full installations representing over &euro;65,000 in gross revenue.</p>
+              <p class="cs-narrative-text">Achieved a <strong>5.20% search CTR</strong>, generating <strong>31 high-ticket installation inquiries</strong> from just &euro;674.66 total spend (&euro;21.76 CPL), closing 9 full installations representing over &euro;65,000 in gross revenue.</p>
             </div>
           </div>
         </div>
         <div class="cs-dash-img-wrap">
           <img src="/images/case-study-heat-pump-31-installs.png" alt="Google Ads Ad Group data for Heat Pump Installation showing 3884 impressions, 31 conversions and 5.20 percent CTR" class="cs-dash-img" loading="lazy">
-          <div style="padding: 10px 14px; font-size: 0.78rem; color: #94a3b8; border-top: 1px solid rgba(255, 255, 255, 0.08); background: rgba(0,0,0,0.3);">
+          <div class="cs-dash-caption">
             &bull; Live Google Ads Ad Group Verification &mdash; <em>Heat Pump Installation (&euro;674.66 Spend, 31 Conversions)</em>
           </div>
         </div>
@@ -1248,7 +1452,7 @@ html[data-theme="light"] .field label {
         <div class="cs-badge-group">
           <span class="cs-tag cs-tag-verified">&bull; Case Study 04</span>
           <span class="cs-tag cs-tag-territory">UK Postcode Ring-Fence &bull; Greater Manchester &amp; Cheshire</span>
-          <span style="font-size: 0.85rem; color: #94a3b8; font-weight: 600;">ICP: 3-Van Independent Gas Safe Boiler Specialist</span>
+          <span class="cs-service-type">ICP: 3-Van Independent Gas Safe Boiler Specialist</span>
         </div>
         <span style="font-size: 0.9rem; font-weight: 800; color: #00d084;">121 Conversions at &pound;25.13 CPL</span>
       </div>
@@ -1263,11 +1467,11 @@ html[data-theme="light"] .field label {
               <span>Conversions</span>
             </div>
             <div class="cs-stat-mini">
-              <strong style="color: #38bdf8;">&pound;25.13</strong>
+              <strong class="stat-cyan">&pound;25.13</strong>
               <span>Cost Per Call</span>
             </div>
             <div class="cs-stat-mini">
-              <strong style="color: #fbbf24;">2,170</strong>
+              <strong class="stat-yellow">2,170</strong>
               <span>Clicks Screened</span>
             </div>
           </div>
@@ -1275,25 +1479,25 @@ html[data-theme="light"] .field label {
           <div class="cs-narrative-list">
             <div class="cs-narrative-box">
               <span class="cs-label cs-label-red">1. Initial Business Situation:</span>
-              <p style="margin: 0; line-height: 1.65; color: #cbd5e1;">Independent contractor with 3 vans running across M and SK postcodes. Trapped in Checkatrade's shared-lead race to the bottom, bidding against 4 other local plumbers who undercut prices on basic diagnostic calls.</p>
+              <p class="cs-narrative-text">Independent contractor with 3 vans running across M and SK postcodes. Trapped in Checkatrade's shared-lead race to the bottom, bidding against 4 other local plumbers who undercut prices on basic diagnostic calls.</p>
             </div>
             <div class="cs-narrative-box">
               <span class="cs-label cs-label-yellow">2. Core Bottlenecks &amp; Challenges:</span>
-              <p style="margin: 0; line-height: 1.65; color: #cbd5e1;">Previous agency setup targeted broad Manchester radius, triggering clicks from towns 25 miles away across the Pennines where sending a van incurred &pound;40 in fuel and 2 hours of travel time.</p>
+              <p class="cs-narrative-text">Previous agency setup targeted broad Manchester radius, triggering clicks from towns 25 miles away across the Pennines where sending a van incurred &pound;40 in fuel and 2 hours of travel time.</p>
             </div>
             <div class="cs-narrative-box">
               <span class="cs-label cs-label-blue">3. Tahmid's Strategy &amp; Engineering:</span>
-              <p style="margin: 0; line-height: 1.65; color: #cbd5e1;">Enforced strict 'Presence-Only' postcode radius (M1&ndash;M34, SK1&ndash;SK12). Implemented the 500+ negative keyword vault blocking DIY error codes (F22, F75, E119), utility 0800 helplines, and social housing grants. Added mobile click-to-call with CallRail whisper audio.</p>
+              <p class="cs-narrative-text">Enforced strict 'Presence-Only' postcode radius (M1&ndash;M34, SK1&ndash;SK12). Implemented the 500+ negative keyword vault blocking DIY error codes (F22, F75, E119), utility 0800 helplines, and social housing grants. Added mobile click-to-call with CallRail whisper audio.</p>
             </div>
             <div class="cs-narrative-box">
               <span class="cs-label cs-label-green">4. Measurable Commercial Outcome:</span>
-              <p style="margin: 0; line-height: 1.65; color: #cbd5e1;">Produced <strong>121 verified conversions at &pound;25.13 CPL</strong> across 2,170 screened clicks. Resulted in 24 full boiler replacements and 41 paid diagnostics, allowing the contractor to hire a 4th Gas Safe installer and cancel Checkatrade permanently.</p>
+              <p class="cs-narrative-text">Produced <strong>121 verified conversions at &pound;25.13 CPL</strong> across 2,170 screened clicks. Resulted in 24 full boiler replacements and 41 paid diagnostics, allowing the contractor to hire a 4th Gas Safe installer and cancel Checkatrade permanently.</p>
             </div>
           </div>
         </div>
         <div class="cs-dash-img-wrap">
           <img src="/images/case-study-uk-gas-safe-121-leads.png" alt="Google Ads Scorecard showing 2.17K Clicks, 8.13K Impressions, 121 Conversions and 25.13 pounds Cost per conversion" class="cs-dash-img" loading="lazy">
-          <div style="padding: 10px 14px; font-size: 0.78rem; color: #94a3b8; border-top: 1px solid rgba(255, 255, 255, 0.08); background: rgba(0,0,0,0.3);">
+          <div class="cs-dash-caption">
             &bull; Live Google Ads Account Scorecard &mdash; <em>121 Conversions at &pound;25.13 CPL across 2.17K Clicks</em>
           </div>
         </div>
