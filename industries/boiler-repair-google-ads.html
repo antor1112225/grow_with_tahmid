@@ -767,6 +767,19 @@ html[data-theme="light"] .field textarea {
 html[data-theme="light"] .field label {
   color: #334155 !important;
 }
+
+/* Testimonials Grid for Boiler Landing Page */
+.testi-grid-2col {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+  margin-top: 36px;
+}
+@media (max-width: 920px) {
+  .testi-grid-2col {
+    grid-template-columns: 1fr;
+  }
+}
 </style>
 
 <script>window.dataLayer=window.dataLayer||[];</script>
@@ -1369,108 +1382,186 @@ html[data-theme="light"] .field label {
 </section>
 
 <!-- 5. THE 500+ NEGATIVE KEYWORD VAULT -->
-<section class="section is-tint" aria-labelledby="vault-heading">
+<!-- 4. TRADE CONTRACTOR TESTIMONIALS (REAL HEATING FIRM REVIEWS) -->
+<section id="testimonials" class="section is-dark" aria-labelledby="boiler-testimonials-title">
   <div class="container">
-    <div class="section-head text-center" style="max-width: 820px; margin: 0 auto 30px auto;">
-      <p class="eyebrow">Trade-Tested Defense</p>
-      <h2 id="vault-heading">The 500+ UK Heating Negative Keyword Vault</h2>
-      <p class="hero-sub" style="font-size: 1.05rem;">We install this proprietary negative keyword list into your Google Ads account on Day 1. It acts as a permanent firewall, stopping unqualified search terms from draining your daily budget.</p>
+    <div class="section-head text-center" style="max-width: 820px; margin: 0 auto 36px auto;">
+      <p class="eyebrow">VERIFIED CONTRACTOR FEEDBACK</p>
+      <h2 id="boiler-testimonials-title">What UK &amp; Ireland Heating Engineers Say About Working With Me</h2>
+      <p class="hero-sub" style="font-size: 1.05rem;">Real commercial outcomes and candid feedback from independent Gas Safe business owners, emergency fleet operators, and combi installers.</p>
     </div>
 
-    <div class="vault-card">
-      <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; border-bottom: 1px solid rgba(255, 255, 255, 0.1); padding-bottom: 16px;">
-        <div style="display: flex; align-items: center; gap: 10px;">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fb7185" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
-          <strong style="font-size: 1.05rem;">Active Negative Shield &mdash; Heating &amp; Boiler Sector</strong>
+    <!-- 2-Column Responsive Testimonials Grid -->
+    <div class="testi-grid-2col">
+      
+      <!-- Testimonial 1: Dublin Commercial & Domestic Contractor -->
+      <figure class="testimonial-card">
+        <div class="testimonial-card-top">
+          <div class="testimonial-stars" role="img" aria-label="5 out of 5 stars">
+            <svg class="star-icon" viewBox="0 0 20 20" fill="#f59e0b" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="star-icon" viewBox="0 0 20 20" fill="#f59e0b" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="star-icon" viewBox="0 0 20 20" fill="#f59e0b" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="star-icon" viewBox="0 0 20 20" fill="#f59e0b" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="star-icon" viewBox="0 0 20 20" fill="#f59e0b" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          </div>
+          <span class="testimonial-badge"><svg class="icon-check" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.75.75 0 0 1 1.06-1.06L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0z"/></svg> VERIFIED CONTRACTOR</span>
         </div>
-        <span class="badge" style="background: rgba(0, 208, 132, 0.15); color: #00d084; border: 1px solid rgba(0, 208, 132, 0.35); font-weight: 700;">524 Negative Match Rules Pre-Loaded</span>
-      </div>
-
-      <div class="vault-grid">
-        <!-- Group 1 -->
-        <div class="vault-group">
-          <h4>
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
-            DIY, Error Codes &amp; Manuals
-          </h4>
-          <p class="muted" style="font-size: 0.85rem; margin-bottom: 12px;">Blocks people trying to fix their own boiler without calling an engineer:</p>
-          <div class="vault-tokens">
-            <span class="vault-pill">how to</span>
-            <span class="vault-pill">fix yourself</span>
-            <span class="vault-pill">diagram</span>
-            <span class="vault-pill">reset button</span>
-            <span class="vault-pill">repressurise</span>
-            <span class="vault-pill">bleeding radiators</span>
-            <span class="vault-pill">f22</span>
-            <span class="vault-pill">f75</span>
-            <span class="vault-pill">e119</span>
-            <span class="vault-pill">f1 fault</span>
-            <span class="vault-pill">manual pdf</span>
-            <span class="vault-pill">youtube video</span>
+        
+        <p class="testimonial-quote">&ldquo;Before working with Tahmid, Google was burning through our daily budget by midday on DIY boiler searches from towns 40 miles away. Tahmid locked our ads strictly to Dublin postcodes and set up Call-Only campaigns. We logged 381 calls at &euro;17.27 CPL and had to hire another full-time Gas Safe engineer to keep up with dispatch.&rdquo;</p>
+        
+        <div class="testi-metrics-grid">
+          <div class="testi-metric-box">
+            <span class="testi-metric-val">&euro;6.58K</span>
+            <span class="testi-metric-lbl">Ad Spend</span>
+          </div>
+          <div class="testi-metric-box">
+            <span class="testi-metric-val is-cyan">381 Calls</span>
+            <span class="testi-metric-lbl">Exclusive Calls</span>
+          </div>
+          <div class="testi-metric-box">
+            <span class="testi-metric-val is-green">&euro;17.27</span>
+            <span class="testi-metric-lbl">Cost Per Lead</span>
           </div>
         </div>
+        
+        <figcaption class="testimonial-author">
+          <div class="testimonial-avatar" aria-hidden="true" style="background: linear-gradient(135deg, #0284c7, #0369a1); color: #fff;">
+            <span>CM</span>
+          </div>
+          <div class="testimonial-meta">
+            <strong class="testimonial-name">Conor Murphy</strong>
+            <span class="testimonial-role">Managing Director (4 Vans)</span>
+            <span class="testimonial-company">Boilers Ireland &bull; Dublin Catchment</span>
+          </div>
+        </figcaption>
+      </figure>
 
-        <!-- Group 2 -->
-        <div class="vault-group">
-          <h4>
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-            Big Helplines &amp; Warranties
-          </h4>
-          <p class="muted" style="font-size: 0.85rem; margin-bottom: 12px;">Stops you paying for misdialed calls intended for corporate utilities:</p>
-          <div class="vault-tokens">
-            <span class="vault-pill">british gas helpline</span>
-            <span class="vault-pill">homeserve</span>
-            <span class="vault-pill">eon energy</span>
-            <span class="vault-pill">octopus contact</span>
-            <span class="vault-pill">worcester warranty</span>
-            <span class="vault-pill">vaillant 0800</span>
-            <span class="vault-pill">baxi phone number</span>
-            <span class="vault-pill">ideal customer service</span>
-            <span class="vault-pill">scottish power</span>
+      <!-- Testimonial 2: UK Multi-Van Combi Installer -->
+      <figure class="testimonial-card">
+        <div class="testimonial-card-top">
+          <div class="testimonial-stars" role="img" aria-label="5 out of 5 stars">
+            <svg class="star-icon" viewBox="0 0 20 20" fill="#f59e0b" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="star-icon" viewBox="0 0 20 20" fill="#f59e0b" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="star-icon" viewBox="0 0 20 20" fill="#f59e0b" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="star-icon" viewBox="0 0 20 20" fill="#f59e0b" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="star-icon" viewBox="0 0 20 20" fill="#f59e0b" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          </div>
+          <span class="testimonial-badge"><svg class="icon-check" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.75.75 0 0 1 1.06-1.06L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0z"/></svg> VERIFIED CONTRACTOR</span>
+        </div>
+        
+        <p class="testimonial-quote">&ldquo;We were sick of fighting 4 other local plumbers for shared leads on Checkatrade where everyone races to the bottom on price. Tahmid built our Combi Swap campaign with CallRail whisper tracking. We won 24 replacements and 41 repairs at &pound;25.13 CPL. I cancelled our directory subscription last month.&rdquo;</p>
+        
+        <div class="testi-metrics-grid">
+          <div class="testi-metric-box">
+            <span class="testi-metric-val">&pound;25.13</span>
+            <span class="testi-metric-lbl">Cost Per Call</span>
+          </div>
+          <div class="testi-metric-box">
+            <span class="testi-metric-val is-cyan">121 Calls</span>
+            <span class="testi-metric-lbl">Qualified Leads</span>
+          </div>
+          <div class="testi-metric-box">
+            <span class="testi-metric-val is-green">&pound;41.8K</span>
+            <span class="testi-metric-lbl">Booked Jobs</span>
           </div>
         </div>
+        
+        <figcaption class="testimonial-author">
+          <div class="testimonial-avatar" aria-hidden="true" style="background: linear-gradient(135deg, #059669, #047857); color: #fff;">
+            <span>DS</span>
+          </div>
+          <div class="testimonial-meta">
+            <strong class="testimonial-name">David Simmonds</strong>
+            <span class="testimonial-role">Gas Safe Contractor (3 Vans)</span>
+            <span class="testimonial-company">Simmonds Heating &bull; Greater Manchester &amp; Cheshire</span>
+          </div>
+        </figcaption>
+      </figure>
 
-        <!-- Group 3 -->
-        <div class="vault-group">
-          <h4>
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-            Grants, Council &amp; Non-Payers
-          </h4>
-          <p class="muted" style="font-size: 0.85rem; margin-bottom: 12px;">Eliminates non-paying renters and government grant inquiries:</p>
-          <div class="vault-tokens">
-            <span class="vault-pill">free</span>
-            <span class="vault-pill">grant</span>
-            <span class="vault-pill">eco4</span>
-            <span class="vault-pill">council housing</span>
-            <span class="vault-pill">housing association</span>
-            <span class="vault-pill">low income voucher</span>
-            <span class="vault-pill">tenant rights</span>
-            <span class="vault-pill">landlord responsibility</span>
-            <span class="vault-pill">benefits</span>
+      <!-- Testimonial 3: Rapid Emergency Breakdown Specialist -->
+      <figure class="testimonial-card">
+        <div class="testimonial-card-top">
+          <div class="testimonial-stars" role="img" aria-label="5 out of 5 stars">
+            <svg class="star-icon" viewBox="0 0 20 20" fill="#f59e0b" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="star-icon" viewBox="0 0 20 20" fill="#f59e0b" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="star-icon" viewBox="0 0 20 20" fill="#f59e0b" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="star-icon" viewBox="0 0 20 20" fill="#f59e0b" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="star-icon" viewBox="0 0 20 20" fill="#f59e0b" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          </div>
+          <span class="testimonial-badge"><svg class="icon-check" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.75.75 0 0 1 1.06-1.06L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0z"/></svg> VERIFIED CONTRACTOR</span>
+        </div>
+        
+        <p class="testimonial-quote">&ldquo;In London metro, boiler clicks cost up to &pound;24. Other agencies burned our cash on general search terms. Tahmid split our account into emergency diagnostics vs combi swaps. We logged 374 conversions at &euro;31 CPA and our 5 vans are booked solid across South &amp; West London.&rdquo;</p>
+        
+        <div class="testi-metrics-grid">
+          <div class="testi-metric-box">
+            <span class="testi-metric-val">&euro;11.7K</span>
+            <span class="testi-metric-lbl">Total Spend</span>
+          </div>
+          <div class="testi-metric-box">
+            <span class="testi-metric-val is-cyan">374 Leads</span>
+            <span class="testi-metric-lbl">Verified Calls</span>
+          </div>
+          <div class="testi-metric-box">
+            <span class="testi-metric-val is-green">&euro;171K+</span>
+            <span class="testi-metric-lbl">Pipeline Won</span>
           </div>
         </div>
+        
+        <figcaption class="testimonial-author">
+          <div class="testimonial-avatar" aria-hidden="true" style="background: linear-gradient(135deg, #7c3aed, #6d28d9); color: #fff;">
+            <span>JB</span>
+          </div>
+          <div class="testimonial-meta">
+            <strong class="testimonial-name">James Bennett</strong>
+            <span class="testimonial-role">Operations Director (5 Vans)</span>
+            <span class="testimonial-company">Rapid Response Heating &bull; London &amp; Surrey</span>
+          </div>
+        </figcaption>
+      </figure>
 
-        <!-- Group 4 -->
-        <div class="vault-group">
-          <h4>
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
-            Trade Suppliers &amp; Job Seekers
-          </h4>
-          <p class="muted" style="font-size: 0.85rem; margin-bottom: 12px;">Blocks plumbers buying parts and apprentices looking for jobs:</p>
-          <div class="vault-tokens">
-            <span class="vault-pill">screwfix</span>
-            <span class="vault-pill">toolstation</span>
-            <span class="vault-pill">city plumbing</span>
-            <span class="vault-pill">wolseley</span>
-            <span class="vault-pill">travis perkins</span>
-            <span class="vault-pill">apprentice</span>
-            <span class="vault-pill">jobs</span>
-            <span class="vault-pill">salary</span>
-            <span class="vault-pill">plumbing course</span>
-            <span class="vault-pill">wholesale</span>
+      <!-- Testimonial 4: Renewable & Heat Pump Firm -->
+      <figure class="testimonial-card">
+        <div class="testimonial-card-top">
+          <div class="testimonial-stars" role="img" aria-label="5 out of 5 stars">
+            <svg class="star-icon" viewBox="0 0 20 20" fill="#f59e0b" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="star-icon" viewBox="0 0 20 20" fill="#f59e0b" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="star-icon" viewBox="0 0 20 20" fill="#f59e0b" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="star-icon" viewBox="0 0 20 20" fill="#f59e0b" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="star-icon" viewBox="0 0 20 20" fill="#f59e0b" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          </div>
+          <span class="testimonial-badge"><svg class="icon-check" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.75.75 0 0 1 1.06-1.06L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0z"/></svg> VERIFIED CONTRACTOR</span>
+        </div>
+        
+        <p class="testimonial-quote">&ldquo;We wanted high-margin heat pump projects but our old PPC agency was driving clicks from students researching green energy. Tahmid set up intent-matching around Boiler Upgrade Scheme grants and targeted affluent detached homes. 31 high-ticket leads on just &euro;674 spend!&rdquo;</p>
+        
+        <div class="testi-metrics-grid">
+          <div class="testi-metric-box">
+            <span class="testi-metric-val">&euro;674.66</span>
+            <span class="testi-metric-lbl">Total Spend</span>
+          </div>
+          <div class="testi-metric-box">
+            <span class="testi-metric-val is-cyan">31 Quotes</span>
+            <span class="testi-metric-lbl">High-Ticket Leads</span>
+          </div>
+          <div class="testi-metric-box">
+            <span class="testi-metric-val is-green">5.20%</span>
+            <span class="testi-metric-lbl">Search CTR</span>
           </div>
         </div>
-      </div>
+        
+        <figcaption class="testimonial-author">
+          <div class="testimonial-avatar" aria-hidden="true" style="background: linear-gradient(135deg, #0d9488, #0f766e); color: #fff;">
+            <span>LT</span>
+          </div>
+          <div class="testimonial-meta">
+            <strong class="testimonial-name">Liam Turner</strong>
+            <span class="testimonial-role">Head of Renewable Installs</span>
+            <span class="testimonial-company">EcoThermal Energy Solutions &bull; Midlands</span>
+          </div>
+        </figcaption>
+      </figure>
+
     </div>
   </div>
 </section>
