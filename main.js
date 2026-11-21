@@ -147,16 +147,22 @@
   var dialog = document.getElementById('video-dialog')
   if (dialog && typeof dialog.showModal === 'function') {
     var frame = dialog.querySelector('.video-frame')
-    var src = frame.getAttribute('data-src')
     var open = function () {
-      if (src && !frame.querySelector('iframe')) {
-        var f = document.createElement('iframe')
-        f.src = src + (src.indexOf('?') > -1 ? '&' : '?') + 'autoplay=1'
-        f.title = 'Meet Tahmid — introduction video'
-        f.allow = 'autoplay; encrypted-media; picture-in-picture; fullscreen'
-        f.allowFullscreen = true
-        frame.appendChild(f)
-        push('intro_video_open', {})
+      if (frame) {
+        var src = frame.getAttribute('data-src')
+        if (src && !frame.querySelector('iframe')) {
+          var f = document.createElement('iframe')
+          f.src = src + (src.indexOf('?') > -1 ? '&' : '?') + 'autoplay=1'
+          f.title = 'Meet Tahmid — Google & Meta Ads Specialist'
+          f.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
+          f.allowFullscreen = true
+          f.style.width = '100%'
+          f.style.height = '100%'
+          f.style.border = '0'
+          frame.innerHTML = ''
+          frame.appendChild(f)
+          push('intro_video_open', {})
+        }
       }
       dialog.showModal()
     }
@@ -164,8 +170,10 @@
       dialog.close()
     }
     dialog.addEventListener('close', function () {
-      var f = frame.querySelector('iframe')
-      if (f) f.remove()
+      if (frame) {
+        var f = frame.querySelector('iframe')
+        if (f) f.remove()
+      }
     })
     document.querySelectorAll('.js-video-open').forEach(function (b) { b.addEventListener('click', open) })
     dialog.querySelectorAll('.js-video-close').forEach(function (b) { b.addEventListener('click', close) })
