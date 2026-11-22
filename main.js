@@ -103,7 +103,7 @@
       var formData = new FormData(form);
       
       // Target primary and backup emails
-      fetch('https://formsubmit.co/ajax/growth@growwithtahmid.com', {
+      fetch('https://formsubmit.co/ajax/contact@growwithtahmid.com', {
         method: 'POST',
         headers: { 
           'Accept': 'application/json'
