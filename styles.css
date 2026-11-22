@@ -3078,9 +3078,26 @@ ol {
   border: 0;
   background: #0a1425;
   cursor: pointer;
+  overflow: hidden;
 }
 
-.video-thumb img,
+.video-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  transition: transform .4s ease;
+}
+
+.video-thumb:hover img {
+  transform: scale(1.03);
+}
+
+.video-thumb:hover .play-btn {
+  transform: translate(-50%, -50%) scale(1.08);
+}
+
 .video-thumb-art {
   width: 100%;
   height: 100%;
